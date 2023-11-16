@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
     // this is a comment
     //another comment
     // I hope this works!!
-    // Also Works
+    // Also Works!
     // Test
     // here is another comment
-    // it works!!
 }
