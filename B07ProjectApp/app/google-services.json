@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1045987726814",
+    "project_id": "cscb07app",
+    "storage_bucket": "cscb07app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045987726814:android:882e0bb492f48fd3cf794f",
+        "android_client_info": {
+          "package_name": "com.example.b07projectapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClz2mKv_gy5w7blBdK18EytaZ7bbWXzcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
