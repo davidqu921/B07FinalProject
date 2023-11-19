@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_student_sign_up.xml",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_student_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_student_dashboard.xml",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_student_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_student_complaint.xml",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_student_complaint.xml"
+    },
+    {
+        "merged": "com.example.b07projectapp-mergeDebugResources-40:/layout/activity_student_complaint.xml",
+        "source": "com.example.b07projectapp-main-43:/layout/activity_student_complaint.xml"
+    },
+    {
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_login.xml"
+    }
+]
