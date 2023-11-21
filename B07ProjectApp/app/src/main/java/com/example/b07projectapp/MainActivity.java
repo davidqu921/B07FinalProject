@@ -24,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickAdminDashBoard(View view) {
+        Intent intent = new Intent(getApplicationContext(), AdminDashboard.class);
+        startActivity(intent);
+    }
+
+    public void onClickStudentLogin(View view){
+        Intent intent = new Intent(getApplicationContext(), Login.class);
+        startActivity(intent);
+    }
 //    public void onClickAdminSignUp(View view) {
 //        Intent intent = new Intent(getApplicationContext(), SignUpAdmin.class);
 //        startActivity(intent);

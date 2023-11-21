@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\layout-w936dp_activity_login.xml.flat",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout-w936dp\\activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -28,8 +24,8 @@
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.b07projectapp-merged_res-41:/layout_activity_student_complaint.xml.flat",
-        "source": "com.example.b07projectapp-main-43:/layout/activity_student_complaint.xml"
+        "merged": "com.example.b07projectapp-merged_res-41:/layout_activity_main.xml.flat",
+        "source": "com.example.b07projectapp-main-43:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\xml_data_extraction_rules.xml.flat",
@@ -56,6 +52,10 @@
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_student_sign_up.xml"
     },
     {
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\layout_activity_admin_dashboard.xml.flat",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_admin_dashboard.xml"
+    },
+    {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\xml\\backup_rules.xml"
     },
@@ -80,8 +80,8 @@
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\layout-w1240dp_activity_login.xml.flat",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout-w1240dp\\activity_login.xml"
+        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\layout_activity_admin_complaint_view.xml.flat",
+        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_admin_complaint_view.xml"
     },
     {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\mipmap-anydpi_ic_launcher.xml.flat",

@@ -1360,6 +1360,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -3190,6 +3191,8 @@ id bounceEnd
 id bounceStart
 id button
 id button2
+id button3
+id button4
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3338,8 +3341,7 @@ id line3
 id linear
 id listMode
 id list_item
-id loading
-id login
+id loginBtn
 id m3_side_sheet
 id marquee
 id masked
@@ -3459,6 +3461,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id registerBtn
 id report_drawn
 id reverseSawtooth
 id right
@@ -3553,6 +3556,7 @@ id textTop
 id textView
 id textView2
 id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3718,6 +3722,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_complaint_view
+layout activity_admin_dashboard
 layout activity_login
 layout activity_main
 layout activity_student_complaint

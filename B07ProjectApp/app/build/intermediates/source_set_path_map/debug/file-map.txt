@@ -34,11 +34,11 @@ com.example.b07projectapp-play-services-measurement-api-21.5.0-32 C:\Users\MTC\.
 com.example.b07projectapp-recyclerview-1.1.0-33 C:\Users\MTC\.gradle\caches\transforms-3\d471990889947ff19de9dc964f727595\transformed\recyclerview-1.1.0\res
 com.example.b07projectapp-lifecycle-livedata-2.6.2-34 C:\Users\MTC\.gradle\caches\transforms-3\de79e10b436d58662aa515520a2134ea\transformed\lifecycle-livedata-2.6.2\res
 com.example.b07projectapp-lifecycle-livedata-core-ktx-2.6.2-35 C:\Users\MTC\.gradle\caches\transforms-3\deaa28eed536d77d597bf6d54019d8be\transformed\lifecycle-livedata-core-ktx-2.6.2\res
-com.example.b07projectapp-pngs-36 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\build\generated\res\pngs\debug
-com.example.b07projectapp-res-37 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\build\generated\res\processDebugGoogleServices
-com.example.b07projectapp-resValues-38 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\build\generated\res\resValues\debug
-com.example.b07projectapp-packageDebugResources-39 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.b07projectapp-packageDebugResources-40 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.b07projectapp-merged_res-41 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\build\intermediates\merged_res\debug
-com.example.b07projectapp-debug-42 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\src\debug\res
-com.example.b07projectapp-main-43 D:\courses\CSCB07 F23\project\b07finalpro\B07ProjectApp\app\src\main\res
+com.example.b07projectapp-pngs-36 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\build\generated\res\pngs\debug
+com.example.b07projectapp-res-37 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\build\generated\res\processDebugGoogleServices
+com.example.b07projectapp-resValues-38 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\build\generated\res\resValues\debug
+com.example.b07projectapp-packageDebugResources-39 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.b07projectapp-packageDebugResources-40 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.b07projectapp-merged_res-41 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\build\intermediates\merged_res\debug
+com.example.b07projectapp-debug-42 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\debug\res
+com.example.b07projectapp-main-43 C:\Users\MTC\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\res

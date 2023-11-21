@@ -45,6 +45,10 @@ public class SignUpStudent extends AppCompatActivity{
                     ref.child("students").child(username).child("username").setValue(username);
                     ref.child("students").child(username).child("name").setValue(name);
                     ref.child("students").child(username).child("password").setValue(password);
+
+                    // show a success message then finish the activity
+                    Toast.makeText(SignUpStudent.this,"User register successfully.",Toast.LENGTH_SHORT).show();
+                    finish();
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "The username already existed. Enter a new one", Toast.LENGTH_LONG).show();
