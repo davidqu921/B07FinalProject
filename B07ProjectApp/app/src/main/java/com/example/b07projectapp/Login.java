@@ -19,13 +19,17 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
 
-    DatabaseReference db = FirebaseDatabase.getInstance().getReferenceFromUrl("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
+    FirebaseDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
+    }
 
+    public void onClickStudentLogIn(View view){
+        DatabaseReference ref = db.getReference();
         final EditText textPersonalName = findViewById(R.id.username);
         final EditText password = findViewById(R.id.password);
         final Button loginBtn = findViewById(R.id.loginBtn);
@@ -41,7 +45,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this,"Please enter your username or password", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    db.child("students").addListenerForSingleValueEvent(new ValueEventListener() {
+                    ref.child("students").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             // check if mobile is exist in database
@@ -49,16 +53,16 @@ public class Login extends AppCompatActivity {
                                 //username is exist in database
                                 //now get password of user from database and match it with user entered password
 
-                                final String getPassword = String.valueOf(snapshot.child(usernameTxt).child("password"));
+                                final String getPassword = snapshot.child(usernameTxt).child("password").getValue(String.class);
 
                                 if(getPassword.equals(passwordTxt)){
                                     Toast.makeText(Login.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
                                     //Open main activity on success
-                                    startActivity(new Intent(Login.this,MainActivity.class));
-                                    finish();
+                                    Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
+                                    startActivity(intent);
                                 }
                                 else{
-                                    Toast.makeText(Login.this,"Wrong Password",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login.this,"Wrong Password" + getPassword,Toast.LENGTH_SHORT).show();
                                 }
                             }
                             else{
