@@ -4,12 +4,12 @@ package com.example.b07projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.b07projectapp.R;
@@ -19,37 +19,32 @@ import java.lang.String;
 
 public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final ConstraintLayout container;
-
-  @NonNull
-  public final ProgressBar loading;
-
-  @NonNull
-  public final Button login;
+  public final AppCompatButton loginBtn;
 
   @NonNull
   public final EditText password;
 
   @NonNull
+  public final TextView registerBtn;
+
+  @NonNull
   public final EditText username;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout container, @NonNull ProgressBar loading, @NonNull Button login,
-      @NonNull EditText password, @NonNull EditText username) {
+  private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton loginBtn,
+      @NonNull EditText password, @NonNull TextView registerBtn, @NonNull EditText username) {
     this.rootView = rootView;
-    this.container = container;
-    this.loading = loading;
-    this.login = login;
+    this.loginBtn = loginBtn;
     this.password = password;
+    this.registerBtn = registerBtn;
     this.username = username;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -74,17 +69,9 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      ConstraintLayout container = (ConstraintLayout) rootView;
-
-      id = R.id.loading;
-      ProgressBar loading = ViewBindings.findChildViewById(rootView, id);
-      if (loading == null) {
-        break missingId;
-      }
-
-      id = R.id.login;
-      Button login = ViewBindings.findChildViewById(rootView, id);
-      if (login == null) {
+      id = R.id.loginBtn;
+      AppCompatButton loginBtn = ViewBindings.findChildViewById(rootView, id);
+      if (loginBtn == null) {
         break missingId;
       }
 
@@ -94,14 +81,20 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.registerBtn;
+      TextView registerBtn = ViewBindings.findChildViewById(rootView, id);
+      if (registerBtn == null) {
+        break missingId;
+      }
+
       id = R.id.username;
       EditText username = ViewBindings.findChildViewById(rootView, id);
       if (username == null) {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, container, loading, login,
-          password, username);
+      return new ActivityLoginBinding((LinearLayout) rootView, loginBtn, password, registerBtn,
+          username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

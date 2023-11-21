@@ -1360,6 +1360,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -3338,8 +3339,7 @@ id line3
 id linear
 id listMode
 id list_item
-id loading
-id login
+id loginBtn
 id m3_side_sheet
 id marquee
 id masked
@@ -3459,6 +3459,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id registerBtn
 id report_drawn
 id reverseSawtooth
 id right
