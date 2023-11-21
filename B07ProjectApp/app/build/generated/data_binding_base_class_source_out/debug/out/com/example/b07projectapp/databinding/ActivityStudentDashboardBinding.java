@@ -24,12 +24,17 @@ public final class ActivityStudentDashboardBinding implements ViewBinding {
   public final Button GoToSubmitComplaintBtn;
 
   @NonNull
+  public final Button checkpostBtn;
+
+  @NonNull
   public final TextView textView2;
 
   private ActivityStudentDashboardBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button GoToSubmitComplaintBtn, @NonNull TextView textView2) {
+      @NonNull Button GoToSubmitComplaintBtn, @NonNull Button checkpostBtn,
+      @NonNull TextView textView2) {
     this.rootView = rootView;
     this.GoToSubmitComplaintBtn = GoToSubmitComplaintBtn;
+    this.checkpostBtn = checkpostBtn;
     this.textView2 = textView2;
   }
 
@@ -66,6 +71,12 @@ public final class ActivityStudentDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.checkpostBtn;
+      Button checkpostBtn = ViewBindings.findChildViewById(rootView, id);
+      if (checkpostBtn == null) {
+        break missingId;
+      }
+
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
@@ -73,7 +84,7 @@ public final class ActivityStudentDashboardBinding implements ViewBinding {
       }
 
       return new ActivityStudentDashboardBinding((ConstraintLayout) rootView,
-          GoToSubmitComplaintBtn, textView2);
+          GoToSubmitComplaintBtn, checkpostBtn, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
