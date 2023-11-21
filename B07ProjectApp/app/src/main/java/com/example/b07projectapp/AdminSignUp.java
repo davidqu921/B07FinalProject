@@ -1,6 +1,5 @@
 package com.example.b07projectapp;
 
-import com.google.firebase.database.FirebaseDatabase;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,29 +11,32 @@ import android.widget.Toast;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-public class SignUpStudent extends AppCompatActivity{
+
+public class AdminSignUp extends AppCompatActivity {
+
     FirebaseDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_sign_up);
+        setContentView(R.layout.activity_admin_sign_up);
         db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
     }
 
-    public void onClickStudentSignUp(View view){
+    public void onClickAdminSignUp(View view){
         DatabaseReference ref = db.getReference();
-        EditText studentUsername = (EditText) findViewById(R.id.editTextStudentUsername);
-        EditText studentName = (EditText) findViewById(R.id.editTextStudentName);
-        EditText studentPassword = (EditText) findViewById(R.id.editTextStudentPassword);
-        String username = studentUsername.getText().toString();
-        String name = studentName.getText().toString();
-        String password = studentPassword.getText().toString();
-        studentUsername.setText("");
-        studentName.setText("");
-        studentPassword.setText("");
-        DatabaseReference query = ref.child("students").child(username);
+        EditText adminUsername = (EditText) findViewById(R.id.editTextAdminUsername);
+        EditText adminName = (EditText) findViewById(R.id.editTextAdminName);
+        EditText adminPassword = (EditText) findViewById(R.id.editTextAdminPassword);
+        String username = adminUsername.getText().toString();
+        String name = adminName.getText().toString();
+        String password = adminPassword.getText().toString();
+        adminUsername.setText("");
+        adminName.setText("");
+        adminPassword.setText("");
+        DatabaseReference query = ref.child("admin").child(username);
 
         query.addListenerForSingleValueEvent(new ValueEventListener() {
 
@@ -42,16 +44,17 @@ public class SignUpStudent extends AppCompatActivity{
             public void onDataChange(DataSnapshot snapshot) {
                 if(!snapshot.exists())
                 {
-                    ref.child("students").child(username).child("username").setValue(username);
-                    ref.child("students").child(username).child("name").setValue(name);
-                    ref.child("students").child(username).child("password").setValue(password);
+                    ref.child("admin").child(username).child("username").setValue(username);
+                    ref.child("admin").child(username).child("name").setValue(name);
+                    ref.child("admin").child(username).child("password").setValue(password);
 
                     // show a success message then finish the activity
-                    Toast.makeText(getApplicationContext(),"User register successfully.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "User register successfully", Toast.LENGTH_LONG).show();
 
                     // redirect to login page
-                    Intent intent = new Intent(getApplicationContext(), Login.class);
-                    startActivity(intent);
+//                    Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
+//                    startActivity(intent);
+
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "The username already existed. Enter a new one", Toast.LENGTH_LONG).show();
@@ -64,7 +67,7 @@ public class SignUpStudent extends AppCompatActivity{
         });
     }
 
-    public void onClickSignUpStudentGoBack(View view) {
+    public void onClickSignUpAdminGoBack(View view) {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
     }
