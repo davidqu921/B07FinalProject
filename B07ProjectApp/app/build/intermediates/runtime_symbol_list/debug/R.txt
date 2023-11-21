@@ -3190,6 +3190,8 @@ int id bounceEnd 0x7f080069
 int id bounceStart 0x7f08006a
 int id button 0x7f08006b
 int id button2 0x7f08006c
+int id button3 0x7f08020a
+int id button4 0x7f08020c
 int id buttonPanel 0x7f08006d
 int id cache_measures 0x7f08006e
 int id callMeasure 0x7f08006f
@@ -3553,6 +3555,7 @@ int id textTop 0x7f0801d4
 int id textView 0x7f0801d5
 int id textView2 0x7f0801d6
 int id textView3 0x7f0801d7
+int id textView4 0x7f08020b
 int id text_input_end_icon 0x7f0801d8
 int id text_input_error_icon 0x7f0801d9
 int id text_input_start_icon 0x7f0801da
@@ -3718,6 +3721,8 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_admin_complaint_view 0x7f0b006e
+int layout activity_admin_dashboard 0x7f0b006f
 int layout activity_login 0x7f0b001c
 int layout activity_main 0x7f0b001d
 int layout activity_student_complaint 0x7f0b001e

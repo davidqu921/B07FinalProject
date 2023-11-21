@@ -40,6 +40,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.AdminComplaintView"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AdminDashboard"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.Login"
             android:exported="false" />
         <activity
