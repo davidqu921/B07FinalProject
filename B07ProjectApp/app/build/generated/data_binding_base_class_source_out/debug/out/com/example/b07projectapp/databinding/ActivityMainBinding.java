@@ -34,15 +34,19 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Button button;
 
+  @NonNull
+  public final Button button4;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button LogInAdminBtn,
       @NonNull Button LogInStudentBtn, @NonNull Button SignUpAdminBtn,
-      @NonNull Button SignUpStudentBtn, @NonNull Button button) {
+      @NonNull Button SignUpStudentBtn, @NonNull Button button, @NonNull Button button4) {
     this.rootView = rootView;
     this.LogInAdminBtn = LogInAdminBtn;
     this.LogInStudentBtn = LogInStudentBtn;
     this.SignUpAdminBtn = SignUpAdminBtn;
     this.SignUpStudentBtn = SignUpStudentBtn;
     this.button = button;
+    this.button4 = button4;
   }
 
   @Override
@@ -102,8 +106,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button4;
+      Button button4 = ViewBindings.findChildViewById(rootView, id);
+      if (button4 == null) {
+        break missingId;
+      }
+
       return new ActivityMainBinding((ConstraintLayout) rootView, LogInAdminBtn, LogInStudentBtn,
-          SignUpAdminBtn, SignUpStudentBtn, button);
+          SignUpAdminBtn, SignUpStudentBtn, button, button4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
