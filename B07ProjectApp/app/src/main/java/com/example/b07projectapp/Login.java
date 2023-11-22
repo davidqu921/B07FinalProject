@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity {
                                 //username is exist in database
                                 //now get password of user from database and match it with user entered password
 
-                                final String getPassword = String.valueOf(snapshot.child(usernameTxt).child("password"));
+                                final String getPassword = String.valueOf(snapshot.child(usernameTxt).child("password").getValue());
 
                                 if(getPassword.equals(passwordTxt)){
                                     Toast.makeText(Login.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
