@@ -21,11 +21,19 @@ public class AdminDashboard extends AppCompatActivity {
 
     public void onClickViewEvent(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+        if (getIntent().getStringExtra("username") != null) {
+            String user = getIntent().getStringExtra("username");
+            intent.putExtra("username", user);
+        }
         startActivity(intent);
     }
 
     public void onClickAddEvent(View view) {
         Intent intent = new Intent(getApplicationContext(), AdminAddEvent.class);
+        if (getIntent().getStringExtra("username") != null) {
+            String user = getIntent().getStringExtra("username");
+            intent.putExtra("username", user);
+        }
         startActivity(intent);
     }
 }

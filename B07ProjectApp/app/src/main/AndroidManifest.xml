@@ -21,6 +21,9 @@
             android:name=".StudentCheckAnnouncements"
             android:exported="false" />
         <activity
+            android:name=".ViewComments"
+            android:exported="false" />
+        <activity
             android:name=".AdminAddEvent"
             android:exported="false" />
         <activity

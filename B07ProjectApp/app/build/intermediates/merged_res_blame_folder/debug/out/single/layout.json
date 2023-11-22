@@ -44,6 +44,10 @@
         "source": "com.example.b07projectapp-main-43:/layout/activity_posts_require_minor.xml"
     },
     {
+        "merged": "com.example.b07projectapp-mergeDebugResources-40:/layout/activity_view_comments.xml",
+        "source": "com.example.b07projectapp-main-43:/layout/activity_view_comments.xml"
+    },
+    {
         "merged": "com.example.b07projectapp-mergeDebugResources-40:/layout/activity_main2.xml",
         "source": "com.example.b07projectapp-main-43:/layout/activity_main2.xml"
     },

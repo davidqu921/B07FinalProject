@@ -32,6 +32,10 @@
         "source": "com.example.b07projectapp-main-43:/layout/activity_student_complaint.xml"
     },
     {
+        "merged": "com.example.b07projectapp-merged_res-41:/layout_activity_view_comments.xml.flat",
+        "source": "com.example.b07projectapp-main-43:/layout/activity_view_comments.xml"
+    },
+    {
         "merged": "com.example.b07projectapp-merged_res-41:/layout_activity_student_sign_up.xml.flat",
         "source": "com.example.b07projectapp-main-43:/layout/activity_student_sign_up.xml"
     },

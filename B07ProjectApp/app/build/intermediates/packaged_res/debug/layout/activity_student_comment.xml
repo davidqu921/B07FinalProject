@@ -75,11 +75,11 @@
         android:layout_width="wrap_content"
         android:layout_height="51dp"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:ems="10"
-        android:inputType="number"
-        android:text="@string/leave_a_rating_1_5"
+        android:hint="@string/leave_a_rating_1_5"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextStudentComment"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextStudentComment" />
 </androidx.constraintlayout.widget.ConstraintLayout>
