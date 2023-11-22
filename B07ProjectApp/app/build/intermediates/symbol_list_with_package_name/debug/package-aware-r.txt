@@ -3166,6 +3166,7 @@ id adjust_height
 id adjust_width
 id adminLoginBtn
 id adminPassword
+id adminRegisterBtn
 id adminUsername
 id alertTitle
 id aligned

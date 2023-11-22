@@ -31,20 +31,20 @@ public final class ActivityAdminLoginBinding implements ViewBinding {
   public final EditText adminPassword;
 
   @NonNull
-  public final EditText adminUsername;
+  public final TextView adminRegisterBtn;
 
   @NonNull
-  public final TextView registerBtn;
+  public final EditText adminUsername;
 
   private ActivityAdminLoginBinding(@NonNull LinearLayout rootView, @NonNull TextView AdminCenter,
       @NonNull AppCompatButton adminLoginBtn, @NonNull EditText adminPassword,
-      @NonNull EditText adminUsername, @NonNull TextView registerBtn) {
+      @NonNull TextView adminRegisterBtn, @NonNull EditText adminUsername) {
     this.rootView = rootView;
     this.AdminCenter = AdminCenter;
     this.adminLoginBtn = adminLoginBtn;
     this.adminPassword = adminPassword;
+    this.adminRegisterBtn = adminRegisterBtn;
     this.adminUsername = adminUsername;
-    this.registerBtn = registerBtn;
   }
 
   @Override
@@ -92,20 +92,20 @@ public final class ActivityAdminLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.adminRegisterBtn;
+      TextView adminRegisterBtn = ViewBindings.findChildViewById(rootView, id);
+      if (adminRegisterBtn == null) {
+        break missingId;
+      }
+
       id = R.id.adminUsername;
       EditText adminUsername = ViewBindings.findChildViewById(rootView, id);
       if (adminUsername == null) {
         break missingId;
       }
 
-      id = R.id.registerBtn;
-      TextView registerBtn = ViewBindings.findChildViewById(rootView, id);
-      if (registerBtn == null) {
-        break missingId;
-      }
-
       return new ActivityAdminLoginBinding((LinearLayout) rootView, AdminCenter, adminLoginBtn,
-          adminPassword, adminUsername, registerBtn);
+          adminPassword, adminRegisterBtn, adminUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -18,6 +18,7 @@ id SignUpStudentBtn
 id StudentSignUpGoBackBtn
 id adminLoginBtn
 id adminPassword
+id adminRegisterBtn
 id adminUsername
 id button
 id button10

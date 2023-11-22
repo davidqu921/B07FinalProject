@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -30,7 +31,8 @@ public class AdminLogin extends AppCompatActivity {
         final EditText textPersonalName = findViewById(R.id.adminUsername);
         final EditText password = findViewById(R.id.adminPassword);
         final Button Admin_loginBtn = findViewById(R.id.adminLoginBtn);
-        // final TextView registerBtn = findViewById(R.id.registerBtn);
+        final TextView Admin_registerBtn = findViewById(R.id.adminRegisterBtn);
+
         Admin_loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +71,13 @@ public class AdminLogin extends AppCompatActivity {
                         }
                     });
                 }
+            }
+        });
+        Admin_registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // open SignUp activity
+                startActivity(new Intent(AdminLogin.this, AdminSignUp.class));
             }
         });
     }
