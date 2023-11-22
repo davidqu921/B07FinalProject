@@ -17,6 +17,10 @@ public class StudentComment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_comment);
         db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
+        //Bundle extras = getIntent().getExtras();
+        //if (extras != null) {
+        //    String value = extras.getString("Event");
+        //}
     }
     public void onClickSubmitComplaint(View view){
         DatabaseReference ref = db.getReference();
