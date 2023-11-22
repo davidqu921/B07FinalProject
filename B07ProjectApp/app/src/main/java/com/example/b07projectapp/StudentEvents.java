@@ -15,7 +15,7 @@ public class StudentEvents extends AppCompatActivity {
         setContentView(R.layout.activity_student_events);
     }
     public void onClickAddComments(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentComment.class);
+        Intent intent = new Intent(getApplicationContext(), ViewComments.class);
         startActivity(intent);
     }
 
