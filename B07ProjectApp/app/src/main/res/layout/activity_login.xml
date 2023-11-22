@@ -8,7 +8,15 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Login">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:id="@+id/studentLogin"
+        android:text="Student Centre"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,4 +82,6 @@
         android:onClick="onClickStudentLogIn"
         android:text="Register Now"
         android:textStyle="bold" />
+
+
 </LinearLayout>

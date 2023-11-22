@@ -18,4 +18,14 @@ public class AdminDashboard extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), AdminComplaintView.class);
         startActivity(intent);
     }
+
+    public void onClickViewEvent(View view) {
+        Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+        startActivity(intent);
+    }
+
+    public void onClickAddEvent(View view) {
+        Intent intent = new Intent(getApplicationContext(), AdminAddEvent.class);
+        startActivity(intent);
+    }
 }
