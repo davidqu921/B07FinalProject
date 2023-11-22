@@ -40,7 +40,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.AdminPostNewAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.StudentCheckAnnouncements"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.AdminAddEvent"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AdminSignUp"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.StudentComment"

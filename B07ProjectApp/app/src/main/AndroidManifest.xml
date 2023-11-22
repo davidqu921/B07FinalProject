@@ -24,6 +24,9 @@
             android:name=".AdminAddEvent"
             android:exported="false" />
         <activity
+            android:name=".AdminSignUp"
+            android:exported="false" />
+        <activity
             android:name=".StudentComment"
             android:exported="false" />
         <activity
