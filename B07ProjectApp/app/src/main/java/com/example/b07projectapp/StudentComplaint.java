@@ -39,6 +39,11 @@ public class StudentComplaint extends AppCompatActivity {
         String complaintKey = ref.child("complaints").push().getKey();
         ref.child("complaints").child(complaintKey).child("topic").setValue(topicStr);
         ref.child("complaints").child(complaintKey).child("content").setValue(content);
+
+        Toast.makeText(getApplicationContext(), "Complaint submitted !", Toast.LENGTH_LONG).show();
+        // redirect to main dashboard
+        Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
+        startActivity(intent);
     }
 
     public void onClickGoBackStudentDashBoard(View view) {

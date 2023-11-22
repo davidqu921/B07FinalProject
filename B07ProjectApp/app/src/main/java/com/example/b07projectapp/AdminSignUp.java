@@ -52,8 +52,8 @@ public class AdminSignUp extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "User register successfully", Toast.LENGTH_LONG).show();
 
                     // redirect to login page
-                    //Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
-                    //startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
+                    startActivity(intent);
 
                 }
                 else {
