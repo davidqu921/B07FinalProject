@@ -46,6 +46,7 @@ id checkpostBtn
 id editTextAdminName
 id editTextAdminPassword
 id editTextAdminUsername
+id editTextComplaintStuName
 id editTextComplaintTopic
 id editTextDate
 id editTextNumber
