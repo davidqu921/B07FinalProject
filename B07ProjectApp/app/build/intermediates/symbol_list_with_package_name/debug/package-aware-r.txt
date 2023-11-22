@@ -2227,6 +2227,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -3083,6 +3084,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
+id AdminCenter
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
@@ -3162,6 +3164,9 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id adminLoginBtn
+id adminPassword
+id adminUsername
 id alertTitle
 id aligned
 id all
@@ -3283,6 +3288,9 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextAdminName
+id editTextAdminPassword
+id editTextAdminUsername
 id editTextComplaintTopic
 id editTextStudentComplaint
 id editTextStudentName
@@ -3553,6 +3561,7 @@ id staticPostLayout
 id stop
 id stretch
 id studentComplaintBtn
+id studentLogin
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -3750,6 +3759,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_admin_complaint_view
 layout activity_admin_dashboard
+layout activity_admin_login
+layout activity_admin_sign_up
 layout activity_login
 layout activity_main
 layout activity_posts_require
@@ -3906,6 +3917,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -3917,6 +3929,7 @@ string invalid_password
 string invalid_username
 string item_view_role_description
 string login_failed
+string lorem_ipsum
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4017,11 +4030,13 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string next
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string previous
 string project_id
 string prompt_email
 string prompt_password
@@ -4029,9 +4044,11 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string second_fragment_label
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string title_activity_admin_login
 string title_activity_login
 string welcome
 style AlertDialog_AppCompat

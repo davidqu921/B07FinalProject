@@ -34,8 +34,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickAdminSignUp(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminSignUp.class);
+    public void onClickAdminLogin(View view){
+        Intent intent = new Intent(getApplicationContext(), AdminLogin.class);
         startActivity(intent);
     }
+//    public void onClickAdminSignUp(View view) {
+//        Intent intent = new Intent(getApplicationContext(), SignUpAdmin.class);
+//        startActivity(intent);
+//    }
+
+    //new comment to test commit
 }

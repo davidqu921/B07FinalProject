@@ -18,4 +18,6 @@ public class AdminDashboard extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), AdminComplaintView.class);
         startActivity(intent);
     }
+
+
 }

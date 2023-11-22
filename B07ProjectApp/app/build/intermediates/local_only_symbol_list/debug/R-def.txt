@@ -5,8 +5,10 @@ color blue
 color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen fab_margin
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id AdminCenter
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
 id LogInStudentBtn
@@ -14,6 +16,9 @@ id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
 id StudentSignUpGoBackBtn
+id adminLoginBtn
+id adminPassword
+id adminUsername
 id button
 id button10
 id button11
@@ -34,6 +39,9 @@ id button7
 id button8
 id button9
 id checkpostBtn
+id editTextAdminName
+id editTextAdminPassword
+id editTextAdminUsername
 id editTextComplaintTopic
 id editTextStudentComplaint
 id editTextStudentName
@@ -51,6 +59,7 @@ id loginBtn
 id password
 id registerBtn
 id studentComplaintBtn
+id studentLogin
 id textView
 id textView2
 id textView3
@@ -60,6 +69,8 @@ id textView6
 id username
 layout activity_admin_complaint_view
 layout activity_admin_dashboard
+layout activity_admin_login
+layout activity_admin_sign_up
 layout activity_login
 layout activity_main
 layout activity_posts_require
@@ -75,6 +86,7 @@ mipmap ic_launcher_round
 string action_sign_in
 string action_sign_in_short
 string app_name
+string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -83,9 +95,14 @@ string google_storage_bucket
 string invalid_password
 string invalid_username
 string login_failed
+string lorem_ipsum
+string next
+string previous
 string project_id
 string prompt_email
 string prompt_password
+string second_fragment_label
+string title_activity_admin_login
 string title_activity_login
 string welcome
 style Base.Theme.B07ProjectApp

@@ -53,13 +53,13 @@ public class Login extends AppCompatActivity {
                                 //username is exist in database
                                 //now get password of user from database and match it with user entered password
 
-                                final String getPassword = snapshot.child(usernameTxt).child("password").getValue(String.class);
+                                final String getPassword = String.valueOf(snapshot.child(usernameTxt).child("password"));
 
                                 if(getPassword.equals(passwordTxt)){
                                     Toast.makeText(Login.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
                                     //Open main activity on success
-                                    Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
-                                    startActivity(intent);
+                                    startActivity(new Intent(Login.this, StudentDashboard.class));
+                                    finish();
                                 }
                                 else{
                                     Toast.makeText(Login.this,"Wrong Password" + getPassword,Toast.LENGTH_SHORT).show();
