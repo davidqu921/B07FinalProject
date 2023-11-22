@@ -52,4 +52,29 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="event_button">EVENT</string>
+    <string name="text_title">Text Title</string>
+    <string name="description">Description</string>
+    <string name="join_event">Join Event</string>
+    <string name="comments">Comments</string>
+    <string name="next_event">Next Event</string>
+    <string name="textview">TextView</string>
+    <string name="rating">Rating</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="view_events">View Events</string>
+    <string name="add_new_event">Add New Event</string>
+    <string name="create_an_event">Create an Event</string>
+    <string name="event_name">Event Name</string>
+    <string name="add">add</string>
+    <string name="add_a_description">Add a description</string>
+    <string name="go_back">Go Back</string>
+    <string name="leave_a_rating_1_5">Leave a Rating (1–5)</string>
+    <string name="submit_comment">Submit Comment</string>
+    <string name="enter_your_comment">Enter your Comment</string>
+    <string name="submit_a_comment">Submit a Comment</string>
+    <string name="title_activity_student_events">StudentEvents</string>
+    <string name="adminDashboard">Admin Dashboard</string>
+    <string name="view_students_complaints">View Students\' Complaints</string>
+    <string name="submit_a_complaint">Submit a Complaint</string>
+    <string name="student_dashboard">Student Dashboard</string>
 </resources>
