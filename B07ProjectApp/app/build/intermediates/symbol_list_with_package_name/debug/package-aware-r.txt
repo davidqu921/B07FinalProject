@@ -3207,6 +3207,8 @@ id button17
 id button18
 id button19
 id button2
+id button20
+id button21
 id button3
 id button4
 id button5
@@ -3294,7 +3296,9 @@ id editTextAdminName
 id editTextAdminPassword
 id editTextAdminUsername
 id editTextComplaintTopic
+id editTextDate
 id editTextNumber
+id editTextNumber2
 id editTextStudentComment
 id editTextStudentComplaint
 id editTextStudentComplaint2
@@ -3302,6 +3306,7 @@ id editTextStudentName
 id editTextStudentPassword
 id editTextStudentUsername
 id editTextText
+id editTextText2
 id editTextTextMultiLine
 id editTextTextMultiLine2
 id editTextTextMultiLine3
@@ -3594,6 +3599,12 @@ id textTop
 id textView
 id textView10
 id textView11
+id textView12
+id textView13
+id textView14
+id textView15
+id textView16
+id textView17
 id textView2
 id textView3
 id textView4
@@ -3787,6 +3798,7 @@ layout activity_student_complaint
 layout activity_student_dashboard
 layout activity_student_events
 layout activity_student_sign_up
+layout activity_view_comments
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
