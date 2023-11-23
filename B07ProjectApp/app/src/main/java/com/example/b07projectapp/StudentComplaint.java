@@ -31,14 +31,34 @@ public class StudentComplaint extends AppCompatActivity {
         DatabaseReference ref = db.getReference();
         EditText topic = (EditText) findViewById(R.id.editTextComplaintTopic);
         EditText complaint = (EditText) findViewById(R.id.editTextStudentComplaint);
+        EditText edname = (EditText) findViewById(R.id.editTextComplaintStuName);
         String content = complaint.getText().toString();
         String topicStr = topic.getText().toString();
-        complaint.setText("");
-        topic.setText("");
+        String name = edname.getText().toString();
 
-        String complaintKey = ref.child("complaints").push().getKey();
-        ref.child("complaints").child(complaintKey).child("topic").setValue(topicStr);
-        ref.child("complaints").child(complaintKey).child("content").setValue(content);
+        // change empty name to "anonymous"
+        if(name.isEmpty()){
+            name = "anonymous";
+        }
+
+        if(topicStr.isEmpty() || content.isEmpty()){
+            Toast.makeText(getApplicationContext(), "Unsuccessful. Please fill out all fields", Toast.LENGTH_LONG).show();
+        }
+        else {
+            edname.setText("");
+            complaint.setText("");
+            topic.setText("");
+
+            String complaintKey = ref.child("complaints").push().getKey();
+            ref.child("complaints").child(complaintKey).child("topic").setValue(topicStr);
+            ref.child("complaints").child(complaintKey).child("content").setValue(content);
+            ref.child("complaints").child(complaintKey).child("name").setValue(name);
+
+            Toast.makeText(getApplicationContext(), "Complaint submitted !", Toast.LENGTH_LONG).show();
+            // redirect to main dashboard
+            Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
+            startActivity(intent);
+        }
     }
 
     public void onClickGoBackStudentDashBoard(View view) {

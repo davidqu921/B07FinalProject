@@ -21,24 +21,24 @@ public final class ActivityPostsRequireBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button back1Btn;
+  public final Button button15;
+
+  @NonNull
+  public final Button button5;
+
+  @NonNull
+  public final Button button6;
 
   @NonNull
   public final EditText editTextText;
 
-  @NonNull
-  public final Button minorBtn;
-
-  @NonNull
-  public final Button specialistBtn;
-
-  private ActivityPostsRequireBinding(@NonNull ConstraintLayout rootView, @NonNull Button back1Btn,
-      @NonNull EditText editTextText, @NonNull Button minorBtn, @NonNull Button specialistBtn) {
+  private ActivityPostsRequireBinding(@NonNull ConstraintLayout rootView, @NonNull Button button15,
+      @NonNull Button button5, @NonNull Button button6, @NonNull EditText editTextText) {
     this.rootView = rootView;
-    this.back1Btn = back1Btn;
+    this.button15 = button15;
+    this.button5 = button5;
+    this.button6 = button6;
     this.editTextText = editTextText;
-    this.minorBtn = minorBtn;
-    this.specialistBtn = specialistBtn;
   }
 
   @Override
@@ -68,9 +68,21 @@ public final class ActivityPostsRequireBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.back1Btn;
-      Button back1Btn = ViewBindings.findChildViewById(rootView, id);
-      if (back1Btn == null) {
+      id = R.id.button15;
+      Button button15 = ViewBindings.findChildViewById(rootView, id);
+      if (button15 == null) {
+        break missingId;
+      }
+
+      id = R.id.button5;
+      Button button5 = ViewBindings.findChildViewById(rootView, id);
+      if (button5 == null) {
+        break missingId;
+      }
+
+      id = R.id.button6;
+      Button button6 = ViewBindings.findChildViewById(rootView, id);
+      if (button6 == null) {
         break missingId;
       }
 
@@ -80,20 +92,8 @@ public final class ActivityPostsRequireBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.minorBtn;
-      Button minorBtn = ViewBindings.findChildViewById(rootView, id);
-      if (minorBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.specialistBtn;
-      Button specialistBtn = ViewBindings.findChildViewById(rootView, id);
-      if (specialistBtn == null) {
-        break missingId;
-      }
-
-      return new ActivityPostsRequireBinding((ConstraintLayout) rootView, back1Btn, editTextText,
-          minorBtn, specialistBtn);
+      return new ActivityPostsRequireBinding((ConstraintLayout) rootView, button15, button5,
+          button6, editTextText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

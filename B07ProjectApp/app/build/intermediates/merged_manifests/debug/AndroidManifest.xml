@@ -41,21 +41,39 @@
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
             android:name="com.example.b07projectapp.AdminSignUp"
+            android:name="com.example.b07projectapp.StudentEventList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AdminPostNewAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.StudentCheckAnnouncements"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.ViewComments"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AdminAddEvent"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.PostsRequire"
+            android:name="com.example.b07projectapp.AdminSignUp"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.PostsRequireMinor"
+            android:name="com.example.b07projectapp.StudentComment"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
+            android:name="com.example.b07projectapp.MainActivity2"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.PostsRequireInsideCMS"
+            android:name="com.example.b07projectapp.StudentEvents"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
+            android:name="com.example.b07projectapp.AdminLogin"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.AdminComplaintView"

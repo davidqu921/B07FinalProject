@@ -22,6 +22,9 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button button5;
+
+  @NonNull
   public final Button button6;
 
   @NonNull
@@ -34,20 +37,18 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
   public final EditText editTextAdminUsername;
 
   @NonNull
-  public final Button smbtn;
-
-  @NonNull
   public final TextView textView6;
 
-  private ActivityAdminSignUpBinding(@NonNull ConstraintLayout rootView, @NonNull Button button6,
-      @NonNull EditText editTextAdminName, @NonNull EditText editTextAdminPassword,
-      @NonNull EditText editTextAdminUsername, @NonNull Button smbtn, @NonNull TextView textView6) {
+  private ActivityAdminSignUpBinding(@NonNull ConstraintLayout rootView, @NonNull Button button5,
+      @NonNull Button button6, @NonNull EditText editTextAdminName,
+      @NonNull EditText editTextAdminPassword, @NonNull EditText editTextAdminUsername,
+      @NonNull TextView textView6) {
     this.rootView = rootView;
+    this.button5 = button5;
     this.button6 = button6;
     this.editTextAdminName = editTextAdminName;
     this.editTextAdminPassword = editTextAdminPassword;
     this.editTextAdminUsername = editTextAdminUsername;
-    this.smbtn = smbtn;
     this.textView6 = textView6;
   }
 
@@ -78,6 +79,12 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button5;
+      Button button5 = ViewBindings.findChildViewById(rootView, id);
+      if (button5 == null) {
+        break missingId;
+      }
+
       id = R.id.button6;
       Button button6 = ViewBindings.findChildViewById(rootView, id);
       if (button6 == null) {
@@ -102,20 +109,14 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.smbtn;
-      Button smbtn = ViewBindings.findChildViewById(rootView, id);
-      if (smbtn == null) {
-        break missingId;
-      }
-
       id = R.id.textView6;
       TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
         break missingId;
       }
 
-      return new ActivityAdminSignUpBinding((ConstraintLayout) rootView, button6, editTextAdminName,
-          editTextAdminPassword, editTextAdminUsername, smbtn, textView6);
+      return new ActivityAdminSignUpBinding((ConstraintLayout) rootView, button5, button6,
+          editTextAdminName, editTextAdminPassword, editTextAdminUsername, textView6);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

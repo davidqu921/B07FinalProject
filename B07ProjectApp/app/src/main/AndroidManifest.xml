@@ -15,6 +15,36 @@
         android:theme="@style/Theme.B07ProjectApp"
         tools:targetApi="31">
         <activity
+            android:name=".StudentEventList"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPostNewAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name=".StudentCheckAnnouncements"
+            android:exported="false" />
+        <activity
+            android:name=".ViewComments"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddEvent"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".StudentComment"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".StudentEvents"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
             android:name=".AdminSignUp"
             android:exported="false" />
         <activity
