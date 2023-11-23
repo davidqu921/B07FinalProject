@@ -40,6 +40,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.StudentEventList"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.AdminPostNewAnnouncement"
             android:exported="false" />
         <activity

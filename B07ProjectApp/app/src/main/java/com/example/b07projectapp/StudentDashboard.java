@@ -24,7 +24,7 @@ public class StudentDashboard extends AppCompatActivity {
         startActivity(intent);
     }
     public void onClickStudentEvent(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+        Intent intent = new Intent(getApplicationContext(), StudentEventList.class);
         startActivity(intent);
     }
 }
