@@ -7,15 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class StudentEvents extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+public class StudentEvents extends AppCompatActivity {
+    FirebaseDatabase fire = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_events);
+        DatabaseReference dref = fire.getReference();
+
     }
     public void onClickAddComments(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentComment.class);
+        Intent intent = new Intent(getApplicationContext(), ViewComments.class);
+        //intent.putExtra("Event", eventTitle);
+
         startActivity(intent);
     }
 

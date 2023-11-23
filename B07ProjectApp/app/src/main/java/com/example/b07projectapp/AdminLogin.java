@@ -55,7 +55,9 @@ public class AdminLogin extends AppCompatActivity {
                                 if (getPassword.equals(passwordTxt)) {
                                     Toast.makeText(AdminLogin.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
                                     //Open main activity on success
-                                    startActivity(new Intent(AdminLogin.this, AdminDashboard.class));
+                                    Intent i = new Intent(AdminLogin.this, AdminDashboard.class);
+                                    i.putExtra("username", usernameTxt);
+                                    startActivity(i);
                                     finish();
                                 } else {
                                     Toast.makeText(AdminLogin.this, "Wrong Password" + getPassword, Toast.LENGTH_SHORT).show();

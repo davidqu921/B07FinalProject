@@ -49,6 +49,9 @@
             android:name="com.example.b07projectapp.StudentCheckAnnouncements"
             android:exported="false" />
         <activity
+            android:name="com.example.b07projectapp.ViewComments"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.AdminAddEvent"
             android:exported="false" />
         <activity
