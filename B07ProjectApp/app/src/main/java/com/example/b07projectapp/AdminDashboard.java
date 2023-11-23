@@ -15,7 +15,7 @@ public class AdminDashboard extends AppCompatActivity {
     }
 
     public void onClickAdminComplaintView(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminComplaintView.class);
+        Intent intent = new Intent(getApplicationContext(), AdminViewComplaint.class);
         startActivity(intent);
     }
 

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.B07ProjectApp"
         tools:targetApi="31">
         <activity
+            android:name=".AdminViewComplaint"
+            android:exported="false" />
+        <activity
             android:name=".StudentEventList"
             android:exported="false" />
         <activity
@@ -43,9 +46,6 @@
             android:exported="false" />
         <activity
             android:name=".AdminLogin"
-            android:exported="false" />
-        <activity
-            android:name=".AdminComplaintView"
             android:exported="false" />
         <activity
             android:name=".AdminDashboard"
