@@ -40,22 +40,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
-            android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
+            android:name="com.example.b07projectapp.AdminSignUp"
             android:exported="false" />
         <activity
-            android:name="com.example.b07projectapp.PostsRequireInsideCMS"
-            android:exported="false" />
-        <activity
-            android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
+            android:name="com.example.b07projectapp.PostsRequire"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.PostsRequireMinor"
             android:exported="false" />
         <activity
-            android:name="com.example.b07projectapp.PostRequireMinor"
+            android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
             android:exported="false" />
         <activity
-            android:name="com.example.b07projectapp.PostsRequire"
+            android:name="com.example.b07projectapp.PostsRequireInsideCMS"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.AdminComplaintView"

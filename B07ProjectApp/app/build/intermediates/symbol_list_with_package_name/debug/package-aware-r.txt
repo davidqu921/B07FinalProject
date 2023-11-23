@@ -3178,6 +3178,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back1Btn
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3195,7 +3196,6 @@ id button11
 id button12
 id button13
 id button14
-id button15
 id button16
 id button17
 id button18
@@ -3203,7 +3203,6 @@ id button19
 id button2
 id button3
 id button4
-id button5
 id button6
 id button7
 id button8
@@ -3283,6 +3282,9 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextAdminName
+id editTextAdminPassword
+id editTextAdminUsername
 id editTextComplaintTopic
 id editTextStudentComplaint
 id editTextStudentName
@@ -3395,6 +3397,7 @@ id matrix
 id message
 id middle
 id mini
+id minorBtn
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3527,6 +3530,7 @@ id sin
 id skipCollapsed
 id skipped
 id slide
+id smbtn
 id snackbar_action
 id snackbar_text
 id snap
@@ -3534,6 +3538,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id specialistBtn
 id spline
 id split_action_bar
 id spread
@@ -3750,6 +3755,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_admin_complaint_view
 layout activity_admin_dashboard
+layout activity_admin_sign_up
 layout activity_login
 layout activity_main
 layout activity_posts_require

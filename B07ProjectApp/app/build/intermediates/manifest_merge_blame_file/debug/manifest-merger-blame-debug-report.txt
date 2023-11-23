@@ -72,38 +72,38 @@
 41-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:15:9-51
 42        <activity
 42-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:17:9-19:40
-43            android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
-43-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:18:13-51
+43            android:name="com.example.b07projectapp.AdminSignUp"
+43-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:18:13-40
 44            android:exported="false" />
 44-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:19:13-37
 45        <activity
 45-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:20:9-22:40
-46            android:name="com.example.b07projectapp.PostsRequireInsideCMS"
-46-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:21:13-50
+46            android:name="com.example.b07projectapp.PostsRequire"
+46-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:21:13-41
 47            android:exported="false" />
 47-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:22:13-37
 48        <activity
 48-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:23:9-25:40
-49            android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
-49-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:24:13-56
+49            android:name="com.example.b07projectapp.PostsRequireMinor"
+49-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:24:13-46
 50            android:exported="false" />
 50-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:25:13-37
 51        <activity
 51-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:26:9-28:40
-52            android:name="com.example.b07projectapp.PostsRequireMinor"
-52-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:27:13-46
+52            android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
+52-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:27:13-56
 53            android:exported="false" />
 53-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:28:13-37
 54        <activity
 54-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:29:9-31:40
-55            android:name="com.example.b07projectapp.PostRequireMinor"
-55-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:30:13-45
+55            android:name="com.example.b07projectapp.PostsRequireInsideCMS"
+55-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:30:13-50
 56            android:exported="false" />
 56-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:31:13-37
 57        <activity
 57-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:32:9-34:40
-58            android:name="com.example.b07projectapp.PostsRequire"
-58-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:33:13-41
+58            android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
+58-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:33:13-51
 59            android:exported="false" />
 59-->/Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:34:13-37
 60        <activity

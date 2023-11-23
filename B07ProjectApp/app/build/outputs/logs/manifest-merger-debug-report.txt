@@ -166,42 +166,42 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/alfredoyu/.gradle/ca
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:15:9-51
 	android:dataExtractionRules
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:9:9-65
-activity#com.example.b07projectapp.PostsRequireOutsideCMS
+activity#com.example.b07projectapp.AdminSignUp
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:18:13-51
-activity#com.example.b07projectapp.PostsRequireInsideCMS
+		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:18:13-40
+activity#com.example.b07projectapp.PostsRequire
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:21:13-50
-activity#com.example.b07projectapp.PostsRequireSpecialistMajor
+		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:21:13-41
+activity#com.example.b07projectapp.PostsRequireMinor
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:24:13-56
-activity#com.example.b07projectapp.PostsRequireMinor
+		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:24:13-46
+activity#com.example.b07projectapp.PostsRequireSpecialistMajor
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:27:13-46
-activity#com.example.b07projectapp.PostRequireMinor
+		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:27:13-56
+activity#com.example.b07projectapp.PostsRequireInsideCMS
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:30:13-45
-activity#com.example.b07projectapp.PostsRequire
+		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:30:13-50
+activity#com.example.b07projectapp.PostsRequireOutsideCMS
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:33:13-51
 activity#com.example.b07projectapp.AdminComplaintView
 ADDED from /Users/alfredoyu/AndroidStudioProjects/B07FinalProject/B07ProjectApp/app/src/main/AndroidManifest.xml:35:9-37:40
 	android:exported
