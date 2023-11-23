@@ -40,10 +40,6 @@
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_posts_require_outside_cms.xml"
     },
     {
-        "merged": "com.example.b07projectapp-mergeDebugResources-40:/layout/complaint.xml",
-        "source": "com.example.b07projectapp-main-43:/layout/complaint.xml"
-    },
-    {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_posts_require_inside_cms.xml",
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_posts_require_inside_cms.xml"
     },
@@ -70,6 +66,10 @@
     {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_student_complaint.xml",
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\layout\\activity_student_complaint.xml"
+    },
+    {
+        "merged": "com.example.b07projectapp-mergeDebugResources-40:/layout/activity_student_complaint.xml",
+        "source": "com.example.b07projectapp-main-43:/layout/activity_student_complaint.xml"
     },
     {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-40:\\layout\\activity_student_comment.xml",

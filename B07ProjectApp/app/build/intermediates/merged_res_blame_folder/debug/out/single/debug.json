@@ -24,10 +24,6 @@
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.b07projectapp-merged_res-41:/layout_complaint.xml.flat",
-        "source": "com.example.b07projectapp-main-43:/layout/complaint.xml"
-    },
-    {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\mipmap-hdpi\\ic_launcher.webp"
     },
@@ -46,6 +42,10 @@
     {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-43:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.b07projectapp-merged_res-41:/layout_activity_student_complaint.xml.flat",
+        "source": "com.example.b07projectapp-main-43:/layout/activity_student_complaint.xml"
     },
     {
         "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-merged_res-41:\\layout_activity_student_check_announcements.xml.flat",

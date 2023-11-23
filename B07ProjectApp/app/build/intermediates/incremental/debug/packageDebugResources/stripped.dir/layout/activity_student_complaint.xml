@@ -28,7 +28,7 @@
         android:ems="10"
         android:gravity="top"
         android:hint="Enter your complaint"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
