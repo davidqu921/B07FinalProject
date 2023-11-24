@@ -129,8 +129,8 @@
 70-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:46:13-37
 71        <activity
 71-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:47:9-49:40
-72            android:name="com.example.b07projectapp.AdminLogin"
-72-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-39
+72            android:name="com.example.b07projectapp.login_module.AdminLogin"
+72-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-52
 73            android:exported="false" />
 73-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:49:13-37
 74        <activity
@@ -141,8 +141,8 @@
 76-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:52:13-37
 77        <activity
 77-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:53:9-55:40
-78            android:name="com.example.b07projectapp.Login"
-78-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-34
+78            android:name="com.example.b07projectapp.login_module.Login"
+78-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-47
 79            android:exported="false" />
 79-->C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:55:13-37
 80        <activity

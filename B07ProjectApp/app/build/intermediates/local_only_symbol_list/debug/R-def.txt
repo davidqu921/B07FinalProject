@@ -8,6 +8,7 @@ dimen activity_vertical_margin
 dimen fab_margin
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable search_view_background
 id AdminCenter
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
@@ -15,6 +16,7 @@ id LogInStudentBtn
 id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
+id StudentEventBack
 id StudentEventList
 id StudentSignUpGoBackBtn
 id adminLoginBtn
@@ -74,6 +76,7 @@ id loginBtn
 id name
 id password
 id registerBtn
+id searchView
 id studentComplaintBtn
 id studentLogin
 id textView
@@ -91,6 +94,7 @@ id textView4
 id textView5
 id textView6
 id textView7
+id textView8
 id textView9
 id txtAbout
 id txtComplaintDescription

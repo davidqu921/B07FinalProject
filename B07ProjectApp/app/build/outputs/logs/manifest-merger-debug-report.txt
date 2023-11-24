@@ -238,24 +238,24 @@ ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\ap
 		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
 		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:45:13-42
-activity#com.example.b07projectapp.AdminLogin
+activity#com.example.b07projectapp.login_module.AdminLogin
 ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
 		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-39
+		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-52
 activity#com.example.b07projectapp.AdminDashboard
 ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
 		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
 		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:51:13-43
-activity#com.example.b07projectapp.Login
+activity#com.example.b07projectapp.login_module.Login
 ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
 		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-34
+		ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-47
 activity#com.example.b07projectapp.StudentDashboard
 ADDED from C:\Users\yangb\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported

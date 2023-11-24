@@ -25,11 +25,24 @@ public class StudentEvents extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle extras = getIntent().getExtras();
+        String title = "default";
+        String location = "default";
+        String description = "default";
+        String dateInfo = "date";
+        if (extras != null) {
+            title = extras.getString("title");
+            location = extras.getString("location");
+            description = extras.getString("description");
+            dateInfo =  extras.getString("date");
+
+        }
         setContentView(R.layout.activity_student_events);
         TextView Title = findViewById(R.id.textView5);
         TextView desc = findViewById(R.id.textView7);
         TextView loc = findViewById(R.id.textView9);
         TextView date = findViewById(R.id.textView17);
+
         DatabaseReference event = fire.getReference("event");
         event.addValueEventListener(new ValueEventListener() {
             @Override
@@ -42,14 +55,18 @@ public class StudentEvents extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
+        String finalTitle = title;
+        String finalDescription = description;
+        String finalLocation = location;
+        String finalDateInfo = dateInfo;
         event.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot ds: snapshot.getChildren()) {
-                    Title.setText(ds.getKey ());
-                    desc.setText(ds.child("description").getValue(String.class));
-                    loc.setText(ds.child("location").getValue(String.class));
-                    date.setText(ds.child("date").getValue(String.class));
+                    Title.setText(finalTitle);
+                    desc.setText(finalDescription);
+                    loc.setText(finalLocation);
+                    date.setText(finalDateInfo);
                     break;
                 }
             }
