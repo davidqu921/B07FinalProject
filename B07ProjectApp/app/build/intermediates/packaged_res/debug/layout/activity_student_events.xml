@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="onClickPast"
     tools:context=".StudentEvents"
     tools:layout_editor_absoluteX="36dp"
     tools:layout_editor_absoluteY="45dp">
@@ -43,7 +44,8 @@
     <TextView
         android:id="@+id/textView5"
         android:layout_width="210dp"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
         android:text="@string/text_title"
         android:textAlignment="center"
         android:textSize="25sp"
@@ -63,15 +65,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/rating"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
         android:id="@+id/textView9"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -86,25 +79,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="15dp"
         android:text="Event Location:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:text="@string/textview"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
-
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClickNext"
         android:text="@string/next_event"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,6 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="192dp"
+        android:onClick="onClickPast"
         android:text="Previous Event"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
