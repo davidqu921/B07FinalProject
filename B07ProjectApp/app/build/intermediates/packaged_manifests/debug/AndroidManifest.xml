@@ -69,13 +69,13 @@
             android:name="com.example.b07projectapp.StudentEvents"
             android:exported="false" />
         <activity
-            android:name="com.example.b07projectapp.AdminLogin"
+            android:name="com.example.b07projectapp.login_module.AdminLogin"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.AdminDashboard"
             android:exported="false" />
         <activity
-            android:name="com.example.b07projectapp.Login"
+            android:name="com.example.b07projectapp.login_module.Login"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.StudentDashboard"

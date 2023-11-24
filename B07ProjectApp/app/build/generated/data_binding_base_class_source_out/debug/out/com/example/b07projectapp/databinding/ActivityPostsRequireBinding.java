@@ -27,18 +27,18 @@ public final class ActivityPostsRequireBinding implements ViewBinding {
   public final Button button5;
 
   @NonNull
-  public final Button button6;
-
-  @NonNull
   public final EditText editTextText;
 
+  @NonNull
+  public final Button eventListBack;
+
   private ActivityPostsRequireBinding(@NonNull ConstraintLayout rootView, @NonNull Button button15,
-      @NonNull Button button5, @NonNull Button button6, @NonNull EditText editTextText) {
+      @NonNull Button button5, @NonNull EditText editTextText, @NonNull Button eventListBack) {
     this.rootView = rootView;
     this.button15 = button15;
     this.button5 = button5;
-    this.button6 = button6;
     this.editTextText = editTextText;
+    this.eventListBack = eventListBack;
   }
 
   @Override
@@ -80,20 +80,20 @@ public final class ActivityPostsRequireBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button6;
-      Button button6 = ViewBindings.findChildViewById(rootView, id);
-      if (button6 == null) {
-        break missingId;
-      }
-
       id = R.id.editTextText;
       EditText editTextText = ViewBindings.findChildViewById(rootView, id);
       if (editTextText == null) {
         break missingId;
       }
 
+      id = R.id.eventListBack;
+      Button eventListBack = ViewBindings.findChildViewById(rootView, id);
+      if (eventListBack == null) {
+        break missingId;
+      }
+
       return new ActivityPostsRequireBinding((ConstraintLayout) rootView, button15, button5,
-          button6, editTextText);
+          editTextText, eventListBack);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

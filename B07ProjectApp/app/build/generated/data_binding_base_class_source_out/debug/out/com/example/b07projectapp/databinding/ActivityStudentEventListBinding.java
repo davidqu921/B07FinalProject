@@ -25,17 +25,17 @@ public final class ActivityStudentEventListBinding implements ViewBinding {
   public final RecyclerView StudentEventList;
 
   @NonNull
-  public final Button button6;
+  public final Button eventListBack;
 
   @NonNull
   public final TextView textView5;
 
   private ActivityStudentEventListBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView StudentEventList, @NonNull Button button6,
+      @NonNull RecyclerView StudentEventList, @NonNull Button eventListBack,
       @NonNull TextView textView5) {
     this.rootView = rootView;
     this.StudentEventList = StudentEventList;
-    this.button6 = button6;
+    this.eventListBack = eventListBack;
     this.textView5 = textView5;
   }
 
@@ -72,9 +72,9 @@ public final class ActivityStudentEventListBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button6;
-      Button button6 = ViewBindings.findChildViewById(rootView, id);
-      if (button6 == null) {
+      id = R.id.eventListBack;
+      Button eventListBack = ViewBindings.findChildViewById(rootView, id);
+      if (eventListBack == null) {
         break missingId;
       }
 
@@ -85,7 +85,7 @@ public final class ActivityStudentEventListBinding implements ViewBinding {
       }
 
       return new ActivityStudentEventListBinding((ConstraintLayout) rootView, StudentEventList,
-          button6, textView5);
+          eventListBack, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
