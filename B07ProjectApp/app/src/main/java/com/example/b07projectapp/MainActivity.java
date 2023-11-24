@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.b07projectapp.login_module.AdminLogin;
+import com.example.b07projectapp.login_module.Login;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
