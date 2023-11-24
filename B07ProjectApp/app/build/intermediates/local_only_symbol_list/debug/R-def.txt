@@ -15,6 +15,7 @@ id LogInStudentBtn
 id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
+id StudentEventList
 id StudentSignUpGoBackBtn
 id adminLoginBtn
 id adminPassword
@@ -43,6 +44,7 @@ id button8
 id button9
 id checkAnnouncements
 id checkpostBtn
+id date
 id editTextAdminName
 id editTextAdminPassword
 id editTextAdminUsername
@@ -66,7 +68,9 @@ id editTextTextMultiLine4
 id editTextTextMultiLine5
 id editTextTextMultiLine6
 id editTextTextMultiLine7
+id location
 id loginBtn
+id name
 id password
 id registerBtn
 id studentComplaintBtn
@@ -107,9 +111,11 @@ layout activity_student_check_announcements
 layout activity_student_comment
 layout activity_student_complaint
 layout activity_student_dashboard
+layout activity_student_event_list
 layout activity_student_events
 layout activity_student_sign_up
 layout activity_view_comments
+layout event
 mipmap ic_launcher
 mipmap ic_launcher_round
 string action_sign_in

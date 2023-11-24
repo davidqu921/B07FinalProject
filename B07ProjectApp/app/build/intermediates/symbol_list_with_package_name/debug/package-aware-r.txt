@@ -3102,6 +3102,7 @@ id SYM
 id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
+id StudentEventList
 id StudentSignUpGoBackBtn
 id TOP_END
 id TOP_START
@@ -3258,6 +3259,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3384,6 +3386,7 @@ id line3
 id linear
 id listMode
 id list_item
+id location
 id loginBtn
 id m3_side_sheet
 id marquee
@@ -3445,6 +3448,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3797,6 +3801,7 @@ layout activity_student_check_announcements
 layout activity_student_comment
 layout activity_student_complaint
 layout activity_student_dashboard
+layout activity_student_event_list
 layout activity_student_events
 layout activity_student_sign_up
 layout activity_view_comments
@@ -3816,6 +3821,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout event
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
