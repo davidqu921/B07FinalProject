@@ -26,9 +26,9 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
-    }
-
-    public void onClickStudentLogIn(View view){
+//    }
+//
+//    public void onClickStudentLogIn(View view){
         DatabaseReference ref = db.getReference();
         final EditText textPersonalName = findViewById(R.id.username);
         final EditText password = findViewById(R.id.password);

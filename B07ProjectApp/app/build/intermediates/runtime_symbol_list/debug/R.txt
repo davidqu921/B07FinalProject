@@ -3168,6 +3168,7 @@ int id adminLoginBtn 0x7f080052
 int id adminPassword 0x7f080053
 int id adminRegisterBtn 0x7f080054
 int id adminUsername 0x7f080055
+int id adminViewComplaint 0x7f080249
 int id alertTitle 0x7f080056
 int id aligned 0x7f080057
 int id all 0x7f080058
@@ -3609,6 +3610,7 @@ int id textView14 0x7f08020b
 int id textView15 0x7f08020c
 int id textView16 0x7f08020d
 int id textView17 0x7f08020e
+int id textView18 0x7f08024d
 int id textView2 0x7f08020f
 int id textView3 0x7f080210
 int id textView4 0x7f080211
@@ -3642,6 +3644,9 @@ int id transition_position 0x7f08022c
 int id transition_scene_layoutid_cache 0x7f08022d
 int id transition_transform 0x7f08022e
 int id triangle 0x7f08022f
+int id txtAbout 0x7f08024a
+int id txtComplaintDescription 0x7f08024b
+int id txtSubmitBy 0x7f08024c
 int id unchecked 0x7f080230
 int id uniform 0x7f080231
 int id unlabeled 0x7f080232
@@ -3783,11 +3788,11 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_admin_add_event 0x7f0b001c
-int layout activity_admin_complaint_view 0x7f0b001d
 int layout activity_admin_dashboard 0x7f0b001e
 int layout activity_admin_login 0x7f0b001f
 int layout activity_admin_post_new_announcement 0x7f0b0020
 int layout activity_admin_sign_up 0x7f0b0021
+int layout activity_admin_view_complaint 0x7f0b0080
 int layout activity_login 0x7f0b0022
 int layout activity_main 0x7f0b0023
 int layout activity_main2 0x7f0b0024
@@ -3804,6 +3809,7 @@ int layout activity_student_event_list 0x7f0b002e
 int layout activity_student_events 0x7f0b002f
 int layout activity_student_sign_up 0x7f0b0030
 int layout activity_view_comments 0x7f0b0031
+int layout complaint 0x7f0b0081
 int layout custom_dialog 0x7f0b0032
 int layout design_bottom_navigation_item 0x7f0b0033
 int layout design_bottom_sheet_dialog 0x7f0b0034

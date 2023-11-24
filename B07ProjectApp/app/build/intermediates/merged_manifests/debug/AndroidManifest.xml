@@ -39,6 +39,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.AdminViewComplaint"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.StudentEventList"
             android:exported="false" />
         <activity
@@ -67,9 +70,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.AdminLogin"
-            android:exported="false" />
-        <activity
-            android:name="com.example.b07projectapp.AdminComplaintView"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.AdminDashboard"
