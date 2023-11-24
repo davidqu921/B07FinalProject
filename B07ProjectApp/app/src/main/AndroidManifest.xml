@@ -45,13 +45,13 @@
             android:name=".StudentEvents"
             android:exported="false" />
         <activity
-            android:name=".AdminLogin"
+            android:name=".login_module.AdminLogin"
             android:exported="false" />
         <activity
             android:name=".AdminDashboard"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".login_module.Login"
             android:exported="false" />
         <activity
             android:name=".StudentDashboard"
