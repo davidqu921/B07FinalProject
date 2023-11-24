@@ -22,7 +22,7 @@ public class PostsRequire extends AppCompatActivity {
             }
         });
 
-        btn6 = (Button) findViewById(R.id.button6);
+        btn6 = (Button) findViewById(R.id.eventListBack);
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
