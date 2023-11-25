@@ -15,12 +15,12 @@ public class AdminDashboard extends AppCompatActivity {
     }
 
     public void onClickAdminComplaintView(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminComplaintView.class);
+        Intent intent = new Intent(getApplicationContext(), AdminViewComplaint.class);
         startActivity(intent);
     }
 
     public void onClickViewEvent(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+        Intent intent = new Intent(getApplicationContext(), StudentEventList.class);
         if (getIntent().getStringExtra("username") != null) {
             String user = getIntent().getStringExtra("username");
             intent.putExtra("username", user);

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.B07ProjectApp"
         tools:targetApi="31">
+        <activity
+            android:name=".AdminViewComplaint"
+            android:exported="false" />
         <activity
             android:name=".StudentEventList"
             android:exported="false" />
@@ -42,34 +45,13 @@
             android:name=".StudentEvents"
             android:exported="false" />
         <activity
-            android:name=".AdminLogin"
-            android:exported="false" />
-        <activity
-            android:name=".AdminSignUp"
-            android:exported="false" />
-        <activity
-            android:name=".PostsRequire"
-            android:exported="false" />
-        <activity
-            android:name=".PostsRequireMinor"
-            android:exported="false" />
-        <activity
-            android:name=".PostsRequireSpecialistMajor"
-            android:exported="false" />
-        <activity
-            android:name=".PostsRequireInsideCMS"
-            android:exported="false" />
-        <activity
-            android:name=".PostsRequireOutsideCMS"
-            android:exported="false" />
-        <activity
-            android:name=".AdminComplaintView"
+            android:name=".login_module.AdminLogin"
             android:exported="false" />
         <activity
             android:name=".AdminDashboard"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".login_module.Login"
             android:exported="false" />
         <activity
             android:name=".StudentDashboard"

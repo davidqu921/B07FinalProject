@@ -36,9 +36,6 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
   public final TextView textView14;
 
   @NonNull
-  public final TextView textView15;
-
-  @NonNull
   public final TextView textView16;
 
   @NonNull
@@ -54,29 +51,24 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
   public final TextView textView7;
 
   @NonNull
-  public final TextView textView8;
-
-  @NonNull
   public final TextView textView9;
 
   private ActivityStudentEventsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button10,
       @NonNull Button button21, @NonNull Button button7, @NonNull Button button8,
-      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
-      @NonNull TextView textView17, @NonNull TextView textView4, @NonNull TextView textView5,
-      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
+      @NonNull TextView textView14, @NonNull TextView textView16, @NonNull TextView textView17,
+      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView7,
+      @NonNull TextView textView9) {
     this.rootView = rootView;
     this.button10 = button10;
     this.button21 = button21;
     this.button7 = button7;
     this.button8 = button8;
     this.textView14 = textView14;
-    this.textView15 = textView15;
     this.textView16 = textView16;
     this.textView17 = textView17;
     this.textView4 = textView4;
     this.textView5 = textView5;
     this.textView7 = textView7;
-    this.textView8 = textView8;
     this.textView9 = textView9;
   }
 
@@ -137,12 +129,6 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView15;
-      TextView textView15 = ViewBindings.findChildViewById(rootView, id);
-      if (textView15 == null) {
-        break missingId;
-      }
-
       id = R.id.textView16;
       TextView textView16 = ViewBindings.findChildViewById(rootView, id);
       if (textView16 == null) {
@@ -173,12 +159,6 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
-        break missingId;
-      }
-
       id = R.id.textView9;
       TextView textView9 = ViewBindings.findChildViewById(rootView, id);
       if (textView9 == null) {
@@ -186,8 +166,8 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
       }
 
       return new ActivityStudentEventsBinding((ConstraintLayout) rootView, button10, button21,
-          button7, button8, textView14, textView15, textView16, textView17, textView4, textView5,
-          textView7, textView8, textView9);
+          button7, button8, textView14, textView16, textView17, textView4, textView5, textView7,
+          textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

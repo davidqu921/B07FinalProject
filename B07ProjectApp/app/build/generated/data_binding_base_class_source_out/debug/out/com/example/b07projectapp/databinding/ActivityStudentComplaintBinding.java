@@ -25,6 +25,9 @@ public final class ActivityStudentComplaintBinding implements ViewBinding {
   public final Button button2;
 
   @NonNull
+  public final EditText editTextComplaintStuName;
+
+  @NonNull
   public final EditText editTextComplaintTopic;
 
   @NonNull
@@ -37,11 +40,12 @@ public final class ActivityStudentComplaintBinding implements ViewBinding {
   public final TextView textView3;
 
   private ActivityStudentComplaintBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button button2, @NonNull EditText editTextComplaintTopic,
-      @NonNull EditText editTextStudentComplaint, @NonNull Button studentComplaintBtn,
-      @NonNull TextView textView3) {
+      @NonNull Button button2, @NonNull EditText editTextComplaintStuName,
+      @NonNull EditText editTextComplaintTopic, @NonNull EditText editTextStudentComplaint,
+      @NonNull Button studentComplaintBtn, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.button2 = button2;
+    this.editTextComplaintStuName = editTextComplaintStuName;
     this.editTextComplaintTopic = editTextComplaintTopic;
     this.editTextStudentComplaint = editTextStudentComplaint;
     this.studentComplaintBtn = studentComplaintBtn;
@@ -81,6 +85,12 @@ public final class ActivityStudentComplaintBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.editTextComplaintStuName;
+      EditText editTextComplaintStuName = ViewBindings.findChildViewById(rootView, id);
+      if (editTextComplaintStuName == null) {
+        break missingId;
+      }
+
       id = R.id.editTextComplaintTopic;
       EditText editTextComplaintTopic = ViewBindings.findChildViewById(rootView, id);
       if (editTextComplaintTopic == null) {
@@ -106,7 +116,8 @@ public final class ActivityStudentComplaintBinding implements ViewBinding {
       }
 
       return new ActivityStudentComplaintBinding((ConstraintLayout) rootView, button2,
-          editTextComplaintTopic, editTextStudentComplaint, studentComplaintBtn, textView3);
+          editTextComplaintStuName, editTextComplaintTopic, editTextStudentComplaint,
+          studentComplaintBtn, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

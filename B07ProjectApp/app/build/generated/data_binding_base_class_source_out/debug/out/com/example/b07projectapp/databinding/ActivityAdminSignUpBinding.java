@@ -25,9 +25,6 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
   public final Button button5;
 
   @NonNull
-  public final Button button6;
-
-  @NonNull
   public final EditText editTextAdminName;
 
   @NonNull
@@ -37,18 +34,21 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
   public final EditText editTextAdminUsername;
 
   @NonNull
+  public final Button eventListBack;
+
+  @NonNull
   public final TextView textView6;
 
   private ActivityAdminSignUpBinding(@NonNull ConstraintLayout rootView, @NonNull Button button5,
-      @NonNull Button button6, @NonNull EditText editTextAdminName,
-      @NonNull EditText editTextAdminPassword, @NonNull EditText editTextAdminUsername,
+      @NonNull EditText editTextAdminName, @NonNull EditText editTextAdminPassword,
+      @NonNull EditText editTextAdminUsername, @NonNull Button eventListBack,
       @NonNull TextView textView6) {
     this.rootView = rootView;
     this.button5 = button5;
-    this.button6 = button6;
     this.editTextAdminName = editTextAdminName;
     this.editTextAdminPassword = editTextAdminPassword;
     this.editTextAdminUsername = editTextAdminUsername;
+    this.eventListBack = eventListBack;
     this.textView6 = textView6;
   }
 
@@ -85,12 +85,6 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button6;
-      Button button6 = ViewBindings.findChildViewById(rootView, id);
-      if (button6 == null) {
-        break missingId;
-      }
-
       id = R.id.editTextAdminName;
       EditText editTextAdminName = ViewBindings.findChildViewById(rootView, id);
       if (editTextAdminName == null) {
@@ -109,14 +103,20 @@ public final class ActivityAdminSignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.eventListBack;
+      Button eventListBack = ViewBindings.findChildViewById(rootView, id);
+      if (eventListBack == null) {
+        break missingId;
+      }
+
       id = R.id.textView6;
       TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
         break missingId;
       }
 
-      return new ActivityAdminSignUpBinding((ConstraintLayout) rootView, button5, button6,
-          editTextAdminName, editTextAdminPassword, editTextAdminUsername, textView6);
+      return new ActivityAdminSignUpBinding((ConstraintLayout) rootView, button5, editTextAdminName,
+          editTextAdminPassword, editTextAdminUsername, eventListBack, textView6);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
