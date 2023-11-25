@@ -63,6 +63,21 @@
             android:name=".SignUpStudent"
             android:exported="false" />
         <activity
+            android:name=".PostsRequire"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireMinor"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireInsideCMS"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireOutsideCMS"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireSpecialistMajor"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
