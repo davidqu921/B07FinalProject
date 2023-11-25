@@ -36,4 +36,9 @@ public class AdminDashboard extends AppCompatActivity {
         }
         startActivity(intent);
     }
+
+    public void onClickAnnouncement(View view) {
+        Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
+        startActivity(intent);
+    }
 }

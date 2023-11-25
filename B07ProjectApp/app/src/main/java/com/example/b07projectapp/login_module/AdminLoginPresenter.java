@@ -6,6 +6,7 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 
 import com.example.b07projectapp.AdminSignUp;
+import com.example.b07projectapp.LoggedInAdmin;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -32,8 +33,17 @@ public class AdminLoginPresenter {
                     if (snapshot.exists()) {
                         String storedPassword = String.valueOf(snapshot.child("password").getValue());
 
+                        //this section is added to access the data of logged in admin using singleton
+                        String adminName = String.valueOf(snapshot.child("name").getValue());
+                        ///
+
                         if (storedPassword.equals(password)) {
                             view.showSuccessMessage();
+
+                            //this section is added to access the data of logged in admin using singleton
+                            LoggedInAdmin.getInstance().setName(adminName);
+                            ///
+
                         } else {
                             view.showErrorMessage("Wrong Password");
                         }

@@ -15,13 +15,19 @@
         android:theme="@style/Theme.B07ProjectApp"
         tools:targetApi="31">
         <activity
+            android:name=".AnnouncementDetailAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPostAnnouncement"
+            android:exported="false" />
+        <activity
             android:name=".AdminViewComplaint"
             android:exported="false" />
         <activity
             android:name=".StudentEventList"
-            android:exported="false" />
-        <activity
-            android:name=".AdminPostNewAnnouncement"
             android:exported="false" />
         <activity
             android:name=".StudentCheckAnnouncements"

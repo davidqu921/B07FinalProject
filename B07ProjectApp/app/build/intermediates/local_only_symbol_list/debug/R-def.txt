@@ -10,6 +10,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable search_view_background
 id AdminCenter
+id AdminViewAnnouncement
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
 id LogInStudentBtn
@@ -32,6 +33,11 @@ id back5Btn
 id button
 id button10
 id button11
+id button12
+id button13
+id button14
+id button15
+id button16
 id button2
 id button20
 id button21
@@ -43,6 +49,9 @@ id button8
 id checkAnnouncements
 id checkpostBtn
 id date
+id edAdminAnnounceTitle
+id edAnnounceContentAdmin
+id edTimePost
 id editTextAdminName
 id editTextAdminPassword
 id editTextAdminUsername
@@ -91,7 +100,10 @@ id textView14
 id textView16
 id textView17
 id textView18
+id textView19
 id textView2
+id textView20
+id textView21
 id textView3
 id textView4
 id textView5
@@ -99,9 +111,16 @@ id textView6
 id textView7
 id textView8
 id textView9
+id tvContent
+id tvPoster
+id tvTitleAnnounce
 id txtAbout
 id txtComplaintDescription
+id txtContentAnnounce
+id txtPostedBy
 id txtSubmitBy
+id txtTimePosted
+id txtTitle
 id username
 id yes1Btn
 id yes2Btn
@@ -110,9 +129,11 @@ id yes4Btn
 layout activity_admin_add_event
 layout activity_admin_dashboard
 layout activity_admin_login
-layout activity_admin_post_new_announcement
+layout activity_admin_post_announcement
 layout activity_admin_sign_up
+layout activity_admin_view_announcement
 layout activity_admin_view_complaint
+layout activity_announcement_detail_admin
 layout activity_login
 layout activity_main
 layout activity_main2
@@ -129,6 +150,7 @@ layout activity_student_event_list
 layout activity_student_events
 layout activity_student_sign_up
 layout activity_view_comments
+layout announcement_ad
 layout complaint
 layout event
 mipmap ic_launcher
@@ -174,6 +196,7 @@ string submit_a_complaint
 string submit_comment
 string text_title
 string textview
+string title_activity_admin_announcement
 string title_activity_admin_login
 string title_activity_login
 string title_activity_student_events
