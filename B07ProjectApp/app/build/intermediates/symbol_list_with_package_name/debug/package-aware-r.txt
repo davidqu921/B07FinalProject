@@ -3188,6 +3188,11 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back1Btn
+id back2Btn
+id back3Btn
+id back4Btn
+id back5Btn
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3202,14 +3207,6 @@ id bounceStart
 id button
 id button10
 id button11
-id button12
-id button13
-id button14
-id button15
-id button16
-id button17
-id button18
-id button19
 id button2
 id button20
 id button21
@@ -3218,7 +3215,6 @@ id button4
 id button5
 id button7
 id button8
-id button9
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3420,6 +3416,7 @@ id matrix
 id message
 id middle
 id mini
+id minorBtn
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3462,6 +3459,10 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id no1Btn
+id no2Btn
+id no3Btn
+id no4Btn
 id noScroll
 id noState
 id none
@@ -3554,6 +3555,7 @@ id sin
 id skipCollapsed
 id skipped
 id slide
+id smbtn
 id snackbar_action
 id snackbar_text
 id snap
@@ -3561,6 +3563,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id specialistBtn
 id spline
 id split_action_bar
 id spread
@@ -3675,6 +3678,10 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yes1Btn
+id yes2Btn
+id yes3Btn
+id yes4Btn
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
