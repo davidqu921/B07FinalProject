@@ -39,6 +39,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.Admin_View_Participants"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.AnnouncementDetailAdmin"
             android:exported="false" />
         <activity

@@ -17,8 +17,8 @@ public class ViewComments extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), StudentComment.class);
         String eventStr = getIntent().getStringExtra("Event");
         intent.putExtra("Event", eventStr);
-        String sStr = getIntent().getStringExtra("student");
-        intent.putExtra("student", sStr);
+        String sStr = getIntent().getStringExtra("stu");
+        intent.putExtra("stu", sStr);
         if (getIntent().getStringExtra("username") != null) {
             String user = getIntent().getStringExtra("username");
             intent.putExtra("username", user);

@@ -27,10 +27,11 @@ public class StudentComment extends AppCompatActivity {
         Title.setText(TitleStr);
     }
     public void onClickSubmitComment(View view){
-        String student = getIntent().getStringExtra("student");
+        //String student = getIntent().getStringExtra("student");
+        String username = getIntent().getStringExtra("stu");
         String admin = getIntent().getStringExtra("username");
         //makeText(StudentComment.this, student, LENGTH_SHORT).show();
-        if (student == null && admin == null) {
+        if (username == null && admin == null) {
             makeText(StudentComment.this, "Log In First", LENGTH_SHORT).show();
             startActivity(new Intent(StudentComment.this, MainActivity.class));
         }
@@ -58,15 +59,19 @@ public class StudentComment extends AppCompatActivity {
                 makeText(StudentComment.this, "Fill In All Empty Fields", LENGTH_SHORT).show();
             }
             else {
-                /*if (ref.child("event").child(TitleStr).child("comment").child(admin).child("review").equals(cmntStr) &&
-                        ref.child("event").child(TitleStr).child("comment").child(admin).child("rating").equals(Integer.valueOf(dateStr)))
+                String pathway = username+cmntStr;
+                if (pathway.isEmpty())
                     makeText(StudentComment.this, "Comment Already Submitted", LENGTH_SHORT).show();
-                else */if (admin == null) {
-                    ref.child("event").child(TitleStr).child("comment").child(student).child("review").setValue(cmntStr);
-                    ref.child("event").child(TitleStr).child("comment").child(student).child("rating").setValue(stars);
+                else if (admin == null) {
+
+                    ref.child("event").child(TitleStr).child("comment").child(pathway).child("review").setValue(cmntStr);
+                    ref.child("event").child(TitleStr).child("comment").child(pathway).child("rating").setValue(stars);
+                    ref.child("event").child(TitleStr).child("comment").child(pathway).child("username").setValue(stars);
                 } else {
-                    ref.child("event").child(TitleStr).child("comment").child(admin).child("review").setValue(cmntStr);
-                    ref.child("event").child(TitleStr).child("comment").child(admin).child("rating").setValue(stars);
+                    pathway = admin+cmntStr;
+                    ref.child("event").child(TitleStr).child("comment").child(pathway).child("review").setValue(cmntStr);
+                    ref.child("event").child(TitleStr).child("comment").child(pathway).child("rating").setValue(stars);
+                    ref.child("event").child(TitleStr).child("comment").child(pathway).child("username").setValue(stars);
                 }
                 makeText(StudentComment.this, "Comment Submitted", LENGTH_SHORT).show();
             }

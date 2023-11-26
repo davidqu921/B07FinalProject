@@ -122,10 +122,20 @@ public class StudentEventList extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 Intent intent = new Intent(getApplicationContext(),StudentEvents.class);
-                intent.putExtra("title",list.get(position).getEventTitle());
+                intent.putExtra("student", getIntent().getStringExtra("student"));
+                intent.putExtra("title",list.get(position).getEventTitle()) ;
                 intent.putExtra("location",list.get(position).getLocation());
                 intent.putExtra("description",list.get(position).getDescription());
                 intent.putExtra("date",list.get(position).getDate());
+                intent.putExtra("counter", position);
+                if (getIntent().getStringExtra("stu") != null) {
+                    String stStr = getIntent().getStringExtra("stu");
+                    intent.putExtra("stu", stStr);
+                }
+                if (getIntent().getStringExtra("username") != null) {
+                    String user = getIntent().getStringExtra("username");
+                    intent.putExtra("username", user);
+                }
                 startActivity(intent);
             }
         };

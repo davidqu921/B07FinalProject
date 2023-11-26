@@ -85,6 +85,7 @@ id no2Btn
 id no3Btn
 id no4Btn
 id password
+id ratingBar
 id registerBtn
 id searchView
 id smbtn
@@ -97,6 +98,7 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
 id textView16
 id textView17
 id textView18
@@ -104,6 +106,8 @@ id textView19
 id textView2
 id textView20
 id textView21
+id textView22
+id textView23
 id textView3
 id textView4
 id textView5
@@ -133,6 +137,7 @@ layout activity_admin_post_announcement
 layout activity_admin_sign_up
 layout activity_admin_view_announcement
 layout activity_admin_view_complaint
+layout activity_admin_view_participants
 layout activity_announcement_detail_admin
 layout activity_login
 layout activity_main

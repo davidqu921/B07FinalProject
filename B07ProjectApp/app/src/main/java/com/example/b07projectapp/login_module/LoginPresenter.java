@@ -23,6 +23,7 @@ public class LoginPresenter {
         final String username = view.getUsername();
         final String password = view.getPassword();
 
+
         if (username.isEmpty() || password.isEmpty()) {
             view.showErrorMessage("Please enter your username or password");
         } else {
@@ -33,7 +34,9 @@ public class LoginPresenter {
                         String storedPassword = String.valueOf(snapshot.child("password").getValue());
 
                         if (storedPassword.equals(password)) {
-                            view.showSuccessMessage();
+                            String userName = String.valueOf(snapshot.child("name").getValue());
+                            String userId = String.valueOf(snapshot.child("username").getValue());
+                            view.showSuccessMessage(userName, userId);
                         } else {
                             view.showErrorMessage("Wrong Password");
                         }

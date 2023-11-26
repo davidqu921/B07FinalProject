@@ -35,10 +35,12 @@ public class AdminLoginPresenter {
 
                         //this section is added to access the data of logged in admin using singleton
                         String adminName = String.valueOf(snapshot.child("name").getValue());
+                        String adminId = String.valueOf(snapshot.child("username").getValue());
                         ///
 
                         if (storedPassword.equals(password)) {
-                            view.showSuccessMessage();
+
+                            view.showSuccessMessage(adminName, adminId);
 
                             //this section is added to access the data of logged in admin using singleton
                             LoggedInAdmin.getInstance().setName(adminName);
