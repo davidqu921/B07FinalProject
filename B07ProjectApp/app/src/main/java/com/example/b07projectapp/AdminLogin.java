@@ -56,7 +56,7 @@ public class AdminLogin extends AppCompatActivity {
                                     Toast.makeText(AdminLogin.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
                                     //Open main activity on success
                                     Intent i = new Intent(AdminLogin.this, AdminDashboard.class);
-                                    i.putExtra("username", usernameTxt);
+                                    i.putExtra("username", snapshot.child(usernameTxt).getKey());
                                     startActivity(i);
                                     finish();
                                 } else {

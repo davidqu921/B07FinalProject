@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,7 +26,7 @@ public final class ActivityStudentCommentBinding implements ViewBinding {
   public final Button button2;
 
   @NonNull
-  public final EditText editTextNumber;
+  public final RatingBar editTextNumber;
 
   @NonNull
   public final EditText editTextStudentComment;
@@ -37,18 +38,22 @@ public final class ActivityStudentCommentBinding implements ViewBinding {
   public final TextView textView11;
 
   @NonNull
+  public final TextView textView20;
+
+  @NonNull
   public final TextView textView3;
 
   private ActivityStudentCommentBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull EditText editTextNumber, @NonNull EditText editTextStudentComment,
+      @NonNull RatingBar editTextNumber, @NonNull EditText editTextStudentComment,
       @NonNull Button studentComplaintBtn, @NonNull TextView textView11,
-      @NonNull TextView textView3) {
+      @NonNull TextView textView20, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.button2 = button2;
     this.editTextNumber = editTextNumber;
     this.editTextStudentComment = editTextStudentComment;
     this.studentComplaintBtn = studentComplaintBtn;
     this.textView11 = textView11;
+    this.textView20 = textView20;
     this.textView3 = textView3;
   }
 
@@ -86,7 +91,7 @@ public final class ActivityStudentCommentBinding implements ViewBinding {
       }
 
       id = R.id.editTextNumber;
-      EditText editTextNumber = ViewBindings.findChildViewById(rootView, id);
+      RatingBar editTextNumber = ViewBindings.findChildViewById(rootView, id);
       if (editTextNumber == null) {
         break missingId;
       }
@@ -109,6 +114,12 @@ public final class ActivityStudentCommentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView20;
+      TextView textView20 = ViewBindings.findChildViewById(rootView, id);
+      if (textView20 == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -116,7 +127,7 @@ public final class ActivityStudentCommentBinding implements ViewBinding {
       }
 
       return new ActivityStudentCommentBinding((ConstraintLayout) rootView, button2, editTextNumber,
-          editTextStudentComment, studentComplaintBtn, textView11, textView3);
+          editTextStudentComment, studentComplaintBtn, textView11, textView20, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

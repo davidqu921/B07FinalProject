@@ -24,8 +24,11 @@ public class StudentEventList extends AppCompatActivity {
     MyAdapter myAdapter;
     ArrayList<Event> list;
 
+
     public void onclickEvent(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+        String sStr = getIntent().getStringExtra("student");
+        intent.putExtra("student", sStr);
         startActivity(intent);
     }
 
@@ -34,12 +37,15 @@ public class StudentEventList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_event_list);
 
+
+
+
+
         recyclerView = findViewById(R.id.StudentEventList);
         databaseReference = FirebaseDatabase.getInstance().getReference("event");
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
-
         myAdapter = new MyAdapter(this,list);
         recyclerView.setAdapter(myAdapter);
         list.add(new Event("111","111","222","222" ));

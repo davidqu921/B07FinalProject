@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.b07projectapp.R;
@@ -21,20 +22,21 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final RecyclerView adminViewComplaint;
+
+  @NonNull
   public final Button button20;
 
   @NonNull
-  public final TextView textView12;
+  public final TextView textView18;
 
-  @NonNull
-  public final TextView textView13;
-
-  private ActivityViewCommentsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button20,
-      @NonNull TextView textView12, @NonNull TextView textView13) {
+  private ActivityViewCommentsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull RecyclerView adminViewComplaint, @NonNull Button button20,
+      @NonNull TextView textView18) {
     this.rootView = rootView;
+    this.adminViewComplaint = adminViewComplaint;
     this.button20 = button20;
-    this.textView12 = textView12;
-    this.textView13 = textView13;
+    this.textView18 = textView18;
   }
 
   @Override
@@ -64,26 +66,26 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.adminViewComplaint;
+      RecyclerView adminViewComplaint = ViewBindings.findChildViewById(rootView, id);
+      if (adminViewComplaint == null) {
+        break missingId;
+      }
+
       id = R.id.button20;
       Button button20 = ViewBindings.findChildViewById(rootView, id);
       if (button20 == null) {
         break missingId;
       }
 
-      id = R.id.textView12;
-      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
-      if (textView12 == null) {
+      id = R.id.textView18;
+      TextView textView18 = ViewBindings.findChildViewById(rootView, id);
+      if (textView18 == null) {
         break missingId;
       }
 
-      id = R.id.textView13;
-      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
-      if (textView13 == null) {
-        break missingId;
-      }
-
-      return new ActivityViewCommentsBinding((ConstraintLayout) rootView, button20, textView12,
-          textView13);
+      return new ActivityViewCommentsBinding((ConstraintLayout) rootView, adminViewComplaint,
+          button20, textView18);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

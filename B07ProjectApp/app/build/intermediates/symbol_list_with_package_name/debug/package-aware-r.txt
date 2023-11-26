@@ -3507,6 +3507,7 @@ id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id ratio
 id rectangles
 id registerBtn
@@ -3612,7 +3613,9 @@ id textView15
 id textView16
 id textView17
 id textView18
+id textView19
 id textView2
+id textView20
 id textView3
 id textView4
 id textView5

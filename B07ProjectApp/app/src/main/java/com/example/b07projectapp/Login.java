@@ -54,11 +54,17 @@ public class Login extends AppCompatActivity {
                                 //now get password of user from database and match it with user entered password
 
                                 final String getPassword = String.valueOf(snapshot.child(usernameTxt).child("password").getValue());
+                                final String getName = String.valueOf(snapshot.child(usernameTxt).child("name").getValue());
 
                                 if(getPassword.equals(passwordTxt)){
                                     Toast.makeText(Login.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
                                     //Open main activity on success
-                                    startActivity(new Intent(Login.this, StudentDashboard.class));
+                                    Intent intent = new Intent(Login.this, StudentDashboard.class);
+                                    //String sStr = ref.child("student").child(usernameTxt).child("name").toString();
+                                    //String sStr = String.valueOf(snapshot.child(getPassword).child("name").getValue());
+                                    String sStr = getName;
+                                    intent.putExtra("student", sStr);
+                                    startActivity(intent);
                                     finish();
                                 }
                                 else{

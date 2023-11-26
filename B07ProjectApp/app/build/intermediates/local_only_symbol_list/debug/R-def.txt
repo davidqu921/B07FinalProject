@@ -73,6 +73,7 @@ id location
 id loginBtn
 id name
 id password
+id ratingBar
 id registerBtn
 id studentComplaintBtn
 id studentLogin
@@ -86,7 +87,9 @@ id textView15
 id textView16
 id textView17
 id textView18
+id textView19
 id textView2
+id textView20
 id textView3
 id textView4
 id textView5

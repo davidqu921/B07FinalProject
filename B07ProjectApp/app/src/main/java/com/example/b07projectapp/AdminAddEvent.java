@@ -23,12 +23,12 @@ public class AdminAddEvent extends AppCompatActivity {
     }
 
     public void onClickAdd(View view){
-        if (getIntent().getStringExtra("username") == null) {
+        if (getIntent().getStringExtra("admin") == null) {
             makeText(AdminAddEvent.this, "Log In as an Admin First!", LENGTH_SHORT).show();
             startActivity(new Intent(AdminAddEvent.this, AdminLogin.class));
         }
         else {
-            String user = getIntent().getStringExtra("username");
+            String user = getIntent().getStringExtra("admin");
             DatabaseReference ref = base.getReference();
             EditText Title = (EditText) findViewById(R.id.editTextText);
             EditText desc = (EditText) findViewById(R.id.editTextStudentComplaint2);
@@ -48,7 +48,6 @@ public class AdminAddEvent extends AppCompatActivity {
             if(TitleStr.isEmpty() || descStr.isEmpty() || dateStr.isEmpty() || locationStr.isEmpty() || peoplestr.isEmpty())
                 makeText(AdminAddEvent.this, "Fill In All Empty Fields", LENGTH_SHORT).show();
             else {
-                String complaintKey = ref.child("complaints").push().getKey();
                 ref.child("event").child(TitleStr).child("title").setValue(TitleStr);
                 ref.child("event").child(TitleStr).child("description").setValue(descStr);
                 ref.child("event").child(TitleStr).child("date").setValue(dateStr);
