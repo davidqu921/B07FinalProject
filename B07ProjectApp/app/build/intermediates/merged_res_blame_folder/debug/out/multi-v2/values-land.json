@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.b07projectapp-mergeDebugResources-39:/values-land/values-land.xml",
+            "outputFile": "com.example.b07projectapp-mergeDebugResources-49:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ramin\\.gradle\\caches\\transforms-3\\ff92050ab482929c4d0f044d21af76fb\\transformed\\appcompat-1.6.1\\res\\values-land\\values-land.xml",
@@ -18,9 +18,9 @@
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
-                        "startOffsets": "17,76",
+                        "startOffsets": "16,74",
                         "endColumns": "57,41",
-                        "endOffsets": "70,113"
+                        "endOffsets": "69,111"
                     },
                     "to": {
                         "startLines": "5,6",

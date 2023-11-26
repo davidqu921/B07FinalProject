@@ -20,7 +20,7 @@ public class AdminDashboard extends AppCompatActivity {
     }
 
     public void onClickViewEvent(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+        Intent intent = new Intent(getApplicationContext(), StudentEventList.class);
         if (getIntent().getStringExtra("username") != null) {
             String user = getIntent().getStringExtra("username");
             intent.putExtra("username", user);
@@ -34,6 +34,11 @@ public class AdminDashboard extends AppCompatActivity {
             String user = getIntent().getStringExtra("username");
             intent.putExtra("username", user);
         }
+        startActivity(intent);
+    }
+
+    public void onClickAnnouncement(View view) {
+        Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
         startActivity(intent);
     }
 }

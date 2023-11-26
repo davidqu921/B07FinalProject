@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.b07projectapp-mergeDebugResources-39:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.b07projectapp-mergeDebugResources-49:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ramin\\.gradle\\caches\\transforms-3\\ff92050ab482929c4d0f044d21af76fb\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
@@ -42,10 +42,10 @@
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "102",
+                        "startOffsets": "100",
                         "endLines": "5",
                         "endColumns": "12",
-                        "endOffsets": "325"
+                        "endOffsets": "320"
                     },
                     "to": {
                         "startLines": "2",

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,20 +23,24 @@ public final class ActivityStudentEventListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button StudentEventBack;
+
+  @NonNull
   public final RecyclerView StudentEventList;
 
   @NonNull
-  public final Button button6;
+  public final SearchView searchView;
 
   @NonNull
   public final TextView textView5;
 
   private ActivityStudentEventListBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView StudentEventList, @NonNull Button button6,
-      @NonNull TextView textView5) {
+      @NonNull Button StudentEventBack, @NonNull RecyclerView StudentEventList,
+      @NonNull SearchView searchView, @NonNull TextView textView5) {
     this.rootView = rootView;
+    this.StudentEventBack = StudentEventBack;
     this.StudentEventList = StudentEventList;
-    this.button6 = button6;
+    this.searchView = searchView;
     this.textView5 = textView5;
   }
 
@@ -66,15 +71,21 @@ public final class ActivityStudentEventListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.StudentEventBack;
+      Button StudentEventBack = ViewBindings.findChildViewById(rootView, id);
+      if (StudentEventBack == null) {
+        break missingId;
+      }
+
       id = R.id.StudentEventList;
       RecyclerView StudentEventList = ViewBindings.findChildViewById(rootView, id);
       if (StudentEventList == null) {
         break missingId;
       }
 
-      id = R.id.button6;
-      Button button6 = ViewBindings.findChildViewById(rootView, id);
-      if (button6 == null) {
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
         break missingId;
       }
 
@@ -84,8 +95,8 @@ public final class ActivityStudentEventListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityStudentEventListBinding((ConstraintLayout) rootView, StudentEventList,
-          button6, textView5);
+      return new ActivityStudentEventListBinding((ConstraintLayout) rootView, StudentEventBack,
+          StudentEventList, searchView, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

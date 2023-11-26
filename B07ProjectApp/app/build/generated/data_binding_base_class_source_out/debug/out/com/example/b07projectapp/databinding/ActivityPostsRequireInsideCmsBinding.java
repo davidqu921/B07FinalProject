@@ -22,13 +22,7 @@ public final class ActivityPostsRequireInsideCmsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button11;
-
-  @NonNull
-  public final Button button12;
-
-  @NonNull
-  public final Button button18;
+  public final Button back4Btn;
 
   @NonNull
   public final EditText editTextTextMultiLine3;
@@ -40,20 +34,26 @@ public final class ActivityPostsRequireInsideCmsBinding implements ViewBinding {
   public final EditText editTextTextMultiLine5;
 
   @NonNull
+  public final Button no3Btn;
+
+  @NonNull
   public final TextView textView6;
 
+  @NonNull
+  public final Button yes3Btn;
+
   private ActivityPostsRequireInsideCmsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button button11, @NonNull Button button12, @NonNull Button button18,
-      @NonNull EditText editTextTextMultiLine3, @NonNull EditText editTextTextMultiLine4,
-      @NonNull EditText editTextTextMultiLine5, @NonNull TextView textView6) {
+      @NonNull Button back4Btn, @NonNull EditText editTextTextMultiLine3,
+      @NonNull EditText editTextTextMultiLine4, @NonNull EditText editTextTextMultiLine5,
+      @NonNull Button no3Btn, @NonNull TextView textView6, @NonNull Button yes3Btn) {
     this.rootView = rootView;
-    this.button11 = button11;
-    this.button12 = button12;
-    this.button18 = button18;
+    this.back4Btn = back4Btn;
     this.editTextTextMultiLine3 = editTextTextMultiLine3;
     this.editTextTextMultiLine4 = editTextTextMultiLine4;
     this.editTextTextMultiLine5 = editTextTextMultiLine5;
+    this.no3Btn = no3Btn;
     this.textView6 = textView6;
+    this.yes3Btn = yes3Btn;
   }
 
   @Override
@@ -83,21 +83,9 @@ public final class ActivityPostsRequireInsideCmsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button11;
-      Button button11 = ViewBindings.findChildViewById(rootView, id);
-      if (button11 == null) {
-        break missingId;
-      }
-
-      id = R.id.button12;
-      Button button12 = ViewBindings.findChildViewById(rootView, id);
-      if (button12 == null) {
-        break missingId;
-      }
-
-      id = R.id.button18;
-      Button button18 = ViewBindings.findChildViewById(rootView, id);
-      if (button18 == null) {
+      id = R.id.back4Btn;
+      Button back4Btn = ViewBindings.findChildViewById(rootView, id);
+      if (back4Btn == null) {
         break missingId;
       }
 
@@ -119,15 +107,27 @@ public final class ActivityPostsRequireInsideCmsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.no3Btn;
+      Button no3Btn = ViewBindings.findChildViewById(rootView, id);
+      if (no3Btn == null) {
+        break missingId;
+      }
+
       id = R.id.textView6;
       TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
         break missingId;
       }
 
-      return new ActivityPostsRequireInsideCmsBinding((ConstraintLayout) rootView, button11,
-          button12, button18, editTextTextMultiLine3, editTextTextMultiLine4,
-          editTextTextMultiLine5, textView6);
+      id = R.id.yes3Btn;
+      Button yes3Btn = ViewBindings.findChildViewById(rootView, id);
+      if (yes3Btn == null) {
+        break missingId;
+      }
+
+      return new ActivityPostsRequireInsideCmsBinding((ConstraintLayout) rootView, back4Btn,
+          editTextTextMultiLine3, editTextTextMultiLine4, editTextTextMultiLine5, no3Btn, textView6,
+          yes3Btn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

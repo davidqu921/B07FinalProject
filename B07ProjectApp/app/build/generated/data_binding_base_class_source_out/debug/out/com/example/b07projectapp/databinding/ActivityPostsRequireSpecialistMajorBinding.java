@@ -21,25 +21,25 @@ public final class ActivityPostsRequireSpecialistMajorBinding implements ViewBin
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button10;
-
-  @NonNull
-  public final Button button17;
-
-  @NonNull
-  public final Button button9;
+  public final Button back3Btn;
 
   @NonNull
   public final EditText editTextTextMultiLine2;
 
+  @NonNull
+  public final Button no2Btn;
+
+  @NonNull
+  public final Button yes2Btn;
+
   private ActivityPostsRequireSpecialistMajorBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button button10, @NonNull Button button17, @NonNull Button button9,
-      @NonNull EditText editTextTextMultiLine2) {
+      @NonNull Button back3Btn, @NonNull EditText editTextTextMultiLine2, @NonNull Button no2Btn,
+      @NonNull Button yes2Btn) {
     this.rootView = rootView;
-    this.button10 = button10;
-    this.button17 = button17;
-    this.button9 = button9;
+    this.back3Btn = back3Btn;
     this.editTextTextMultiLine2 = editTextTextMultiLine2;
+    this.no2Btn = no2Btn;
+    this.yes2Btn = yes2Btn;
   }
 
   @Override
@@ -70,21 +70,9 @@ public final class ActivityPostsRequireSpecialistMajorBinding implements ViewBin
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button10;
-      Button button10 = ViewBindings.findChildViewById(rootView, id);
-      if (button10 == null) {
-        break missingId;
-      }
-
-      id = R.id.button17;
-      Button button17 = ViewBindings.findChildViewById(rootView, id);
-      if (button17 == null) {
-        break missingId;
-      }
-
-      id = R.id.button9;
-      Button button9 = ViewBindings.findChildViewById(rootView, id);
-      if (button9 == null) {
+      id = R.id.back3Btn;
+      Button back3Btn = ViewBindings.findChildViewById(rootView, id);
+      if (back3Btn == null) {
         break missingId;
       }
 
@@ -94,8 +82,20 @@ public final class ActivityPostsRequireSpecialistMajorBinding implements ViewBin
         break missingId;
       }
 
-      return new ActivityPostsRequireSpecialistMajorBinding((ConstraintLayout) rootView, button10,
-          button17, button9, editTextTextMultiLine2);
+      id = R.id.no2Btn;
+      Button no2Btn = ViewBindings.findChildViewById(rootView, id);
+      if (no2Btn == null) {
+        break missingId;
+      }
+
+      id = R.id.yes2Btn;
+      Button yes2Btn = ViewBindings.findChildViewById(rootView, id);
+      if (yes2Btn == null) {
+        break missingId;
+      }
+
+      return new ActivityPostsRequireSpecialistMajorBinding((ConstraintLayout) rootView, back3Btn,
+          editTextTextMultiLine2, no2Btn, yes2Btn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

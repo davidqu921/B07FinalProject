@@ -4,7 +4,6 @@ package com.example.b07projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,9 +20,6 @@ public final class EventBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final Button button21;
-
-  @NonNull
   public final TextView date;
 
   @NonNull
@@ -32,13 +28,16 @@ public final class EventBinding implements ViewBinding {
   @NonNull
   public final TextView name;
 
-  private EventBinding(@NonNull CardView rootView, @NonNull Button button21, @NonNull TextView date,
-      @NonNull TextView location, @NonNull TextView name) {
+  @NonNull
+  public final TextView textView8;
+
+  private EventBinding(@NonNull CardView rootView, @NonNull TextView date,
+      @NonNull TextView location, @NonNull TextView name, @NonNull TextView textView8) {
     this.rootView = rootView;
-    this.button21 = button21;
     this.date = date;
     this.location = location;
     this.name = name;
+    this.textView8 = textView8;
   }
 
   @Override
@@ -68,12 +67,6 @@ public final class EventBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button21;
-      Button button21 = ViewBindings.findChildViewById(rootView, id);
-      if (button21 == null) {
-        break missingId;
-      }
-
       id = R.id.date;
       TextView date = ViewBindings.findChildViewById(rootView, id);
       if (date == null) {
@@ -92,7 +85,13 @@ public final class EventBinding implements ViewBinding {
         break missingId;
       }
 
-      return new EventBinding((CardView) rootView, button21, date, location, name);
+      id = R.id.textView8;
+      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
+      if (textView8 == null) {
+        break missingId;
+      }
+
+      return new EventBinding((CardView) rootView, date, location, name, textView8);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

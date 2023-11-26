@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.082" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/yes4Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.308" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/no4Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/back5Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Dashboard"

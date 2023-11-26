@@ -22,13 +22,7 @@ public final class ActivityPostsRequireOutsideCmsBinding implements ViewBinding 
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button13;
-
-  @NonNull
-  public final Button button14;
-
-  @NonNull
-  public final Button button19;
+  public final Button back5Btn;
 
   @NonNull
   public final EditText editTextTextMultiLine6;
@@ -37,19 +31,25 @@ public final class ActivityPostsRequireOutsideCmsBinding implements ViewBinding 
   public final EditText editTextTextMultiLine7;
 
   @NonNull
+  public final Button no4Btn;
+
+  @NonNull
   public final TextView textView5;
 
+  @NonNull
+  public final Button yes4Btn;
+
   private ActivityPostsRequireOutsideCmsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button button13, @NonNull Button button14, @NonNull Button button19,
-      @NonNull EditText editTextTextMultiLine6, @NonNull EditText editTextTextMultiLine7,
-      @NonNull TextView textView5) {
+      @NonNull Button back5Btn, @NonNull EditText editTextTextMultiLine6,
+      @NonNull EditText editTextTextMultiLine7, @NonNull Button no4Btn, @NonNull TextView textView5,
+      @NonNull Button yes4Btn) {
     this.rootView = rootView;
-    this.button13 = button13;
-    this.button14 = button14;
-    this.button19 = button19;
+    this.back5Btn = back5Btn;
     this.editTextTextMultiLine6 = editTextTextMultiLine6;
     this.editTextTextMultiLine7 = editTextTextMultiLine7;
+    this.no4Btn = no4Btn;
     this.textView5 = textView5;
+    this.yes4Btn = yes4Btn;
   }
 
   @Override
@@ -79,21 +79,9 @@ public final class ActivityPostsRequireOutsideCmsBinding implements ViewBinding 
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button13;
-      Button button13 = ViewBindings.findChildViewById(rootView, id);
-      if (button13 == null) {
-        break missingId;
-      }
-
-      id = R.id.button14;
-      Button button14 = ViewBindings.findChildViewById(rootView, id);
-      if (button14 == null) {
-        break missingId;
-      }
-
-      id = R.id.button19;
-      Button button19 = ViewBindings.findChildViewById(rootView, id);
-      if (button19 == null) {
+      id = R.id.back5Btn;
+      Button back5Btn = ViewBindings.findChildViewById(rootView, id);
+      if (back5Btn == null) {
         break missingId;
       }
 
@@ -109,14 +97,26 @@ public final class ActivityPostsRequireOutsideCmsBinding implements ViewBinding 
         break missingId;
       }
 
+      id = R.id.no4Btn;
+      Button no4Btn = ViewBindings.findChildViewById(rootView, id);
+      if (no4Btn == null) {
+        break missingId;
+      }
+
       id = R.id.textView5;
       TextView textView5 = ViewBindings.findChildViewById(rootView, id);
       if (textView5 == null) {
         break missingId;
       }
 
-      return new ActivityPostsRequireOutsideCmsBinding((ConstraintLayout) rootView, button13,
-          button14, button19, editTextTextMultiLine6, editTextTextMultiLine7, textView5);
+      id = R.id.yes4Btn;
+      Button yes4Btn = ViewBindings.findChildViewById(rootView, id);
+      if (yes4Btn == null) {
+        break missingId;
+      }
+
+      return new ActivityPostsRequireOutsideCmsBinding((ConstraintLayout) rootView, back5Btn,
+          editTextTextMultiLine6, editTextTextMultiLine7, no4Btn, textView5, yes4Btn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
