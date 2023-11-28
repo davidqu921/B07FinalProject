@@ -34,6 +34,7 @@ public class ComplaintAdapter extends RecyclerView.Adapter<ComplaintAdapter.MyVi
         holder.topic.setText(c.getTopic());
         holder.content.setText(c.getContent());
         holder.name.setText(c.getName());
+        holder.time.setText(c.getTime());
     }
 
     @Override
@@ -45,11 +46,13 @@ public class ComplaintAdapter extends RecyclerView.Adapter<ComplaintAdapter.MyVi
         TextView topic;
         TextView content;
         TextView name;
+        TextView time;
         public MyViewHolder(@NonNull View complaintView){
             super(complaintView);
             topic = complaintView.findViewById(R.id.txtAbout);
             content = complaintView.findViewById(R.id.txtComplaintDescription);
             name = complaintView.findViewById(R.id.txtSubmitBy);
+            time = complaintView.findViewById(R.id.txtComplainTime);
         }
     }
 }

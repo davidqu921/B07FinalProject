@@ -4,6 +4,7 @@ package com.example.b07projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,12 +25,17 @@ public final class ActivityAdminViewComplaintBinding implements ViewBinding {
   public final RecyclerView adminViewComplaint;
 
   @NonNull
+  public final Button button6;
+
+  @NonNull
   public final TextView textView18;
 
   private ActivityAdminViewComplaintBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView adminViewComplaint, @NonNull TextView textView18) {
+      @NonNull RecyclerView adminViewComplaint, @NonNull Button button6,
+      @NonNull TextView textView18) {
     this.rootView = rootView;
     this.adminViewComplaint = adminViewComplaint;
+    this.button6 = button6;
     this.textView18 = textView18;
   }
 
@@ -66,6 +72,12 @@ public final class ActivityAdminViewComplaintBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button6;
+      Button button6 = ViewBindings.findChildViewById(rootView, id);
+      if (button6 == null) {
+        break missingId;
+      }
+
       id = R.id.textView18;
       TextView textView18 = ViewBindings.findChildViewById(rootView, id);
       if (textView18 == null) {
@@ -73,7 +85,7 @@ public final class ActivityAdminViewComplaintBinding implements ViewBinding {
       }
 
       return new ActivityAdminViewComplaintBinding((ConstraintLayout) rootView, adminViewComplaint,
-          textView18);
+          button6, textView18);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

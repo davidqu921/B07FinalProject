@@ -23,15 +23,20 @@ public final class ComplaintBinding implements ViewBinding {
   public final TextView txtAbout;
 
   @NonNull
+  public final TextView txtComplainTime;
+
+  @NonNull
   public final TextView txtComplaintDescription;
 
   @NonNull
   public final TextView txtSubmitBy;
 
   private ComplaintBinding(@NonNull CardView rootView, @NonNull TextView txtAbout,
-      @NonNull TextView txtComplaintDescription, @NonNull TextView txtSubmitBy) {
+      @NonNull TextView txtComplainTime, @NonNull TextView txtComplaintDescription,
+      @NonNull TextView txtSubmitBy) {
     this.rootView = rootView;
     this.txtAbout = txtAbout;
+    this.txtComplainTime = txtComplainTime;
     this.txtComplaintDescription = txtComplaintDescription;
     this.txtSubmitBy = txtSubmitBy;
   }
@@ -69,6 +74,12 @@ public final class ComplaintBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtComplainTime;
+      TextView txtComplainTime = ViewBindings.findChildViewById(rootView, id);
+      if (txtComplainTime == null) {
+        break missingId;
+      }
+
       id = R.id.txtComplaintDescription;
       TextView txtComplaintDescription = ViewBindings.findChildViewById(rootView, id);
       if (txtComplaintDescription == null) {
@@ -81,8 +92,8 @@ public final class ComplaintBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ComplaintBinding((CardView) rootView, txtAbout, txtComplaintDescription,
-          txtSubmitBy);
+      return new ComplaintBinding((CardView) rootView, txtAbout, txtComplainTime,
+          txtComplaintDescription, txtSubmitBy);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
