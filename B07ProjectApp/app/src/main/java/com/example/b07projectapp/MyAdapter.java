@@ -1,6 +1,7 @@
 package com.example.b07projectapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,16 +11,26 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>  {
 
     Context context;
 
     ArrayList<Event> list;
 
-    public MyAdapter(Context context, ArrayList<Event> list) {
+    RecyclerViewClickListener listener;
+
+    public void setFilteredList(ArrayList<Event> filteredList){
+        this.list = filteredList;
+        notifyDataSetChanged();
+    }
+
+    public MyAdapter(Context context, ArrayList<Event> list, RecyclerViewClickListener listener) {
+
         this.context = context;
         this.list = list;
+        this.listener = listener;
     }
 
 
@@ -38,6 +49,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.location.setText(event.location);
         holder.date.setText(event.date);
 
+
     }
 
     @Override
@@ -45,7 +57,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return list.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public interface RecyclerViewClickListener{
+        void onClick(View view, int position);
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder implements  View.OnClickListener{
 
         TextView name, location, date;
 
@@ -56,6 +72,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             name = itemView.findViewById(R.id.name);
             location =itemView.findViewById(R.id.location);
             date = itemView.findViewById(R.id.date);
+            itemView.setOnClickListener(this);
+        }
+        @Override
+        public void onClick(View v) {
+            listener.onClick(itemView,getAdapterPosition());
         }
     }
 }

@@ -39,13 +39,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.Admin_View_Participants"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AnnouncementDetailAdmin"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AdminViewAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.AdminPostAnnouncement"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.AdminViewComplaint"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.StudentEventList"
-            android:exported="false" />
-        <activity
-            android:name="com.example.b07projectapp.AdminPostNewAnnouncement"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.StudentCheckAnnouncements"
@@ -85,6 +94,21 @@
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.SignUpStudent"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.PostsRequire"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.PostsRequireMinor"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.PostsRequireInsideCMS"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
             android:exported="false" />
         <activity
             android:name="com.example.b07projectapp.MainActivity"
@@ -172,6 +196,12 @@
 
         <uses-library
             android:name="android.ext.adservices"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
             android:required="false" />
 
         <meta-data

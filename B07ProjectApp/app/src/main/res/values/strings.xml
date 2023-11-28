@@ -77,4 +77,5 @@
     <string name="view_students_complaints">View Students\' Complaints</string>
     <string name="submit_a_complaint">Submit a Complaint</string>
     <string name="student_dashboard">Student Dashboard</string>
+    <string name="title_activity_admin_announcement">AdminAnnouncement</string>
 </resources>

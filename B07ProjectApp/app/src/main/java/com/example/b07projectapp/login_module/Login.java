@@ -15,6 +15,7 @@ import com.example.b07projectapp.StudentDashboard;
 
 public class Login extends AppCompatActivity implements LoginView {
     private LoginPresenter presenter;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +45,14 @@ public class Login extends AppCompatActivity implements LoginView {
     }
 
     @Override
-    public void showSuccessMessage() {
+    public void showSuccessMessage(String userName, String userId) {
         Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
         // Open main activity on success
-        startActivity(new Intent(this, StudentDashboard.class));
+
+        Intent i = new Intent(this, StudentDashboard.class);
+        i.putExtra("student", userName);
+        i.putExtra("stu", userId);
+        startActivity(i);
         finish();
     }
 

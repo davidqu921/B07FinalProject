@@ -44,10 +44,12 @@ public class AdminLogin extends AppCompatActivity implements LoginView {
     }
 
     @Override
-    public void showSuccessMessage() {
+    public void showSuccessMessage(String userName, String userId) {
         Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
         // Open main activity on success
-        startActivity(new Intent(this, AdminDashboard.class));
+        Intent i = new Intent(this, AdminDashboard.class);
+        i.putExtra("username", userId);
+        startActivity(i);
         finish();
     }
 

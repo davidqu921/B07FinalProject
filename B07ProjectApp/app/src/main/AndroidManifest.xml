@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,15 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.B07ProjectApp"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".Admin_View_Participants"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementDetailAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPostAnnouncement"
+            android:exported="false" />
         <activity
             android:name=".AdminViewComplaint"
             android:exported="false" />
         <activity
             android:name=".StudentEventList"
-            android:exported="false" />
-        <activity
-            android:name=".AdminPostNewAnnouncement"
             android:exported="false" />
         <activity
             android:name=".StudentCheckAnnouncements"
@@ -63,8 +72,23 @@
             android:name=".SignUpStudent"
             android:exported="false" />
         <activity
+            android:name=".PostsRequire"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireMinor"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireInsideCMS"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireOutsideCMS"
+            android:exported="false" />
+        <activity
+            android:name=".PostsRequireSpecialistMajor"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

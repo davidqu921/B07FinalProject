@@ -8,28 +8,28 @@ import android.view.View;
 import android.widget.Button;
 
 public class PostsRequireSpecialistMajor extends AppCompatActivity {
-    private Button btn9, btn10, btn17;
+    private Button yes2Btn, no2Btn, back3Btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posts_require_specialist_major);
 
-        btn9 = (Button) findViewById(R.id.button9);
-        btn9.setOnClickListener(new View.OnClickListener() {
+        yes2Btn = (Button) findViewById(R.id.yes2Btn);
+        yes2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openInsideCMS();
             }
         });
-        btn10 = (Button) findViewById(R.id.button10);
-        btn10.setOnClickListener(new View.OnClickListener() {
+        no2Btn = (Button) findViewById(R.id.no2Btn);
+        no2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openOutSideCMS();
             }
         });
-        btn17 = (Button) findViewById(R.id.button17);
-        btn17.setOnClickListener(new View.OnClickListener() {
+        back3Btn = (Button) findViewById(R.id.back3Btn);
+        back3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openStudentDashboard();

@@ -8,30 +8,30 @@ import android.view.View;
 import android.widget.Button;
 
 public class PostsRequire extends AppCompatActivity {
-    Button btn5, btn6, btn15;
+    Button specialistBtn, minorBtn, back1Btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posts_require);
 
-        btn5 = (Button) findViewById(R.id.button5);
-        btn5.setOnClickListener(new View.OnClickListener() {
+        specialistBtn = (Button) findViewById(R.id.specialistBtn);
+        specialistBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openSpecialistMajor();
             }
         });
 
-        btn6 = (Button) findViewById(R.id.eventListBack);
-        btn6.setOnClickListener(new View.OnClickListener() {
+        minorBtn = (Button) findViewById(R.id.minorBtn);
+        minorBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMinor();
             }
         });
 
-        btn15 = (Button) findViewById(R.id.button15);
-        btn15.setOnClickListener(new View.OnClickListener() {
+        back1Btn = (Button) findViewById(R.id.back1Btn);
+        back1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openStudentDashboard();
@@ -53,3 +53,4 @@ public class PostsRequire extends AppCompatActivity {
         startActivity(intent);
     }
 }
+

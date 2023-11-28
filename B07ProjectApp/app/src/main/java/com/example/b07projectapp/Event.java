@@ -16,10 +16,11 @@ public class Event {
     }
 
     // Constructor with parameters to initialize the fields
-    public Event(String title, String location, String date) {
+    public Event(String title, String location, String date, String description) {
         this.title = title;
         this.location = location;
         this.date = date;
+        this.description = description;
 
     }
 

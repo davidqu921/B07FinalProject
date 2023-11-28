@@ -30,10 +30,14 @@ public class AdminDashboard extends AppCompatActivity {
 
     public void onClickAddEvent(View view) {
         Intent intent = new Intent(getApplicationContext(), AdminAddEvent.class);
-        if (getIntent().getStringExtra("username") != null) {
-            String user = getIntent().getStringExtra("username");
-            intent.putExtra("username", user);
-        }
+        String user = getIntent().getStringExtra("username");
+        intent.putExtra("username", user);
+
+        startActivity(intent);
+    }
+
+    public void onClickAnnouncement(View view) {
+        Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
         startActivity(intent);
     }
 }

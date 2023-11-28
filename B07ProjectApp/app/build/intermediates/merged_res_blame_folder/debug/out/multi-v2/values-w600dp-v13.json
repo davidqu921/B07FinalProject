@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.b07projectapp-mergeDebugResources-39:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.example.b07projectapp-mergeDebugResources-49:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yangb\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
