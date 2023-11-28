@@ -82,6 +82,7 @@
     <string name="submit_comment">Submit Comment</string>
     <string name="text_title">Text Title</string>
     <string name="textview">TextView</string>
+    <string name="title_activity_admin_announcement">AdminAnnouncement</string>
     <string name="title_activity_admin_login">activity_admin_login</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_student_events">StudentEvents</string>
