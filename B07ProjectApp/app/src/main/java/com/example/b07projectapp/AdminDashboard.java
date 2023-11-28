@@ -43,4 +43,13 @@ public class AdminDashboard extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
         startActivity(intent);
     }
+
+    public void onClickAdminSignOut(View view) {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+        //set the name of admin to be empty
+        LoggedInAdmin.getInstance().setName("");
+
+        startActivity(intent);
+    }
 }
