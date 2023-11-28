@@ -53,7 +53,7 @@ public class StudentComplaint extends AppCompatActivity {
         }
 
         if(topicStr.isEmpty() || content.isEmpty()){
-            Toast.makeText(getApplicationContext(), "Unsuccessful. Please fill out all fields", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Unsuccessful. Please fill out required fields", Toast.LENGTH_LONG).show();
         }
         else {
             edname.setText("");
