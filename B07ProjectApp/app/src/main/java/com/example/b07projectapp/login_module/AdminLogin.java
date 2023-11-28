@@ -49,6 +49,7 @@ public class AdminLogin extends AppCompatActivity implements LoginView {
         // Open main activity on success
         Intent i = new Intent(this, AdminDashboard.class);
         i.putExtra("username", userId);
+
         startActivity(i);
         finish();
     }
