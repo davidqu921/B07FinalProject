@@ -3003,6 +3003,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
+int drawable admin_background 0x7f0700f6
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
 int drawable btn_checkbox_checked_mtrl 0x7f07007a
@@ -3013,6 +3014,7 @@ int drawable btn_radio_off_mtrl 0x7f07007e
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07007f
 int drawable btn_radio_on_mtrl 0x7f070080
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070081
+int drawable check_mark 0x7f0700f7
 int drawable common_full_open_on_phone 0x7f070082
 int drawable common_google_signin_btn_icon_dark 0x7f070083
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070084
@@ -3044,7 +3046,6 @@ int drawable ic_clear_black_24 0x7f07009d
 int drawable ic_clock_black_24dp 0x7f07009e
 int drawable ic_keyboard_black_24dp 0x7f07009f
 int drawable ic_launcher_background 0x7f0700a0
-int drawable ic_launcher_foreground 0x7f0700a1
 int drawable ic_m3_chip_check 0x7f0700a2
 int drawable ic_m3_chip_checked_circle 0x7f0700a3
 int drawable ic_m3_chip_close 0x7f0700a4
@@ -3053,6 +3054,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f0700a6
 int drawable ic_mtrl_chip_checked_circle 0x7f0700a7
 int drawable ic_mtrl_chip_close_circle 0x7f0700a8
 int drawable ic_search_black_24 0x7f0700a9
+int drawable login_signup_background 0x7f0700f8
 int drawable m3_appbar_background 0x7f0700aa
 int drawable m3_avd_hide_password 0x7f0700ab
 int drawable m3_avd_show_password 0x7f0700ac
@@ -3065,6 +3067,7 @@ int drawable m3_tabs_background 0x7f0700b2
 int drawable m3_tabs_line_indicator 0x7f0700b3
 int drawable m3_tabs_rounded_line_indicator 0x7f0700b4
 int drawable m3_tabs_transparent_background 0x7f0700b5
+int drawable main_activity_background 0x7f0700f9
 int drawable material_cursor_drawable 0x7f0700b6
 int drawable material_ic_calendar_black_24dp 0x7f0700b7
 int drawable material_ic_clear_black_24dp 0x7f0700b8
@@ -3113,6 +3116,7 @@ int drawable mtrl_switch_track 0x7f0700e2
 int drawable mtrl_switch_track_decoration 0x7f0700e3
 int drawable mtrl_tabs_default_indicator 0x7f0700e4
 int drawable navigation_empty_icon 0x7f0700e5
+int drawable new_icon 0x7f0700fc
 int drawable notification_action_background 0x7f0700e6
 int drawable notification_bg 0x7f0700e7
 int drawable notification_bg_low 0x7f0700e8
@@ -3126,9 +3130,11 @@ int drawable notification_template_icon_low_bg 0x7f0700ef
 int drawable notification_tile_bg 0x7f0700f0
 int drawable notify_panel_notification_icon_bg 0x7f0700f1
 int drawable search_view_background 0x7f0700f2
+int drawable student_background 0x7f0700fa
 int drawable test_level_drawable 0x7f0700f3
 int drawable tooltip_frame_dark 0x7f0700f4
 int drawable tooltip_frame_light 0x7f0700f5
+int drawable utoronto_coa 0x7f0700fb
 int id ALT 0x7f080000
 int id AdminCenter 0x7f080001
 int id AdminViewAnnouncement 0x7f080002
@@ -3419,6 +3425,8 @@ int id ifRoom 0x7f08011e
 int id ignore 0x7f08011f
 int id ignoreRequest 0x7f080120
 int id image 0x7f080121
+int id imageView 0x7f080275
+int id imageView2 0x7f080276
 int id immediateStop 0x7f080122
 int id included 0x7f080123
 int id indeterminate 0x7f080124
@@ -3980,6 +3988,7 @@ int layout select_dialog_multichoice_material 0x7f0b0082
 int layout select_dialog_singlechoice_material 0x7f0b0083
 int layout support_simple_spinner_dropdown_item 0x7f0b0084
 int mipmap ic_launcher 0x7f0d0000
+int mipmap ic_launcher_foreground 0x7f0d0002
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
 int raw firebase_common_keep 0x7f0f0000

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_signup_background"
     tools:context=".AdminSignUp">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="45dp"
         android:layout_marginTop="64dp"
         android:text="Admin Sign Up"
+        android:textColor="#050505"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

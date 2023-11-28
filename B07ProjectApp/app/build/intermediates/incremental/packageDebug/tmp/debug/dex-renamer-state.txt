@@ -1,4 +1,4 @@
-#Mon Nov 27 22:29:24 EST 2023
+#Tue Nov 28 00:28:28 EST 2023
 base.0=C\:\\Users\\shizh\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\shizh\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\shizh\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex

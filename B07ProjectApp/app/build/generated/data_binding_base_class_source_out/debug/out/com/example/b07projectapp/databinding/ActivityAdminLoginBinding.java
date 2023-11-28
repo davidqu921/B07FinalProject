@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -36,15 +37,20 @@ public final class ActivityAdminLoginBinding implements ViewBinding {
   @NonNull
   public final EditText adminUsername;
 
+  @NonNull
+  public final ImageView imageView2;
+
   private ActivityAdminLoginBinding(@NonNull LinearLayout rootView, @NonNull TextView AdminCenter,
       @NonNull AppCompatButton adminLoginBtn, @NonNull EditText adminPassword,
-      @NonNull TextView adminRegisterBtn, @NonNull EditText adminUsername) {
+      @NonNull TextView adminRegisterBtn, @NonNull EditText adminUsername,
+      @NonNull ImageView imageView2) {
     this.rootView = rootView;
     this.AdminCenter = AdminCenter;
     this.adminLoginBtn = adminLoginBtn;
     this.adminPassword = adminPassword;
     this.adminRegisterBtn = adminRegisterBtn;
     this.adminUsername = adminUsername;
+    this.imageView2 = imageView2;
   }
 
   @Override
@@ -104,8 +110,14 @@ public final class ActivityAdminLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
+        break missingId;
+      }
+
       return new ActivityAdminLoginBinding((LinearLayout) rootView, AdminCenter, adminLoginBtn,
-          adminPassword, adminRegisterBtn, adminUsername);
+          adminPassword, adminRegisterBtn, adminUsername, imageView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
