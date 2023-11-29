@@ -33,13 +33,14 @@ public class StudentEvents extends AppCompatActivity {
     String eventName;
 
 
+
     private int c = 1;
     private int x = c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String sStr = getIntent().getStringExtra("student");
+
         int counter = getIntent().getIntExtra("counter", 0);
         setContentView(R.layout.activity_student_events);
         TextView Title = findViewById(R.id.textView5);
@@ -62,8 +63,12 @@ public class StudentEvents extends AppCompatActivity {
             }
         });
         event.addValueEventListener(new ValueEventListener() {
+
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String sStr = getIntent().getStringExtra("username");
+                if (sStr == null)
+                    sStr = getIntent().getStringExtra("student");
                 int counting = 0;
                 for (DataSnapshot ds: snapshot.getChildren()) {
 
@@ -87,6 +92,8 @@ public class StudentEvents extends AppCompatActivity {
 
                                 for (DataSnapshot dat: snapshot.getChildren()){
                                     if (dat.hasChild("rating")) {
+                                        if (dat.child("rating").getValue(Integer.class) == 0)
+                                            continue;
                                         sum +=(dat.child("rating").getValue(Integer.class));
                                         //makeText(StudentEvents.this, String.valueOf(sum), LENGTH_SHORT).show();
                                         cRating++;
@@ -107,11 +114,11 @@ public class StudentEvents extends AppCompatActivity {
                         ct.setRating(0);
                     joined = false;
                     if(ds.hasChild("participants"))
+
                         if(ds.child("participants").hasChild(sStr)) {
                             join.setText("Remove Participation");
                             joined = true;
                         }
-
                     else
                             join.setText("Join Event");
                     eventStr = ds.getKey();
@@ -134,7 +141,7 @@ public class StudentEvents extends AppCompatActivity {
 
     public void onClickNext(View view) {
 
-        String sStr = getIntent().getStringExtra("student");
+        //String sStr = getIntent().getStringExtra("student");
 
         TextView Title = findViewById(R.id.textView5);
         TextView desc = findViewById(R.id.textView7);
@@ -152,6 +159,9 @@ public class StudentEvents extends AppCompatActivity {
         event.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String sStr = getIntent().getStringExtra("username");
+                if (sStr == null)
+                    sStr = getIntent().getStringExtra("student");
                 int counter = 0;
                 for (DataSnapshot ds: snapshot.getChildren()) {
 
@@ -179,6 +189,8 @@ public class StudentEvents extends AppCompatActivity {
                                     ct.setRating(0);
                                     for (DataSnapshot dat: snapshot.getChildren()){
                                         if (dat.hasChild("rating")) {
+                                            if (dat.child("rating").getValue(Integer.class) == 0)
+                                                continue;
                                             sum +=(dat.child("rating").getValue(Integer.class));
                                             ct.setRating(0);
                                             cRating++;
@@ -238,6 +250,9 @@ public class StudentEvents extends AppCompatActivity {
             event.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    String sStr = getIntent().getStringExtra("username");
+                    if (sStr == null)
+                        sStr = getIntent().getStringExtra("student");
                     int counter = 0;
                     for (DataSnapshot ds : snapshot.getChildren()) {
 
@@ -264,6 +279,8 @@ public class StudentEvents extends AppCompatActivity {
                                         float sum = 0;
                                         for (DataSnapshot dat: snapshot.getChildren()){
                                             if (dat.hasChild("rating")) {
+                                                if (dat.child("rating").getValue(Integer.class) == 0)
+                                                    continue;
                                                 sum +=(dat.child("rating").getValue(Integer.class));
                                                 cRating++;
                                                 ct.setRating(0);
@@ -317,7 +334,7 @@ public class StudentEvents extends AppCompatActivity {
     public void onClickJoin(View view){
         DatabaseReference ref = fire.getReference();
         if (getIntent().getStringExtra("student") == null)
-            makeText(StudentEvents.this, "SignIn as Student First", LENGTH_SHORT).show();
+            makeText(StudentEvents.this, "Sign In as Student First", LENGTH_SHORT).show();
         else{
             String sStr = getIntent().getStringExtra("student");
             ref.child("event").child(eventStr).child("participants").child(sStr).child("name").setValue(sStr);

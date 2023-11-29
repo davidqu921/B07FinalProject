@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class AdminDashboard extends AppCompatActivity {
 
@@ -25,11 +26,13 @@ public class AdminDashboard extends AppCompatActivity {
             String user = getIntent().getStringExtra("username");
             intent.putExtra("username", user);
         }
+
         startActivity(intent);
     }
 
     public void onClickAddEvent(View view) {
         Intent intent = new Intent(getApplicationContext(), AdminAddEvent.class);
+
         String user = getIntent().getStringExtra("username");
         intent.putExtra("username", user);
 
