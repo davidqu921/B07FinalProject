@@ -4,25 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@drawable/login_signup_background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".login_module.Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/check_mark" />
+
     <TextView
+        android:id="@+id/studentLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:id="@+id/studentLogin"
         android:text="Student Centre"
+        android:textColor="#0B0A0A"
         android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:text="University of Toronto"
+        android:textColor="#0E0E0E"
         android:textSize="30dp"
         android:textStyle="bold" />
 
@@ -71,7 +81,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have an account?" />
+        android:text="Don't have an account?"
+        android:textColor="#070707" />
 
     <TextView
         android:id="@+id/registerBtn"
@@ -79,6 +90,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="Register Now"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 

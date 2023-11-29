@@ -6,9 +6,15 @@ color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen fab_margin
+drawable admin_background
+drawable check_mark
 drawable ic_launcher_background
-drawable ic_launcher_foreground
+drawable login_signup_background
+drawable main_activity_background
+drawable new_icon
 drawable search_view_background
+drawable student_background
+drawable utoronto_coa
 id AdminCenter
 id AdminViewAnnouncement
 id GoToSubmitComplaintBtn
@@ -44,6 +50,7 @@ id button21
 id button3
 id button4
 id button5
+id button6
 id button7
 id button8
 id checkAnnouncements
@@ -76,6 +83,8 @@ id editTextTextMultiLine5
 id editTextTextMultiLine6
 id editTextTextMultiLine7
 id eventListBack
+id imageView
+id imageView2
 id location
 id loginBtn
 id minorBtn
@@ -119,6 +128,7 @@ id tvContent
 id tvPoster
 id tvTitleAnnounce
 id txtAbout
+id txtComplainTime
 id txtComplaintDescription
 id txtContentAnnounce
 id txtPostedBy
@@ -159,6 +169,7 @@ layout announcement_ad
 layout complaint
 layout event
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string action_sign_in
 string action_sign_in_short

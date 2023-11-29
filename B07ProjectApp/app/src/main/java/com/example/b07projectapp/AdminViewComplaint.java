@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.annotation.NonNull;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -45,7 +48,8 @@ public class AdminViewComplaint extends AppCompatActivity {
                     String topic = snap.child("topic").getValue(String.class);
                     String content = snap.child("content").getValue(String.class);
                     String name = snap.child("name").getValue(String.class);
-                    Complaint complaint = new Complaint(topic, content, name);
+                    String time = snap.child("time").getValue(String.class);
+                    Complaint complaint = new Complaint(topic, content, name, time);
                     list.add(complaint);
                 }
                 Collections.reverse(list);
@@ -57,5 +61,10 @@ public class AdminViewComplaint extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void onClickGoBackComplaint(View view) {
+        Intent intent = new Intent(getApplicationContext(), AdminDashboard.class);
+        startActivity(intent);
     }
 }
