@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/admin_background"
     tools:context=".AnnouncementDetailAdmin">
 
     <TextView
@@ -25,6 +26,7 @@
         android:layout_height="62dp"
         android:layout_marginTop="24dp"
         android:text="Title"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +37,7 @@
         android:layout_width="389dp"
         android:layout_height="55dp"
         android:text="Posted By"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,12 +47,14 @@
         android:id="@+id/tvContent"
         android:layout_width="415dp"
         android:layout_height="326dp"
-        android:background="#F4F0FA"
+        android:background="@drawable/admin_background"
         android:inputType="textMultiLine"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTimePost" />
 
@@ -58,6 +63,7 @@
         android:layout_width="394dp"
         android:layout_height="53dp"
         android:text="Time Posted"
+        android:textColor="#FBFBFB"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

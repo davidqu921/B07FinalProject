@@ -5,15 +5,17 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:onClick="onClickViewDetail"
+    app:cardBackgroundColor="@color/blue"
     app:cardCornerRadius="1dp"
     app:cardElevation="8dp">
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="363dp"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
+        android:background="@color/blue"
         android:orientation="vertical"
         android:paddingTop="8dp"
         android:paddingBottom="8dp">
@@ -107,10 +109,10 @@
         </LinearLayout>
 
         <TextView
-            android:paddingTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:paddingTop="8dp"
             android:text="Click to View Detail"
             android:textSize="16dp" />
 

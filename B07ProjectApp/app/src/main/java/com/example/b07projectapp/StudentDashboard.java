@@ -37,4 +37,8 @@ public class StudentDashboard extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
     }
+    public void onClickViewStudentAnnouncement(View view) {
+        Intent intent = new Intent(getApplicationContext(), StudentViewAnnouncement.class);
+        startActivity(intent);
+    }
 }

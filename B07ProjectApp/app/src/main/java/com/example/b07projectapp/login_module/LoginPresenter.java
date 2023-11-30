@@ -5,7 +5,9 @@ import android.content.Intent;
 
 import androidx.annotation.NonNull;
 
+import com.example.b07projectapp.LoggedInAdmin;
 import com.example.b07projectapp.SignUpStudent;
+import com.example.b07projectapp.SignedInStudent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -33,10 +35,19 @@ public class LoginPresenter {
                     if (snapshot.exists()) {
                         String storedPassword = String.valueOf(snapshot.child("password").getValue());
 
+                        //this section is added to access the data of logged in student using singleton
+                        String studentUsername = String.valueOf(snapshot.child("username").getValue());
+                        ///
+
                         if (storedPassword.equals(password)) {
                             String userName = String.valueOf(snapshot.child("name").getValue());
                             String userId = String.valueOf(snapshot.child("username").getValue());
                             view.showSuccessMessage(userName, userId);
+
+                            //this section is added to access the data of logged in admin using singleton
+                            SignedInStudent.getInstance().setUsername(studentUsername);
+                            ///
+
                         } else {
                             view.showErrorMessage("Wrong Password");
                         }

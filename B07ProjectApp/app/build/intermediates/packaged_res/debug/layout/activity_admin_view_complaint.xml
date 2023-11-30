@@ -10,6 +10,7 @@
         android:id="@+id/adminViewComplaint"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:background="@drawable/admin_background"
         android:paddingTop="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
