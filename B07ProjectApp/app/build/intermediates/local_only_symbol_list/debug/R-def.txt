@@ -20,12 +20,14 @@ id AdminViewAnnouncement
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
 id LogInStudentBtn
+id SABtn
 id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
 id StudentEventBack
 id StudentEventList
 id StudentSignUpGoBackBtn
+id StudentViewAnnouncement
 id adminLoginBtn
 id adminPassword
 id adminRegisterBtn
@@ -124,6 +126,7 @@ id textView6
 id textView7
 id textView8
 id textView9
+id textViewSA
 id tvContent
 id tvPoster
 id tvTitleAnnounce
@@ -164,6 +167,7 @@ layout activity_student_dashboard
 layout activity_student_event_list
 layout activity_student_events
 layout activity_student_sign_up
+layout activity_student_view_announcement
 layout activity_view_comments
 layout announcement_ad
 layout complaint

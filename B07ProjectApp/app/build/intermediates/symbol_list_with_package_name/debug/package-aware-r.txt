@@ -3148,6 +3148,7 @@ id LogInAdminBtn
 id LogInStudentBtn
 id META
 id NO_DEBUG
+id SABtn
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3159,6 +3160,7 @@ id SignUpStudentBtn
 id StudentEventBack
 id StudentEventList
 id StudentSignUpGoBackBtn
+id StudentViewAnnouncement
 id TOP_END
 id TOP_START
 id accelerate
@@ -3704,6 +3706,7 @@ id textView6
 id textView7
 id textView8
 id textView9
+id textViewSA
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3909,6 +3912,7 @@ layout activity_student_dashboard
 layout activity_student_event_list
 layout activity_student_events
 layout activity_student_sign_up
+layout activity_student_view_announcement
 layout activity_view_comments
 layout announcement_ad
 layout complaint

@@ -29,7 +29,6 @@
         android:gravity="top"
         android:hint="Enter your complaint"
         android:inputType="textMultiLine"
-        android:textColorHint="#F47979"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +53,6 @@
         android:ems="10"
         android:hint="What do you want to complain about?"
         android:inputType="text"
-        android:textColorHint="#F47979"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextComplaintStuName" />

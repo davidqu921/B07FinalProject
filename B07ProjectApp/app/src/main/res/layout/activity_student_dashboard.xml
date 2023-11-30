@@ -58,7 +58,7 @@
         android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:onClick="onClickStudentEvent"
+        android:onClick="onClickViewStudentAnnouncement"
         android:text="Check Announcements"
         app:layout_constraintBottom_toTopOf="@+id/GoToSubmitComplaintBtn"
         app:layout_constraintEnd_toEndOf="parent"
