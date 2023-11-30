@@ -104,8 +104,7 @@ public class StudentComment extends AppCompatActivity {
             }
         }
     }
-    public void onClickGoBackStudentDashBoard(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
-        startActivity(intent);
+    public void onClickGoBack(View view) {
+        onBackPressed();
     }
 }

@@ -38,8 +38,8 @@ public class PostsRequireInsideCMS extends AppCompatActivity {
         });
 
     }
+
     public void openStudentDashboard(){
-        Intent intent = new Intent(this, StudentDashboard.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

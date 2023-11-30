@@ -4,10 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onClickPast"
     tools:context=".StudentEvents"
     tools:layout_editor_absoluteX="36dp"
     tools:layout_editor_absoluteY="45dp">
+
+    <Button
+        android:id="@+id/studentEventBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onClickGoBack"
+        android:padding="15dp"
+        android:text="Go Back"
+        app:cornerRadius="10dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintStart_toStartOf="@+id/button10" />
 
     <TextView
         android:id="@+id/textView16"
@@ -143,7 +156,7 @@
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginEnd="4dp"
         android:onClick="onClickParticipants"
         android:text="No. of Participants"
@@ -153,7 +166,7 @@
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:onClick="onClickParticipants"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"

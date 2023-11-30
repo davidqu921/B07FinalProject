@@ -25,7 +25,7 @@ public final class ActivityAdminAddEventBinding implements ViewBinding {
   public final Button button11;
 
   @NonNull
-  public final EditText editTextDate;
+  public final Button datePickerButton;
 
   @NonNull
   public final EditText editTextNumber2;
@@ -43,12 +43,12 @@ public final class ActivityAdminAddEventBinding implements ViewBinding {
   public final TextView textView10;
 
   private ActivityAdminAddEventBinding(@NonNull ConstraintLayout rootView, @NonNull Button button11,
-      @NonNull EditText editTextDate, @NonNull EditText editTextNumber2,
+      @NonNull Button datePickerButton, @NonNull EditText editTextNumber2,
       @NonNull EditText editTextStudentComplaint2, @NonNull EditText editTextText,
       @NonNull EditText editTextText2, @NonNull TextView textView10) {
     this.rootView = rootView;
     this.button11 = button11;
-    this.editTextDate = editTextDate;
+    this.datePickerButton = datePickerButton;
     this.editTextNumber2 = editTextNumber2;
     this.editTextStudentComplaint2 = editTextStudentComplaint2;
     this.editTextText = editTextText;
@@ -89,9 +89,9 @@ public final class ActivityAdminAddEventBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.editTextDate;
-      EditText editTextDate = ViewBindings.findChildViewById(rootView, id);
-      if (editTextDate == null) {
+      id = R.id.datePickerButton;
+      Button datePickerButton = ViewBindings.findChildViewById(rootView, id);
+      if (datePickerButton == null) {
         break missingId;
       }
 
@@ -125,8 +125,9 @@ public final class ActivityAdminAddEventBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAdminAddEventBinding((ConstraintLayout) rootView, button11, editTextDate,
-          editTextNumber2, editTextStudentComplaint2, editTextText, editTextText2, textView10);
+      return new ActivityAdminAddEventBinding((ConstraintLayout) rootView, button11,
+          datePickerButton, editTextNumber2, editTextStudentComplaint2, editTextText, editTextText2,
+          textView10);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

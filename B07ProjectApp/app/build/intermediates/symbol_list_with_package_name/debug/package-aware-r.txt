@@ -3318,6 +3318,7 @@ id customPanel
 id cut
 id dark
 id date
+id datePickerButton
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3360,7 +3361,6 @@ id editTextAdminPassword
 id editTextAdminUsername
 id editTextComplaintStuName
 id editTextComplaintTopic
-id editTextDate
 id editTextNumber
 id editTextNumber2
 id editTextStudentComment
@@ -3656,6 +3656,8 @@ id staticPostLayout
 id stop
 id stretch
 id studentComplaintBtn
+id studentEventBack
+id studentEventBack6
 id studentLogin
 id submenuarrow
 id submit_area

@@ -1,5 +1,8 @@
 package com.example.b07projectapp;
 
+import static android.widget.Toast.LENGTH_SHORT;
+import static android.widget.Toast.makeText;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,15 +17,22 @@ public class ViewComments extends AppCompatActivity {
         setContentView(R.layout.activity_view_comments);
     }
     public void onClickAddComments(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentComment.class);
-        String eventStr = getIntent().getStringExtra("Event");
-        intent.putExtra("Event", eventStr);
-        String sStr = getIntent().getStringExtra("stu");
-        intent.putExtra("stu", sStr);
-        if (getIntent().getStringExtra("username") != null) {
-            String user = getIntent().getStringExtra("username");
-            intent.putExtra("username", user);
+        if(getIntent().getBooleanExtra("joined", false)) {
+            Intent intent = new Intent(getApplicationContext(), StudentComment.class);
+            String eventStr = getIntent().getStringExtra("Event");
+            intent.putExtra("Event", eventStr);
+            String sStr = getIntent().getStringExtra("stu");
+            intent.putExtra("stu", sStr);
+            intent.putExtra("student", getIntent().getStringExtra("student"));
+            if (getIntent().getStringExtra("username") != null) {
+                String user = getIntent().getStringExtra("username");
+                intent.putExtra("username", user);
+            }
+            startActivity(intent);
         }
-        startActivity(intent);
+        else makeText(this, "You must join the event before leaving a review", LENGTH_SHORT).show();
+    }
+    public void onClickGoBack (View view){
+        onBackPressed();
     }
 }

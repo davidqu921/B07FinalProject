@@ -70,8 +70,7 @@ public class AdminViewAnnouncement extends AppCompatActivity {
     }
 
     public void onClickAdminAnnouncementGoBack(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminDashboard.class);
-        startActivity(intent);
+        onBackPressed();
     }
 
     public void onClickAdminNewAnnouncement(View view) {

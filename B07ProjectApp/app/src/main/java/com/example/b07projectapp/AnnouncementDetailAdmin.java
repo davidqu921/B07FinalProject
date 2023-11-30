@@ -38,7 +38,6 @@ public class AnnouncementDetailAdmin extends AppCompatActivity {
     }
 
     public void onClickAdminAnnounceDetailGoBack(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

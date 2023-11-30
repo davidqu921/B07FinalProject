@@ -28,14 +28,18 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
   public final Button button20;
 
   @NonNull
+  public final Button studentEventBack6;
+
+  @NonNull
   public final TextView textView18;
 
   private ActivityViewCommentsBinding(@NonNull ConstraintLayout rootView,
       @NonNull RecyclerView adminViewComplaint, @NonNull Button button20,
-      @NonNull TextView textView18) {
+      @NonNull Button studentEventBack6, @NonNull TextView textView18) {
     this.rootView = rootView;
     this.adminViewComplaint = adminViewComplaint;
     this.button20 = button20;
+    this.studentEventBack6 = studentEventBack6;
     this.textView18 = textView18;
   }
 
@@ -78,6 +82,12 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.studentEventBack6;
+      Button studentEventBack6 = ViewBindings.findChildViewById(rootView, id);
+      if (studentEventBack6 == null) {
+        break missingId;
+      }
+
       id = R.id.textView18;
       TextView textView18 = ViewBindings.findChildViewById(rootView, id);
       if (textView18 == null) {
@@ -85,7 +95,7 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
       }
 
       return new ActivityViewCommentsBinding((ConstraintLayout) rootView, adminViewComplaint,
-          button20, textView18);
+          button20, studentEventBack6, textView18);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

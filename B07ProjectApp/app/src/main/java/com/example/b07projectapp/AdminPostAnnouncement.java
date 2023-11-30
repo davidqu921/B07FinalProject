@@ -70,7 +70,6 @@ public class AdminPostAnnouncement extends AppCompatActivity {
     }
 
     public void onClickView(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

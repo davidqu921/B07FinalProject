@@ -74,7 +74,6 @@ public class StudentComplaint extends AppCompatActivity {
     }
 
     public void onClickGoBackStudentDashBoard(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

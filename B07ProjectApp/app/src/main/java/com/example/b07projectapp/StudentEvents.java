@@ -30,10 +30,6 @@ public class StudentEvents extends AppCompatActivity {
     private String eventStr;
     int limit = 0;
     boolean joined = false;
-    String eventName;
-
-
-
     private int c = 1;
     private int x = c;
 
@@ -54,16 +50,14 @@ public class StudentEvents extends AppCompatActivity {
         event.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot ds: snapshot.getChildren()) {
+                for (DataSnapshot ds: snapshot.getChildren())
                     limit++;
-                }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
         event.addValueEventListener(new ValueEventListener() {
-
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String sStr = getIntent().getStringExtra("username");
@@ -71,60 +65,68 @@ public class StudentEvents extends AppCompatActivity {
                     sStr = getIntent().getStringExtra("student");
                 int counting = 0;
                 for (DataSnapshot ds: snapshot.getChildren()) {
-
-
-                    Title.setText(ds.getKey ());
-                    desc.setText(ds.child("description").getValue(String.class));
-                    loc.setText(ds.child("location").getValue(String.class));
-                    date.setText(ds.child("date").getValue(String.class));
-                    limits.setText(String.valueOf( ds.child("limit").getValue(Integer.class)));
-                    RatingBar ct = findViewById(R.id.ratingBar);
-                    limitCheck(ds.getKey());
-                    rating.setText(" None");
-                    join.setText("Join Event");
-                    if(ds.hasChild("comment")) {
-                        event.child(ds.getKey()).child("comment").addValueEventListener(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                int cRating = 0;
-                                float sum = 0;
-                                float mean = 0;
-
-                                for (DataSnapshot dat: snapshot.getChildren()){
-                                    if (dat.hasChild("rating")) {
-                                        if (dat.child("rating").getValue(Integer.class) == 0)
-                                            continue;
-                                        sum +=(dat.child("rating").getValue(Integer.class));
-                                        //makeText(StudentEvents.this, String.valueOf(sum), LENGTH_SHORT).show();
-                                        cRating++;
-                                    }else
-                                        ct.setRating(0);
-                                }
-                                if (cRating != 0)
-                                    mean = sum / cRating;
-                                rating.setText("  " + cRating + " ratings");
-                                ct.setRating(mean);
-                            }
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
-                            }
-                        });
-                    }
-                    else
-                        ct.setRating(0);
-                    joined = false;
-                    if(ds.hasChild("participants"))
-
-                        if(ds.child("participants").hasChild(sStr)) {
-                            join.setText("Remove Participation");
-                            joined = true;
-                        }
-                    else
-                            join.setText("Join Event");
-                    eventStr = ds.getKey();
                     if (counting == counter) {
-                        eventName = ds.getKey ();
                         c = counter+1;
+                        Title.setText(ds.getKey ());
+                        desc.setText(ds.child("description").getValue(String.class));
+                        loc.setText(ds.child("location").getValue(String.class));
+                        date.setText(ds.child("date").getValue(String.class));
+                        limits.setText(String.valueOf( ds.child("limit").getValue(Integer.class)));
+                        RatingBar ct = findViewById(R.id.ratingBar);
+                        limitCheck(ds.getKey());
+                        rating.setText(" None");
+                        join.setText("Join Event");
+                        joined = true;
+
+                        String Username = getIntent().getStringExtra("stu");
+                        if (Username != null) {
+                            if (ds.hasChild("participants"))
+
+                                if (ds.child("participants").hasChild(Username)) {
+                                    join.setText("Remove Participation");
+                                    joined = true;
+                                } else {
+                                    join.setText("Join Event");
+                                    joined = false;
+                                }
+                        }
+                        eventStr = ds.getKey();
+                        if(ds.hasChild("comment")) {
+                            event.child(ds.getKey()).child("comment").addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    int cRating = 0;
+                                    float sum = 0;
+                                    for (DataSnapshot dat: snapshot.getChildren()){
+                                        if (dat.hasChild("rating")) {
+                                            if (dat.child("rating").getValue(Integer.class) == 0)
+                                                continue;
+                                            sum +=(dat.child("rating").getValue(Integer.class));
+                                            //makeText(StudentEvents.this, String.valueOf(sum), LENGTH_SHORT).show();
+                                            cRating++;
+                                        }else
+                                            ct.setRating(0);
+                                    }
+                                    if (cRating > 0) {
+                                        float mean = sum / cRating;
+                                        //makeText(StudentEvents.this, String.valueOf(mean), LENGTH_SHORT).show();
+                                        ct.setRating(mean);
+                                    }else {
+                                        ct.setRating(0);
+
+                                    }
+
+                                    rating.setText("  " + cRating + " ratings");
+                                }
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
+                        }
+                        else {
+                            ct.setRating((float) 0);
+                            //makeText(StudentEvents.this, String.valueOf(0), LENGTH_SHORT).show();
+                        }
                         break;
                     }
                     else
@@ -192,32 +194,35 @@ public class StudentEvents extends AppCompatActivity {
                                             if (dat.child("rating").getValue(Integer.class) == 0)
                                                 continue;
                                             sum +=(dat.child("rating").getValue(Integer.class));
-                                            ct.setRating(0);
                                             cRating++;
                                         }
                                     }
-                                    float mean = sum / cRating;
-                                    rating.setText("  " + cRating + " ratings");
-                                    ct.setRating(mean);
-                                }
-                                    @Override
-                                    public void onCancelled(@NonNull DatabaseError error) {
+                                    if (cRating > 0) {
+                                        float mean = sum / cRating;
+                                        rating.setText("  " + cRating + " ratings");
+                                        ct.setRating(mean);
                                     }
-                                });
+                                    else
+                                        ct.setRating(0);
+                                }
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                }
+                            });
                         }
-                        joined = false;
-                        if(sStr != null && ds.hasChild("participants"))
-                            if( ds.child("participants").hasChild(sStr)) {
+                        joined = true;
+                        String Username = getIntent().getStringExtra("stu");
+                        if(Username != null && sStr != null && ds.hasChild("participants"))
+                            if( ds.child("participants").hasChild(Username)) {
                                 join.setText("Remove Participation");
                                 joined = true;
                             }
                             else {
                                 c=x;
-                                join.setText("Join Event");
-
+                                joined = false;
                             }
+                        join.setText("Join Event");
                         eventStr = ds.getKey();
-                        eventName = ds.getKey ();
                         break;
                     }
                 }
@@ -260,6 +265,7 @@ public class StudentEvents extends AppCompatActivity {
 
                         counter++;
                         if (counter >= c){
+                            String evnt = ds.getKey();
                             Title.setText(ds.getKey ());
                             desc.setText(ds.child("description").getValue(String.class));
                             loc.setText(ds.child("location").getValue(String.class));
@@ -271,7 +277,7 @@ public class StudentEvents extends AppCompatActivity {
                             join.setText("Join Event");
                             rating.setText(" None");
                             if(ds.hasChild("comment")) {
-                                event.child(ds.getKey()).child("comment").addValueEventListener(new ValueEventListener() {
+                                event.child(evnt).child("comment").addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                         ct.setRating(0);
@@ -289,19 +295,21 @@ public class StudentEvents extends AppCompatActivity {
                                         float mean = sum / cRating;
                                         rating.setText("  " + cRating + " ratings");
                                         ct.setRating(mean);
+                                        return;
                                     }
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError error) {
                                     }
                                 });
                             }
-                            if(sStr != null && ds.hasChild("participants"))
-                                if(ds.child("participants").hasChild(sStr)) {
+                            String Username = getIntent().getStringExtra("stu");
+                            if(Username != null && sStr != null && ds.hasChild("participants")) {
+                                if (ds.child("participants").hasChild(Username)) {
                                     join.setText("Remove Participation");
                                     joined = true;
                                 }
+                            }
                             eventStr = ds.getKey();
-                            eventName = ds.getKey ();
                             break;
                         }
                     }
@@ -318,6 +326,8 @@ public class StudentEvents extends AppCompatActivity {
         String sStr = getIntent().getStringExtra("student");
         intent.putExtra("student", sStr);
         intent.putExtra("Event", eventStr);
+        intent.putExtra("joined", joined);
+        intent.putExtra("student", getIntent().getStringExtra("student"));
         if (getIntent().getStringExtra("username") != null) {
             String user = getIntent().getStringExtra("username");
             intent.putExtra("username", user);
@@ -337,11 +347,12 @@ public class StudentEvents extends AppCompatActivity {
             makeText(StudentEvents.this, "Sign In as Student First", LENGTH_SHORT).show();
         else{
             String sStr = getIntent().getStringExtra("student");
-            ref.child("event").child(eventStr).child("participants").child(sStr).child("name").setValue(sStr);
+            String Username = getIntent().getStringExtra("stu");
+            ref.child("event").child(eventStr).child("participants").child(Username).child("name").setValue(sStr);
             if (!joined)
                 makeText(StudentEvents.this, "Event Joined!", LENGTH_SHORT).show();
             else {
-                ref.child("event").child(eventStr).child("participants").child(sStr).child("name").removeValue();
+                ref.child("event").child(eventStr).child("participants").child(Username).child("name").removeValue();
                 makeText(StudentEvents.this, "You are no longer attending the event", LENGTH_SHORT).show();
 
             }
@@ -350,7 +361,7 @@ public class StudentEvents extends AppCompatActivity {
 
     public void onClickParticipants(View view){
         Intent i = new Intent(getApplicationContext(), Admin_View_Participants.class);
-        i.putExtra("eventx", eventName);
+        i.putExtra("eventx", eventStr);
         startActivity(i);
     }
 
@@ -376,6 +387,9 @@ public class StudentEvents extends AppCompatActivity {
 
             }
         });
+    }
+    public void onClickGoBack (View view){
+        onBackPressed();
     }
 
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class PostsRequire extends AppCompatActivity {
     Button specialistBtn, minorBtn, back1Btn;
+    //private
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,8 +50,7 @@ public class PostsRequire extends AppCompatActivity {
     }
 
     public void openStudentDashboard(){
-        Intent intent = new Intent(this, StudentDashboard.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }
 

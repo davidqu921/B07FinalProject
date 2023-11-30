@@ -64,7 +64,6 @@ public class AdminViewComplaint extends AppCompatActivity {
     }
 
     public void onClickGoBackComplaint(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminDashboard.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

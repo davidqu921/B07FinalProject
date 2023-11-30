@@ -66,7 +66,6 @@ public class SignUpStudent extends AppCompatActivity{
     }
 
     public void onClickSignUpStudentGoBack(View view) {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

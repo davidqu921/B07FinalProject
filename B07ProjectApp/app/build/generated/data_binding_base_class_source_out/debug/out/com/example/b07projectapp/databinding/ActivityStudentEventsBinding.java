@@ -37,6 +37,9 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
   public final RatingBar ratingBar;
 
   @NonNull
+  public final Button studentEventBack;
+
+  @NonNull
   public final TextView textView12;
 
   @NonNull
@@ -68,16 +71,17 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
 
   private ActivityStudentEventsBinding(@NonNull ConstraintLayout rootView, @NonNull Button button10,
       @NonNull Button button21, @NonNull Button button7, @NonNull Button button8,
-      @NonNull RatingBar ratingBar, @NonNull TextView textView12, @NonNull TextView textView13,
-      @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
-      @NonNull TextView textView17, @NonNull TextView textView4, @NonNull TextView textView5,
-      @NonNull TextView textView7, @NonNull TextView textView9) {
+      @NonNull RatingBar ratingBar, @NonNull Button studentEventBack, @NonNull TextView textView12,
+      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView15,
+      @NonNull TextView textView16, @NonNull TextView textView17, @NonNull TextView textView4,
+      @NonNull TextView textView5, @NonNull TextView textView7, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.button10 = button10;
     this.button21 = button21;
     this.button7 = button7;
     this.button8 = button8;
     this.ratingBar = ratingBar;
+    this.studentEventBack = studentEventBack;
     this.textView12 = textView12;
     this.textView13 = textView13;
     this.textView14 = textView14;
@@ -147,6 +151,12 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.studentEventBack;
+      Button studentEventBack = ViewBindings.findChildViewById(rootView, id);
+      if (studentEventBack == null) {
+        break missingId;
+      }
+
       id = R.id.textView12;
       TextView textView12 = ViewBindings.findChildViewById(rootView, id);
       if (textView12 == null) {
@@ -208,8 +218,8 @@ public final class ActivityStudentEventsBinding implements ViewBinding {
       }
 
       return new ActivityStudentEventsBinding((ConstraintLayout) rootView, button10, button21,
-          button7, button8, ratingBar, textView12, textView13, textView14, textView15, textView16,
-          textView17, textView4, textView5, textView7, textView9);
+          button7, button8, ratingBar, studentEventBack, textView12, textView13, textView14,
+          textView15, textView16, textView17, textView4, textView5, textView7, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

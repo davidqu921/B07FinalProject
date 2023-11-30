@@ -21,6 +21,7 @@ public class StudentDashboard extends AppCompatActivity {
 
     public void onClickStudentCheckPost(View view){
         Intent intent = new Intent(getApplicationContext(), PostsRequire.class);
+        intent.putExtra("fromDashboard", true);
         startActivity(intent);
     }
     public void onClickStudentEvent(View view) {

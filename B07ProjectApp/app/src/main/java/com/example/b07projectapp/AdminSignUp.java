@@ -69,7 +69,6 @@ public class AdminSignUp extends AppCompatActivity {
     }
 
     public void onClickSignUpAdminGoBack(View view) {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

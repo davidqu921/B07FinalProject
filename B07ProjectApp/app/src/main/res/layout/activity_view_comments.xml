@@ -5,6 +5,21 @@
     android:layout_height="match_parent"
     tools:context=".AdminViewComplaint">
 
+    <Button
+        android:id="@+id/studentEventBack6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="@color/black"
+        android:onClick="onClickGoBack"
+        android:padding="15dp"
+        android:text="Go Back"
+        app:cornerRadius="10dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/adminViewComplaint"
         android:layout_width="409dp"
