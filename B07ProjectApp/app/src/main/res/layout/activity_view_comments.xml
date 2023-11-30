@@ -50,7 +50,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/black"
         android:padding="15dp"
         android:text="Go Back"
         app:cornerRadius="10dp"
