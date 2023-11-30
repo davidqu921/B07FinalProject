@@ -16,15 +16,26 @@ import com.google.firebase.database.ValueEventListener;
 
 import android.os.Bundle;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class StudentComplaint extends AppCompatActivity {
 
     FirebaseDatabase db;
+    String time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_complaint);
         db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
+
+        // get the current day and time and format string time
+        Calendar c = Calendar.getInstance();
+        java.util.Date date = c.getTime();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, dd MMMM, HH:mm", Locale.getDefault());
+        time = dateFormat.format(date);
     }
 
     public void onClickSubmitComplaint(View view){
@@ -42,7 +53,7 @@ public class StudentComplaint extends AppCompatActivity {
         }
 
         if(topicStr.isEmpty() || content.isEmpty()){
-            Toast.makeText(getApplicationContext(), "Unsuccessful. Please fill out all fields", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Unsuccessful. Please fill out required fields", Toast.LENGTH_LONG).show();
         }
         else {
             edname.setText("");
@@ -53,6 +64,7 @@ public class StudentComplaint extends AppCompatActivity {
             ref.child("complaints").child(complaintKey).child("topic").setValue(topicStr);
             ref.child("complaints").child(complaintKey).child("content").setValue(content);
             ref.child("complaints").child(complaintKey).child("name").setValue(name);
+            ref.child("complaints").child(complaintKey).child("time").setValue(time);
 
             Toast.makeText(getApplicationContext(), "Complaint submitted !", Toast.LENGTH_LONG).show();
             // redirect to main dashboard

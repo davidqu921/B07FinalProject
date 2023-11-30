@@ -3148,6 +3148,7 @@ id LogInAdminBtn
 id LogInStudentBtn
 id META
 id NO_DEBUG
+id SABtn
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3156,9 +3157,16 @@ id SYM
 id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
+id StdContent
+id StdPoster
+id StdTimePost
+id StdTitleAnnounce
+id Stdbutton14
+id StdtextView
 id StudentEventBack
 id StudentEventList
 id StudentSignUpGoBackBtn
+id StudentViewAnnouncement
 id TOP_END
 id TOP_START
 id accelerate
@@ -3272,6 +3280,7 @@ id button21
 id button3
 id button4
 id button5
+id button6
 id button7
 id button8
 id buttonPanel
@@ -3703,6 +3712,7 @@ id textView6
 id textView7
 id textView8
 id textView9
+id textViewSA
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3732,6 +3742,7 @@ id tvContent
 id tvPoster
 id tvTitleAnnounce
 id txtAbout
+id txtComplainTime
 id txtComplaintDescription
 id txtContentAnnounce
 id txtPostedBy
@@ -3900,6 +3911,7 @@ layout activity_posts_require_inside_cms
 layout activity_posts_require_minor
 layout activity_posts_require_outside_cms
 layout activity_posts_require_specialist_major
+layout activity_student_announcement_detail
 layout activity_student_check_announcements
 layout activity_student_comment
 layout activity_student_complaint
@@ -3907,6 +3919,7 @@ layout activity_student_dashboard
 layout activity_student_event_list
 layout activity_student_events
 layout activity_student_sign_up
+layout activity_student_view_announcement
 layout activity_view_comments
 layout announcement_ad
 layout complaint

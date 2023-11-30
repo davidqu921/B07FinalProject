@@ -31,4 +31,13 @@ public class StudentDashboard extends AppCompatActivity {
         intent.putExtra("stu", stStr);
         startActivity(intent);
     }
+
+    public void onClickStudentSignOut(View view) {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
+    public void onClickViewStudentAnnouncement(View view) {
+        Intent intent = new Intent(getApplicationContext(), StudentViewAnnouncement.class);
+        startActivity(intent);
+    }
 }

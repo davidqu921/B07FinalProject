@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickStudentDashBoard(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
-        startActivity(intent);
-    }
-
-    public void onClickAdminDashBoard(View view) {
-        Intent intent = new Intent(getApplicationContext(), AdminDashboard.class);
-        startActivity(intent);
-    }
+//    public void onClickStudentDashBoard(View view) {
+//        Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
+//        startActivity(intent);
+//    }
+//
+//    public void onClickAdminDashBoard(View view) {
+//        Intent intent = new Intent(getApplicationContext(), AdminDashboard.class);
+//        startActivity(intent);
+//    }
 
     public void onClickStudentLogin(View view){
         Intent intent = new Intent(getApplicationContext(), Login.class);
