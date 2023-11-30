@@ -15,6 +15,9 @@
         android:theme="@style/Theme.B07ProjectApp"
         tools:targetApi="31">
         <activity
+            android:name=".StudentAnnouncementDetail"
+            android:exported="false" />
+        <activity
             android:name=".StudentViewAnnouncement"
             android:exported="false" />
         <activity

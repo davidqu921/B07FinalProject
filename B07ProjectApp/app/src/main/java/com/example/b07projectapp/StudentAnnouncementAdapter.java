@@ -69,7 +69,7 @@ public class StudentAnnouncementAdapter extends RecyclerView.Adapter<StudentAnno
                         String content = a.getContent();
                         String time = a.getTime();
 
-                        Intent intent = new Intent(context, AnnouncementDetailAdmin.class);
+                        Intent intent = new Intent(context, StudentAnnouncementDetail.class);
                         intent.putExtra("title", title);
                         intent.putExtra("name", name);
                         intent.putExtra("time", time);

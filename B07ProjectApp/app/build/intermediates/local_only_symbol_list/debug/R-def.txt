@@ -24,6 +24,12 @@ id SABtn
 id SignUpAdminBtn
 id SignUpStuBtn
 id SignUpStudentBtn
+id StdContent
+id StdPoster
+id StdTimePost
+id StdTitleAnnounce
+id Stdbutton14
+id StdtextView
 id StudentEventBack
 id StudentEventList
 id StudentSignUpGoBackBtn
@@ -160,6 +166,7 @@ layout activity_posts_require_inside_cms
 layout activity_posts_require_minor
 layout activity_posts_require_outside_cms
 layout activity_posts_require_specialist_major
+layout activity_student_announcement_detail
 layout activity_student_check_announcements
 layout activity_student_comment
 layout activity_student_complaint
