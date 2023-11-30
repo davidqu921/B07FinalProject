@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/student_background"
     android:onClick="onClickPast"
     tools:context=".StudentEvents"
     tools:layout_editor_absoluteX="36dp"
@@ -15,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Event Date:"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -25,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/textview"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/textView16" />
@@ -36,6 +39,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/event_button"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +52,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/text_title"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -61,6 +66,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:text="@string/description"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -70,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/textview"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toTopOf="@+id/textView14" />
@@ -81,6 +88,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="15dp"
         android:text="Event Location:"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -137,6 +145,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -147,6 +156,7 @@
         android:layout_marginEnd="4dp"
         android:onClick="onClickParticipants"
         android:text="No. of Participants"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -156,6 +166,7 @@
         android:layout_height="wrap_content"
         android:onClick="onClickParticipants"
         android:text="TextView"
+        android:textColor="#FFEB3B"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="@+id/textView7" />
 

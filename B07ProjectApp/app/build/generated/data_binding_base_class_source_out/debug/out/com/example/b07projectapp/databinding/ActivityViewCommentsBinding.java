@@ -22,20 +22,24 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final RecyclerView adminViewComplaint;
+  public final Button AddComment;
 
   @NonNull
-  public final Button button20;
+  public final Button CommentsBack;
+
+  @NonNull
+  public final RecyclerView studentViewComments;
 
   @NonNull
   public final TextView textView18;
 
   private ActivityViewCommentsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView adminViewComplaint, @NonNull Button button20,
-      @NonNull TextView textView18) {
+      @NonNull Button AddComment, @NonNull Button CommentsBack,
+      @NonNull RecyclerView studentViewComments, @NonNull TextView textView18) {
     this.rootView = rootView;
-    this.adminViewComplaint = adminViewComplaint;
-    this.button20 = button20;
+    this.AddComment = AddComment;
+    this.CommentsBack = CommentsBack;
+    this.studentViewComments = studentViewComments;
     this.textView18 = textView18;
   }
 
@@ -66,15 +70,21 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.adminViewComplaint;
-      RecyclerView adminViewComplaint = ViewBindings.findChildViewById(rootView, id);
-      if (adminViewComplaint == null) {
+      id = R.id.AddComment;
+      Button AddComment = ViewBindings.findChildViewById(rootView, id);
+      if (AddComment == null) {
         break missingId;
       }
 
-      id = R.id.button20;
-      Button button20 = ViewBindings.findChildViewById(rootView, id);
-      if (button20 == null) {
+      id = R.id.CommentsBack;
+      Button CommentsBack = ViewBindings.findChildViewById(rootView, id);
+      if (CommentsBack == null) {
+        break missingId;
+      }
+
+      id = R.id.studentViewComments;
+      RecyclerView studentViewComments = ViewBindings.findChildViewById(rootView, id);
+      if (studentViewComments == null) {
         break missingId;
       }
 
@@ -84,8 +94,8 @@ public final class ActivityViewCommentsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityViewCommentsBinding((ConstraintLayout) rootView, adminViewComplaint,
-          button20, textView18);
+      return new ActivityViewCommentsBinding((ConstraintLayout) rootView, AddComment, CommentsBack,
+          studentViewComments, textView18);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3137,11 +3137,14 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable utoronto_coa
 id ALT
+id AddComment
 id AdminCenter
 id AdminViewAnnouncement
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id CommentsBack
+id EventComment
 id FUNCTION
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
@@ -3437,6 +3440,8 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView3
+id imageView4
 id immediateStop
 id included
 id indeterminate
@@ -3574,6 +3579,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id participantName
 id password
 id password_toggle
 id path
@@ -3588,6 +3594,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratingBar
+id ratingBar2
 id ratio
 id rectangles
 id registerBtn
@@ -3665,6 +3672,7 @@ id stop
 id stretch
 id studentComplaintBtn
 id studentLogin
+id studentViewComments
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -3922,6 +3930,7 @@ layout activity_student_sign_up
 layout activity_student_view_announcement
 layout activity_view_comments
 layout announcement_ad
+layout comment
 layout complaint
 layout custom_dialog
 layout design_bottom_navigation_item

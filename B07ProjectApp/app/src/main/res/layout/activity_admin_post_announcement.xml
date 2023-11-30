@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DED5ED"
+    android:background="@drawable/admin_background"
     tools:context=".AdminPostAnnouncement">
 
     <TextView
@@ -13,6 +13,7 @@
         android:layout_height="98dp"
         android:layout_marginTop="32dp"
         android:text="Post New Announcement"
+        android:textColor="#FBFAFA"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +27,8 @@
         android:ems="10"
         android:hint="Title"
         android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,11 +39,13 @@
         android:layout_width="328dp"
         android:layout_height="305dp"
         android:layout_marginTop="16dp"
-        android:background="#F8F5F5"
+        android:background="@drawable/admin_background"
         android:ems="10"
         android:gravity="top"
         android:hint="Enter your announcement"
         android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edAdminAnnounceTitle" />

@@ -15,8 +15,11 @@ drawable new_icon
 drawable search_view_background
 drawable student_background
 drawable utoronto_coa
+id AddComment
 id AdminCenter
 id AdminViewAnnouncement
+id CommentsBack
+id EventComment
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
 id LogInStudentBtn
@@ -93,6 +96,8 @@ id editTextTextMultiLine7
 id eventListBack
 id imageView
 id imageView2
+id imageView3
+id imageView4
 id location
 id loginBtn
 id minorBtn
@@ -101,14 +106,17 @@ id no1Btn
 id no2Btn
 id no3Btn
 id no4Btn
+id participantName
 id password
 id ratingBar
+id ratingBar2
 id registerBtn
 id searchView
 id smbtn
 id specialistBtn
 id studentComplaintBtn
 id studentLogin
+id studentViewComments
 id textView
 id textView10
 id textView11
@@ -177,6 +185,7 @@ layout activity_student_sign_up
 layout activity_student_view_announcement
 layout activity_view_comments
 layout announcement_ad
+layout comment
 layout complaint
 layout event
 mipmap ic_launcher
