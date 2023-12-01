@@ -23,19 +23,18 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/studentViewComments"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="407dp"
+        android:layout_height="702dp"
         android:paddingTop="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="417dp"
-        android:layout_height="0dp"
+        android:layout_width="465dp"
+        android:layout_height="72dp"
         android:background="#3F51B5"
         android:backgroundTint="#3F51B5"
         android:paddingTop="20dp"
@@ -52,10 +51,12 @@
         android:id="@+id/AddComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:onClick="onClickAddComments"
-        android:text="add comment"
+        android:padding="15dp"
+        android:text="Add Comment"
+        app:cornerRadius="10dp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -65,7 +66,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/black"
         android:padding="15dp"
         android:text="Go Back"
         app:cornerRadius="10dp"
