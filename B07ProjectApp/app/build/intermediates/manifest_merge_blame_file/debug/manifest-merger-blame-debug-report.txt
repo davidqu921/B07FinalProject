@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 14    <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -45,199 +45,199 @@
 26-->[androidx.core:core:1.9.0] C:\Users\ramin\.gradle\caches\transforms-3\45dba061abe1e5d647d9f295032bd2d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 27
 28    <application
-28-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:7:5-104:19
+28-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:7:5-104:19
 29        android:allowBackup="true"
-29-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:8:9-35
+29-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:8:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 30-->[androidx.core:core:1.9.0] C:\Users\ramin\.gradle\caches\transforms-3\45dba061abe1e5d647d9f295032bd2d4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 31        android:dataExtractionRules="@xml/data_extraction_rules"
-31-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:9:9-65
+31-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:9:9-65
 32        android:debuggable="true"
 33        android:extractNativeLibs="false"
 34        android:fullBackupContent="@xml/backup_rules"
-34-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:10:9-54
+34-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:10:9-54
 35        android:icon="@mipmap/ic_launcher"
-35-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:11:9-43
+35-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:11:9-43
 36        android:label="@string/app_name"
-36-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:12:9-41
+36-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:12:9-41
 37        android:roundIcon="@mipmap/ic_launcher_round"
-37-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:13:9-54
+37-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:13:9-54
 38        android:supportsRtl="true"
-38-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:14:9-35
+38-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:14:9-35
 39        android:testOnly="true"
 40        android:theme="@style/Theme.B07ProjectApp" >
-40-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:15:9-51
+40-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:15:9-51
 41        <activity
-41-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:17:9-19:40
+41-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:17:9-19:40
 42            android:name="com.example.b07projectapp.StudentAnnouncementDetail"
-42-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:18:13-54
+42-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:18:13-54
 43            android:exported="false" />
-43-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:19:13-37
+43-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:19:13-37
 44        <activity
-44-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:20:9-22:40
+44-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:20:9-22:40
 45            android:name="com.example.b07projectapp.StudentViewAnnouncement"
-45-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:21:13-52
+45-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:21:13-52
 46            android:exported="false" />
-46-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:22:13-37
+46-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:22:13-37
 47        <activity
-47-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:23:9-25:40
+47-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:23:9-25:40
 48            android:name="com.example.b07projectapp.Admin_View_Participants"
-48-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:24:13-52
+48-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:24:13-52
 49            android:exported="false" />
-49-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:25:13-37
+49-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:25:13-37
 50        <activity
-50-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:26:9-28:40
+50-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:26:9-28:40
 51            android:name="com.example.b07projectapp.AnnouncementDetailAdmin"
-51-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:27:13-52
+51-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:27:13-52
 52            android:exported="false" />
-52-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:28:13-37
+52-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:28:13-37
 53        <activity
-53-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:29:9-31:40
+53-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:29:9-31:40
 54            android:name="com.example.b07projectapp.AdminViewAnnouncement"
-54-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:30:13-50
+54-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:30:13-50
 55            android:exported="false" />
-55-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:31:13-37
+55-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:31:13-37
 56        <activity
-56-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:32:9-34:40
+56-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:32:9-34:40
 57            android:name="com.example.b07projectapp.AdminPostAnnouncement"
-57-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:33:13-50
+57-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:33:13-50
 58            android:exported="false" />
-58-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:34:13-37
+58-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:34:13-37
 59        <activity
-59-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:35:9-37:40
+59-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:35:9-37:40
 60            android:name="com.example.b07projectapp.AdminViewComplaint"
-60-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:36:13-47
+60-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:36:13-47
 61            android:exported="false" />
-61-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:37:13-37
+61-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:37:13-37
 62        <activity
-62-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:38:9-40:40
+62-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:38:9-40:40
 63            android:name="com.example.b07projectapp.StudentEventList"
-63-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:39:13-45
+63-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:39:13-45
 64            android:exported="false" />
-64-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:40:13-37
+64-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:40:13-37
 65        <activity
-65-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:41:9-43:40
+65-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:41:9-43:40
 66            android:name="com.example.b07projectapp.StudentCheckAnnouncements"
-66-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:42:13-54
+66-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:42:13-54
 67            android:exported="false" />
-67-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:43:13-37
+67-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:43:13-37
 68        <activity
-68-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:44:9-46:40
+68-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:44:9-46:40
 69            android:name="com.example.b07projectapp.ViewComments"
-69-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:45:13-41
+69-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:45:13-41
 70            android:exported="false" />
-70-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:46:13-37
+70-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:46:13-37
 71        <activity
-71-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:47:9-49:40
+71-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:47:9-49:40
 72            android:name="com.example.b07projectapp.AdminAddEvent"
-72-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-42
+72-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-42
 73            android:exported="false" />
-73-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:49:13-37
+73-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:49:13-37
 74        <activity
-74-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:50:9-52:40
+74-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:50:9-52:40
 75            android:name="com.example.b07projectapp.AdminSignUp"
-75-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:51:13-40
+75-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:51:13-40
 76            android:exported="false" />
-76-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:52:13-37
+76-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:52:13-37
 77        <activity
-77-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:53:9-55:40
+77-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:53:9-55:40
 78            android:name="com.example.b07projectapp.StudentComment"
-78-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-43
+78-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-43
 79            android:exported="false" />
-79-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:55:13-37
+79-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:55:13-37
 80        <activity
-80-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:56:9-58:40
+80-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:56:9-58:40
 81            android:name="com.example.b07projectapp.MainActivity2"
-81-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:57:13-42
+81-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:57:13-42
 82            android:exported="false" />
-82-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:58:13-37
+82-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:58:13-37
 83        <activity
-83-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:59:9-61:40
+83-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:59:9-61:40
 84            android:name="com.example.b07projectapp.StudentEvents"
-84-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:60:13-42
+84-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:60:13-42
 85            android:exported="false" />
-85-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:61:13-37
+85-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:61:13-37
 86        <activity
-86-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:62:9-64:40
+86-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:62:9-64:40
 87            android:name="com.example.b07projectapp.login_module.AdminLogin"
-87-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:63:13-52
+87-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:63:13-52
 88            android:exported="false" />
-88-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:64:13-37
+88-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:64:13-37
 89        <activity
-89-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:65:9-67:40
+89-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:65:9-67:40
 90            android:name="com.example.b07projectapp.AdminDashboard"
-90-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:66:13-43
+90-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:66:13-43
 91            android:exported="false" />
-91-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:67:13-37
+91-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:67:13-37
 92        <activity
-92-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:68:9-70:40
+92-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:68:9-70:40
 93            android:name="com.example.b07projectapp.login_module.Login"
-93-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:69:13-47
+93-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:69:13-47
 94            android:exported="false" />
-94-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:70:13-37
+94-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:70:13-37
 95        <activity
-95-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:71:9-73:40
+95-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:71:9-73:40
 96            android:name="com.example.b07projectapp.StudentDashboard"
-96-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:72:13-45
+96-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:72:13-45
 97            android:exported="false" />
-97-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:73:13-37
+97-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:73:13-37
 98        <activity
-98-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:74:9-76:40
+98-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:74:9-76:40
 99            android:name="com.example.b07projectapp.StudentComplaint"
-99-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:75:13-45
+99-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:75:13-45
 100            android:exported="false" />
-100-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:76:13-37
+100-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:76:13-37
 101        <activity
-101-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:77:9-79:40
+101-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:77:9-79:40
 102            android:name="com.example.b07projectapp.SignUpStudent"
-102-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:78:13-42
+102-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:78:13-42
 103            android:exported="false" />
-103-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:79:13-37
+103-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:79:13-37
 104        <activity
-104-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:80:9-82:40
+104-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:80:9-82:40
 105            android:name="com.example.b07projectapp.PostsRequire"
-105-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:81:13-41
+105-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:81:13-41
 106            android:exported="false" />
-106-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:82:13-37
+106-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:82:13-37
 107        <activity
-107-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:83:9-85:40
+107-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:83:9-85:40
 108            android:name="com.example.b07projectapp.PostsRequireMinor"
-108-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:84:13-46
+108-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:84:13-46
 109            android:exported="false" />
-109-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:85:13-37
+109-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:85:13-37
 110        <activity
-110-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:86:9-88:40
+110-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:86:9-88:40
 111            android:name="com.example.b07projectapp.PostsRequireInsideCMS"
-111-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:87:13-50
+111-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:87:13-50
 112            android:exported="false" />
-112-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:88:13-37
+112-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:88:13-37
 113        <activity
-113-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:89:9-91:40
+113-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:89:9-91:40
 114            android:name="com.example.b07projectapp.PostsRequireOutsideCMS"
-114-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:90:13-51
+114-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:90:13-51
 115            android:exported="false" />
-115-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:91:13-37
+115-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:91:13-37
 116        <activity
-116-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:92:9-94:40
+116-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:92:9-94:40
 117            android:name="com.example.b07projectapp.PostsRequireSpecialistMajor"
-117-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:93:13-56
+117-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:93:13-56
 118            android:exported="false" />
-118-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:94:13-37
+118-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:94:13-37
 119        <activity
-119-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:95:9-103:20
+119-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:95:9-103:20
 120            android:name="com.example.b07projectapp.MainActivity"
-120-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:96:13-41
+120-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:96:13-41
 121            android:exported="true" >
-121-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:97:13-36
+121-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:97:13-36
 122            <intent-filter>
-122-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:98:13-102:29
+122-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:98:13-102:29
 123                <action android:name="android.intent.action.MAIN" />
-123-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:99:17-69
-123-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:99:25-66
+123-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:99:17-69
+123-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:99:25-66
 124
 125                <category android:name="android.intent.category.LAUNCHER" />
-125-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:101:17-77
-125-->C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:101:27-74
+125-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:101:17-77
+125-->C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:101:27-74
 126            </intent-filter>
 127        </activity>
 128

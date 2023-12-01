@@ -1077,7 +1077,7 @@
             "outputFile": "com.example.b07projectapp-merged_res-51:/values-w1240dp-v13_values-w1240dp-v13.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
@@ -2422,7 +2422,7 @@
             "outputFile": "com.example.b07projectapp-merged_res-51:/values-v23_values-v23.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values-v23\\themes.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values-v23\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -4138,7 +4138,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
@@ -4179,7 +4179,7 @@
             "outputFile": "com.example.b07projectapp-merged_res-51:/values-w600dp-v13_values-w600dp-v13.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
@@ -7366,7 +7366,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -8350,23 +8350,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "90,149,206",
-                        "endColumns": "57,55,41",
-                        "endOffsets": "143,200,243"
-                    },
-                    "to": {
-                        "startLines": "1056,1057,1121",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "62882,62940,67099",
-                        "endColumns": "57,55,41",
-                        "endOffsets": "62935,62991,67136"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ramin\\.gradle\\caches\\transforms-3\\4fa7387265049e01dc46477901db8bd7\\transformed\\navigation-common-2.7.5\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,15,21,27,30",
@@ -8386,56 +8369,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "2,4,3",
+                        "startLines": "2,3,4",
                         "startColumns": "4,4,4",
-                        "startOffsets": "57,143,100",
-                        "endColumns": "41,38,41",
-                        "endOffsets": "94,177,137"
+                        "startOffsets": "90,149,206",
+                        "endColumns": "57,55,41",
+                        "endOffsets": "143,200,243"
                     },
                     "to": {
-                        "startLines": "648,649,974",
+                        "startLines": "1056,1057,1121",
                         "startColumns": "4,4,4",
-                        "startOffsets": "33134,33176,57391",
-                        "endColumns": "41,38,41",
-                        "endOffsets": "33171,33210,57428"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\build\\generated\\res\\processDebugGoogleServices\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,138,242,352,472,565",
-                        "endColumns": "82,103,109,119,92,69",
-                        "endOffsets": "133,237,347,467,560,630"
-                    },
-                    "to": {
-                        "startLines": "2045,2047,2048,2049,2050,2211",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "137322,137449,137553,137663,137783,158331",
-                        "endColumns": "82,103,109,119,92,69",
-                        "endOffsets": "137400,137548,137658,137778,137871,158396"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "102,335",
-                        "endLines": "5,7",
-                        "endColumns": "12,74",
-                        "endOffsets": "327,405"
-                    },
-                    "to": {
-                        "startLines": "2588,6480",
-                        "startColumns": "4,4",
-                        "startOffsets": "182727,454712",
-                        "endLines": "2591,6480",
-                        "endColumns": "12,73",
-                        "endOffsets": "182843,454781"
+                        "startOffsets": "62882,62940,67099",
+                        "endColumns": "57,55,41",
+                        "endOffsets": "62935,62991,67136"
                     }
                 },
                 {
@@ -8534,6 +8481,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "102,335",
+                        "endLines": "5,7",
+                        "endColumns": "12,74",
+                        "endOffsets": "327,405"
+                    },
+                    "to": {
+                        "startLines": "2588,6480",
+                        "startColumns": "4,4",
+                        "startOffsets": "182727,454712",
+                        "endLines": "2591,6480",
+                        "endColumns": "12,73",
+                        "endOffsets": "182843,454781"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ramin\\.gradle\\caches\\transforms-3\\50786544954b7496b0a92ded292da342\\transformed\\cardview-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -8553,6 +8519,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2,4,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,143,100",
+                        "endColumns": "41,38,41",
+                        "endOffsets": "94,177,137"
+                    },
+                    "to": {
+                        "startLines": "648,649,974",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "33134,33176,57391",
+                        "endColumns": "41,38,41",
+                        "endOffsets": "33171,33210,57428"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ramin\\.gradle\\caches\\transforms-3\\e69ddfd2048d62e013e1c084a9c6ef14\\transformed\\play-services-basement-18.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -8567,25 +8550,6 @@
                         "startOffsets": "125510,135005",
                         "endColumns": "67,166",
                         "endOffsets": "125573,135167"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\Idi\\B07ProjectApp\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "5,6,67,68,64,75,62,1,58,65,56,72,54,66,13,69,9,8,57,70,10,18,15,59,16,3,4,61,14,78,73,77,71,55,60,79,11,2,74,63,76,7",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "230,293,4748,4784,4582,5218,4470,16,4286,4638,4184,5018,4087,4698,727,4848,464,398,4236,4892,540,942,857,4332,895,130,177,4428,791,5423,5084,5357,4960,4134,4382,5487,596,67,5146,4530,5277,350",
-                        "endLines": "5,6,67,68,64,75,62,1,58,65,56,72,54,66,13,69,9,8,57,70,10,53,15,59,16,3,4,61,14,78,73,77,71,55,60,79,11,2,74,63,76,7",
-                        "endColumns": "62,56,35,63,55,58,59,50,45,59,51,65,46,49,63,43,75,65,49,67,55,13,37,49,45,46,52,41,65,63,61,65,57,49,45,79,75,62,71,51,79,47",
-                        "endOffsets": "288,345,4779,4843,4633,5272,4525,62,4327,4693,4231,5079,4129,4743,786,4887,535,459,4281,4955,591,4082,890,4377,936,172,225,4465,852,5482,5141,5418,5013,4179,4423,5562,667,125,5213,4577,5352,393"
-                    },
-                    "to": {
-                        "startLines": "1992,1993,1994,1995,1996,1997,1998,2000,2012,2031,2032,2034,2039,2040,2044,2046,2053,2054,2056,2057,2058,2059,2203,2204,2210,2212,2213,2214,2221,2225,2226,2227,2228,2229,2230,2231,2232,2233,2234,2235,2236,2237",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "131774,131837,131894,131930,131994,132050,132109,132252,133919,136298,136358,136467,136758,136805,137258,137405,138183,138259,138384,138434,138502,138558,157395,157433,158285,158401,158448,158501,159104,159589,159653,159715,159781,159839,159889,159935,160015,160091,160154,160226,160278,160358",
-                        "endLines": "1992,1993,1994,1995,1996,1997,1998,2000,2012,2031,2032,2034,2039,2040,2044,2046,2053,2054,2056,2057,2058,2094,2203,2204,2210,2212,2213,2214,2221,2225,2226,2227,2228,2229,2230,2231,2232,2233,2234,2235,2236,2237",
-                        "endColumns": "62,56,35,63,55,58,59,50,45,59,51,65,46,49,63,43,75,65,49,67,55,13,37,49,45,46,52,41,65,63,61,65,57,49,45,79,75,62,71,51,79,47",
-                        "endOffsets": "131832,131889,131925,131989,132045,132104,132164,132298,133960,136353,136405,136528,136800,136850,137317,137444,138254,138320,138429,138497,138553,141698,157428,157478,158326,158443,158496,158538,159165,159648,159710,159776,159834,159884,159930,160010,160086,160149,160221,160273,160353,160401"
                     }
                 },
                 {
@@ -8637,6 +8601,25 @@
                         "startOffsets": "124837",
                         "endColumns": "49",
                         "endOffsets": "124882"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "5,6,67,68,64,75,62,1,58,65,56,72,54,66,13,69,9,8,57,70,10,18,15,59,16,3,4,61,14,78,73,77,71,55,60,79,11,2,74,63,76,7",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "235,299,4815,4852,4646,5293,4532,17,4344,4703,4240,5090,4141,4764,740,4917,473,406,4293,4962,550,960,872,4391,911,133,181,4489,805,5501,5157,5434,5031,4189,4442,5566,607,69,5220,4593,5353,357",
+                        "endLines": "5,6,67,68,64,75,62,1,58,65,56,72,54,66,13,69,9,8,57,70,10,53,15,59,16,3,4,61,14,78,73,77,71,55,60,79,11,2,74,63,76,7",
+                        "endColumns": "62,56,35,63,55,58,59,50,45,59,51,65,46,49,63,43,75,65,49,67,55,13,37,49,45,46,52,41,65,63,61,65,57,49,45,79,75,62,71,51,79,47",
+                        "endOffsets": "293,351,4846,4911,4697,5347,4587,63,4385,4758,4287,5151,4183,4809,799,4956,544,467,4338,5025,601,4135,905,4436,952,175,229,4526,866,5560,5214,5495,5084,4234,4483,5641,678,127,5287,4640,5428,400"
+                    },
+                    "to": {
+                        "startLines": "1992,1993,1994,1995,1996,1997,1998,2000,2012,2031,2032,2034,2039,2040,2044,2046,2053,2054,2056,2057,2058,2059,2203,2204,2210,2212,2213,2214,2221,2225,2226,2227,2228,2229,2230,2231,2232,2233,2234,2235,2236,2237",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "131774,131837,131894,131930,131994,132050,132109,132252,133919,136298,136358,136467,136758,136805,137258,137405,138183,138259,138384,138434,138502,138558,157395,157433,158285,158401,158448,158501,159104,159589,159653,159715,159781,159839,159889,159935,160015,160091,160154,160226,160278,160358",
+                        "endLines": "1992,1993,1994,1995,1996,1997,1998,2000,2012,2031,2032,2034,2039,2040,2044,2046,2053,2054,2056,2057,2058,2094,2203,2204,2210,2212,2213,2214,2221,2225,2226,2227,2228,2229,2230,2231,2232,2233,2234,2235,2236,2237",
+                        "endColumns": "62,56,35,63,55,58,59,50,45,59,51,65,46,49,63,43,75,65,49,67,55,13,37,49,45,46,52,41,65,63,61,65,57,49,45,79,75,62,71,51,79,47",
+                        "endOffsets": "131832,131889,131925,131989,132045,132104,132164,132298,133960,136353,136405,136528,136800,136850,137317,137444,138254,138320,138429,138497,138553,141698,157428,157478,158326,158443,158496,158538,159165,159648,159710,159776,159834,159884,159930,160010,160086,160149,160221,160273,160353,160401"
                     }
                 },
                 {
@@ -8730,6 +8713,23 @@
                         "startOffsets": "122545,124723",
                         "endColumns": "41,59",
                         "endOffsets": "122582,124778"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ramin\\AndroidStudioProjects\\B07FinalProject\\B07ProjectApp\\app\\build\\generated\\res\\processDebugGoogleServices\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,138,242,352,472,565",
+                        "endColumns": "82,103,109,119,92,69",
+                        "endOffsets": "133,237,347,467,560,630"
+                    },
+                    "to": {
+                        "startLines": "2045,2047,2048,2049,2050,2211",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "137322,137449,137553,137663,137783,158331",
+                        "endColumns": "82,103,109,119,92,69",
+                        "endOffsets": "137400,137548,137658,137778,137871,158396"
                     }
                 },
                 {

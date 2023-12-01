@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:2:1-106:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] C:\Users\ramin\.gradle\caches\transforms-3\c67a35c69da12863408aa1ebb6d6a59c\transformed\viewbinding-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\ramin\.gradle\caches\transforms-3\b7e579bcb612759cc4760c37c971c0ab\transformed\firebase-analytics-21.5.0\AndroidManifest.xml:2:1-9:12
@@ -84,17 +84,17 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\ramin\.gradle\caches\transforms-3\7641d05edde3414b31d231801952046c\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramin\.gradle\caches\transforms-3\817a250b4cb62a6b2705197541445128\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ramin\.gradle\caches\transforms-3\34cb4e93373402a3d12782b12370d338\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:23:5-67
@@ -108,10 +108,10 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\ramin\.gradle\caches\transforms-3\5087a82e713c6ce063beae45460632c8\transformed\play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\ramin\.gradle\caches\transforms-3\5087a82e713c6ce063beae45460632c8\transformed\play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:7:5-104:19
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:7:5-104:19
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:7:5-104:19
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:7:5-104:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\ramin\.gradle\caches\transforms-3\b7e579bcb612759cc4760c37c971c0ab\transformed\firebase-analytics-21.5.0\AndroidManifest.xml:7:5-20
@@ -169,203 +169,203 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ramin\.g
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramin\.gradle\caches\transforms-3\726546bace9bbe385c0d8cd4ec26ef9b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ramin\.gradle\caches\transforms-3\726546bace9bbe385c0d8cd4ec26ef9b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ramin\.gradle\caches\transforms-3\45dba061abe1e5d647d9f295032bd2d4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:16:9-29
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:15:9-51
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:15:9-51
 	android:dataExtractionRules
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:9:9-65
 activity#com.example.b07projectapp.StudentAnnouncementDetail
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:17:9-19:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:19:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:18:13-54
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:18:13-54
 activity#com.example.b07projectapp.StudentViewAnnouncement
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:20:9-22:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:21:13-52
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:21:13-52
 activity#com.example.b07projectapp.Admin_View_Participants
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:23:9-25:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:24:13-52
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:24:13-52
 activity#com.example.b07projectapp.AnnouncementDetailAdmin
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:27:13-52
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:27:13-52
 activity#com.example.b07projectapp.AdminViewAnnouncement
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:29:9-31:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:31:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:30:13-50
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:30:13-50
 activity#com.example.b07projectapp.AdminPostAnnouncement
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:32:9-34:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:33:13-50
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:33:13-50
 activity#com.example.b07projectapp.AdminViewComplaint
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:35:9-37:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:36:13-47
 activity#com.example.b07projectapp.StudentEventList
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:38:9-40:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:39:13-45
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:39:13-45
 activity#com.example.b07projectapp.StudentCheckAnnouncements
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:41:9-43:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:43:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:42:13-54
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:42:13-54
 activity#com.example.b07projectapp.ViewComments
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:44:9-46:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:45:13-41
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:45:13-41
 activity#com.example.b07projectapp.AdminAddEvent
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:47:9-49:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:49:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-42
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:48:13-42
 activity#com.example.b07projectapp.AdminSignUp
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:50:9-52:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:51:13-40
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:51:13-40
 activity#com.example.b07projectapp.StudentComment
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:53:9-55:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:55:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-43
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:54:13-43
 activity#com.example.b07projectapp.MainActivity2
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:56:9-58:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:57:13-42
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:57:13-42
 activity#com.example.b07projectapp.StudentEvents
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:59:9-61:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:61:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:60:13-42
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:60:13-42
 activity#com.example.b07projectapp.login_module.AdminLogin
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:62:9-64:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:62:9-64:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:64:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:63:13-52
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:63:13-52
 activity#com.example.b07projectapp.AdminDashboard
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:65:9-67:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:65:9-67:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:67:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:66:13-43
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:66:13-43
 activity#com.example.b07projectapp.login_module.Login
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:68:9-70:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:68:9-70:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:69:13-47
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:69:13-47
 activity#com.example.b07projectapp.StudentDashboard
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:71:9-73:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:71:9-73:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:73:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:72:13-45
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:72:13-45
 activity#com.example.b07projectapp.StudentComplaint
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:74:9-76:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:74:9-76:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:76:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:75:13-45
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:75:13-45
 activity#com.example.b07projectapp.SignUpStudent
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:77:9-79:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:77:9-79:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:79:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:79:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:78:13-42
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:78:13-42
 activity#com.example.b07projectapp.PostsRequire
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:80:9-82:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:80:9-82:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:82:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:82:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:81:13-41
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:81:13-41
 activity#com.example.b07projectapp.PostsRequireMinor
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:83:9-85:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:83:9-85:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:85:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:85:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:84:13-46
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:84:13-46
 activity#com.example.b07projectapp.PostsRequireInsideCMS
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:86:9-88:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:86:9-88:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:88:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:88:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:87:13-50
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:87:13-50
 activity#com.example.b07projectapp.PostsRequireOutsideCMS
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:89:9-91:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:89:9-91:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:91:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:91:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:90:13-51
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:90:13-51
 activity#com.example.b07projectapp.PostsRequireSpecialistMajor
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:92:9-94:40
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:92:9-94:40
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:94:13-37
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:94:13-37
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:93:13-56
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:93:13-56
 activity#com.example.b07projectapp.MainActivity
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:95:9-103:20
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:95:9-103:20
 	android:exported
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:97:13-36
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:97:13-36
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:96:13-41
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:96:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:98:13-102:29
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:98:13-102:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:99:17-69
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:99:17-69
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:99:25-66
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:99:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:101:17-77
+ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:101:17-77
 	android:name
-		ADDED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml:101:27-74
+		ADDED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml:101:27-74
 uses-sdk
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.1.2] C:\Users\ramin\.gradle\caches\transforms-3\c67a35c69da12863408aa1ebb6d6a59c\transformed\viewbinding-8.1.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.1.2] C:\Users\ramin\.gradle\caches\transforms-3\c67a35c69da12863408aa1ebb6d6a59c\transformed\viewbinding-8.1.2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:18:5-44
@@ -525,9 +525,9 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ramin\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramin\.gradle\caches\transforms-3\817a250b4cb62a6b2705197541445128\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ramin\.gradle\caches\transforms-3\817a250b4cb62a6b2705197541445128\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\ramin\AndroidStudioProjects\Idi\B07ProjectApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ramin\AndroidStudioProjects\B07FinalProject\B07ProjectApp\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\ramin\.gradle\caches\transforms-3\73c90495d2ae38a10237f955e2b7f1f9\transformed\firebase-database-20.3.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ramin\.gradle\caches\transforms-3\34cb4e93373402a3d12782b12370d338\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:24:5-79
