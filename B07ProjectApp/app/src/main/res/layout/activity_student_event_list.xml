@@ -34,17 +34,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
+    <android.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="265dp"
         android:layout_height="43dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/search_view_background"
-        app:iconifiedByDefault="false"
+        android:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:queryHint="Search for an Event Here ..." />
+        android:queryHint="Search for an Event..." />
 
     <Button
         android:id="@+id/StudentEventBack"
