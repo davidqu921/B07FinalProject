@@ -48,7 +48,6 @@ id back3Btn
 id back4Btn
 id back5Btn
 id button
-id button10
 id button11
 id button12
 id button13
@@ -56,7 +55,6 @@ id button14
 id button15
 id button16
 id button2
-id button20
 id button21
 id button3
 id button4

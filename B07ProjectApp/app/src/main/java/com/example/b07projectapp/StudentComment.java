@@ -49,7 +49,6 @@ public class StudentComment extends AppCompatActivity {
             String cmntStr = cmnt.getText().toString();
             RatingBar star = findViewById(R.id.editTextNumber);
             float stars = star.getRating();
-            boolean called[] = {true};
             String pathway, name;
             if(admin == null){
                 pathway = username + cmntStr;
@@ -63,7 +62,7 @@ public class StudentComment extends AppCompatActivity {
                 makeText(StudentComment.this, "Fill In All Empty Fields", LENGTH_SHORT).show();
             }
             else {
-                ref.child("event").child(TitleStr).child("comment").addValueEventListener(new ValueEventListener() {
+                ref.child("event").child(TitleStr).child("comment").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         int rating =0;
@@ -85,7 +84,7 @@ public class StudentComment extends AppCompatActivity {
                                 break;
                             }
                         }
-                        if (called[0]) {
+
                             if (found)
                                 makeText(StudentComment.this, "Comment Already Submitted", LENGTH_SHORT).show();
                             else {
@@ -93,9 +92,13 @@ public class StudentComment extends AppCompatActivity {
                                 ref.child("event").child(TitleStr).child("comment").child(pathway).child("rating").setValue(Integer.valueOf(String.valueOf(rating)));
                                 ref.child("event").child(TitleStr).child("comment").child(pathway).child("username").setValue(name);
                                 makeText(StudentComment.this, "Comment Submitted", LENGTH_SHORT).show();
+                                star.setRating(0);
+                                cmnt.setText("");
+
                             }
-                            called[0] = false;
-                        }
+
+
+
                     }
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {

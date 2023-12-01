@@ -30,7 +30,7 @@
         android:hint="Enter your complaint"
         android:inputType="textMultiLine"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColorHint="#99FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextComplaintTopic" />
@@ -55,7 +55,7 @@
         android:hint="What do you want to complain about?"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColorHint="#99FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextComplaintStuName" />
@@ -80,7 +80,7 @@
         android:hint="Your name (optional)"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColorHint="#99FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toStartOf="parent"

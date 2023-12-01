@@ -36,7 +36,6 @@ public class StudentAnnouncementDetail extends AppCompatActivity {
         edcontent.setText(content);
     }
     public void onClickStudentAnnounceDetailGoBack(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentViewAnnouncement.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

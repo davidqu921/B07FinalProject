@@ -33,6 +33,7 @@ public class AdminAddEvent extends AppCompatActivity {
     //Button dateButton;
     private Button dateButton;
     private DatePickerDialog datePickerDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +56,7 @@ public class AdminAddEvent extends AppCompatActivity {
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int day) {
-                month = month+1;
+                month = month + 1;
                 String date = makeDateString(day, month, year);
                 dateButton.setText(date);
             }
@@ -68,6 +69,7 @@ public class AdminAddEvent extends AppCompatActivity {
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
         datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
     }
+
     private String makeDateString(int day, int month, int year) {
         return getMonthFormat(month) + " " + day + " " + year;
     }
@@ -104,84 +106,51 @@ public class AdminAddEvent extends AppCompatActivity {
     }
 
 
-    public void onClickAdd(View view){
+    public void onClickAdd(View view) {
         String user = getIntent().getStringExtra("username");
-        if (user == null) {
-            makeText(AdminAddEvent.this, "Log In as an Admin First!", LENGTH_SHORT).show();
-            startActivity(new Intent(AdminAddEvent.this, AdminLogin.class));
-        }
-        else {
+        DatabaseReference ref = base.getReference();
+        EditText Title = (EditText) findViewById(R.id.editTextText);
+        EditText desc = (EditText) findViewById(R.id.editTextStudentComplaint2);
+        String descStr = desc.getText().toString();
+        String TitleStr = Title.getText().toString();
+        EditText location = (EditText) findViewById(R.id.editTextText2);
+        String locationStr = location.getText().toString();
+        String dateStr = dateButton.getText().toString();
+        EditText people = (EditText) findViewById(R.id.editTextNumber2);
+        String peoplestr = people.getText().toString();
+        ref.child("event").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                boolean call = false;
 
-            DatabaseReference ref = base.getReference();
-            EditText Title = (EditText) findViewById(R.id.editTextText);
-            EditText desc = (EditText) findViewById(R.id.editTextStudentComplaint2);
-            String descStr = desc.getText().toString();
-            String TitleStr = Title.getText().toString();
-            //desc.setText("");
-            //Title.setText("");
-            EditText location = (EditText) findViewById(R.id.editTextText2);
-            String locationStr = location.getText().toString();
-            //location.setText("");
-            //EditText date =  findViewById(R.id.editTextDate);
-            //String dateStr = date.getText().toString();
-            String dateStr = dateButton.getText().toString();
-
-            //Date eventDate = Date.valueOf(dateStr);
-            //makeText(AdminAddEvent.this, dateStr, LENGTH_SHORT).show();
-            EditText people = (EditText) findViewById(R.id.editTextNumber2);
-            String peoplestr = people.getText().toString();
-
-
-            //people.setText("");
-
-            boolean ct[] = {true};
-            ref.child("event").addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    boolean call = false;
-
-                    for (DataSnapshot ds: snapshot.getChildren()){
-                        if (ds.getKey().equals(TitleStr)) {
-                            call = true;
-                            break;
-                        }
+                for (DataSnapshot ds : snapshot.getChildren()) {
+                    if (ds.getKey().equals(TitleStr)) {
+                        call = true;
+                        break;
                     }
-                    if(ct[0]) {
-                        if (!call) {
-                            //java.util.Date eventDate = Date.valueOf(dateStr);
-                            //java.util.Date currentDate = Calendar.getInstance().getTime();
-                            if (TitleStr.isEmpty() || descStr.isEmpty()  || locationStr.isEmpty() || peoplestr.isEmpty()) {
-                                makeText(AdminAddEvent.this, "Fill In All Empty Fields", LENGTH_SHORT).show();
-                           // } else if (eventDate.compareTo(currentDate) <= 0) {
-                            //  makeText(AdminAddEvent.this, "Date cannot be before current date", LENGTH_SHORT).show();
-                            //} else if (Integer.valueOf(people.getText().toString()) <= 0){
-                              //makeText(AdminAddEvent.this, "Must have atleast one Participant", LENGTH_SHORT).show();
-                            }
-                            else {
-                                ref.child("event").child(TitleStr).child("title").setValue(TitleStr);
-                                ref.child("event").child(TitleStr).child("description").setValue(descStr);
-                                ref.child("event").child(TitleStr).child("date").setValue(dateStr);
-                                ref.child("event").child(TitleStr).child("location").setValue(locationStr);
-                                ref.child("event").child(TitleStr).child("limit").setValue(Integer.valueOf(peoplestr));
-                                ref.child("event").child(TitleStr).child("poster").setValue(user);
-                                makeText(AdminAddEvent.this, "Event Created!", LENGTH_SHORT).show();
-                                ct[0] = false;
-                                onBackPressed();
-                            }
-
-                        } else {
-                            makeText(AdminAddEvent.this, "Event Already Exists", LENGTH_SHORT).show();
-                        }
-                        ct[0] = false;
+                }
+                if (!call) {
+                    if (TitleStr.isEmpty() || descStr.isEmpty() || locationStr.isEmpty() || peoplestr.isEmpty()) {
+                        makeText(AdminAddEvent.this, "Fill In All Empty Fields", LENGTH_SHORT).show();
+                    } else if (Integer.valueOf(people.getText().toString()) <= 0) {
+                        makeText(AdminAddEvent.this, "Must have atleast one Participant", LENGTH_SHORT).show();
+                    } else {
+                        ref.child("event").child(TitleStr).child("title").setValue(TitleStr);
+                        ref.child("event").child(TitleStr).child("description").setValue(descStr);
+                        ref.child("event").child(TitleStr).child("date").setValue(dateStr);
+                        ref.child("event").child(TitleStr).child("location").setValue(locationStr);
+                        ref.child("event").child(TitleStr).child("limit").setValue(Integer.valueOf(peoplestr));
+                        ref.child("event").child(TitleStr).child("poster").setValue(user);
+                        makeText(AdminAddEvent.this, "Event Created!", LENGTH_SHORT).show();
+                        onBackPressed();
                     }
-                    //finish();
+                } else {
+                    makeText(AdminAddEvent.this, "Event Already Exists", LENGTH_SHORT).show();
                 }
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-                }
-            });
-
-        }
-
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
     }
 }

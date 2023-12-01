@@ -67,7 +67,6 @@ public class StudentViewAnnouncement extends AppCompatActivity {
     }
 
     public void onClickStudentAnnouncementGoBack(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentDashboard.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

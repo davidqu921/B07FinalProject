@@ -25,18 +25,14 @@ import java.util.List;
 public class StudentEventList extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    FirebaseDatabase db;
+    FirebaseDatabase db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com");
     MyAdapter myAdapter;
     ArrayList<Event> list;
     Button btnBack;
     MyAdapter.RecyclerViewClickListener listener;
+    String st;
 
     SearchView searchView;
-
-    public void onclickEvent(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
-        startActivity(intent);
-    }
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -54,13 +50,14 @@ public class StudentEventList extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                st = newText;
                 filterList(newText);
                 return true;
             }
         });
 
         recyclerView = findViewById(R.id.StudentEventList);
-        db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com");
+
         DatabaseReference ref = db.getReference();
 
         recyclerView.setHasFixedSize(true);
@@ -75,7 +72,6 @@ public class StudentEventList extends AppCompatActivity {
         ref.child("event").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     String title = dataSnapshot.child("title").getValue(String.class);
                     String location = dataSnapshot.child("location").getValue(String.class);
@@ -84,7 +80,6 @@ public class StudentEventList extends AppCompatActivity {
                     Event event = new Event(title,location,date,description);
                     list.add(event);
                 }
-
                 myAdapter.notifyDataSetChanged();
             }
 
@@ -102,7 +97,6 @@ public class StudentEventList extends AppCompatActivity {
             }
         });
     }
-
     private void filterList(String newText) {
         ArrayList<Event> filteredList = new ArrayList<>();
         for(Event event : list) {
@@ -111,23 +105,37 @@ public class StudentEventList extends AppCompatActivity {
             }
         }
         if (filteredList.isEmpty()) {
-            Toast.makeText(this, "No Events Found", Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this, "No Events Found", Toast.LENGTH_SHORT).show();
         }else{
             myAdapter.setFilteredList(filteredList);
         }
     }
 
+    private void  filterList(String newText, ArrayList<Event> lst) {
+        for(Event event : list) {
+            if (event.getEventTitle().toLowerCase().contains(newText.toLowerCase())) {
+                lst.add(event);
+            }
+        }
+    }
+
     private void setOnClickListener() {
+
         listener = new MyAdapter.RecyclerViewClickListener() {
+            String s = "xca";
             @Override
             public void onClick(View view, int position) {
+                ArrayList<Event> lists = new ArrayList<>();
+                if (st == null)
+                    lists = list;
+                else
+                    filterList(st, lists);
                 Intent intent = new Intent(getApplicationContext(),StudentEvents.class);
                 intent.putExtra("student", getIntent().getStringExtra("student"));
-                intent.putExtra("title",list.get(position).getEventTitle()) ;
-                intent.putExtra("location",list.get(position).getLocation());
-                intent.putExtra("description",list.get(position).getDescription());
-                intent.putExtra("date",list.get(position).getDate());
-                intent.putExtra("counter", position);
+                intent.putExtra("title",lists.get(position).getEventTitle()) ;
+                intent.putExtra("location",lists.get(position).getLocation());
+                intent.putExtra("description",lists.get(position).getDescription());
+                intent.putExtra("date",lists.get(position).getDate());
                 if (getIntent().getStringExtra("stu") != null) {
                     String stStr = getIntent().getStringExtra("stu");
                     intent.putExtra("stu", stStr);

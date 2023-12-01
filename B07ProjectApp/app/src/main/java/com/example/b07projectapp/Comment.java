@@ -2,12 +2,12 @@ package com.example.b07projectapp;
 
 public class Comment {
     String user;
-    int rating;
+    float rating;
     String comment;
 
 
 
-    public Comment(String username, int rating, String review ) {
+    public Comment(String username, float rating, String review ) {
         this.user = username;
         this.comment =review;
         this.rating =rating;
@@ -17,7 +17,7 @@ public class Comment {
         return user;
     }
 
-    public int getRating() {
+    public float getRating() {
         return rating;
     }
 
