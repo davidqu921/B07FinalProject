@@ -32,6 +32,14 @@ public class StudentDashboard extends AppCompatActivity {
         intent.putExtra("stu", stStr);
         startActivity(intent);
     }
+    public void onClickMyEvents(View view){
+        Intent intent = new Intent(getApplicationContext(), MyEvents.class);
+        String sStr = getIntent().getStringExtra("student");
+        String stStr = getIntent().getStringExtra("stu");
+        intent.putExtra("student", sStr);
+        intent.putExtra("stu", stStr);
+        startActivity(intent);
+    }
 
     public void onClickStudentSignOut(View view) {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);

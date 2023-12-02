@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin_background"
+    tools:context=".AdminAddEvent">
+
+    <EditText
+        android:id="@+id/editTextStudentComplaint2"
+        android:layout_width="347dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/add_a_description"
+        android:inputType="textMultiLine"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#99FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickAdd"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePickerButton" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="294dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:hint="@string/event_name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#99FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="294dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#99FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStudentComplaint2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/create_an_event"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/datePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="openDatePicker"
+        android:text="    Pick Date     "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="no. of participants"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#99FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

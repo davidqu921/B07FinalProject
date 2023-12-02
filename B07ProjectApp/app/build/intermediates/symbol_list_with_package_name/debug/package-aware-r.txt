@@ -3151,6 +3151,8 @@ id GoToSubmitComplaintBtn
 id LogInAdminBtn
 id LogInStudentBtn
 id META
+id MyEventBack
+id MyEventsList
 id NO_DEBUG
 id PstAnnounInfo
 id PstName
@@ -3289,6 +3291,7 @@ id button5
 id button6
 id button7
 id button8
+id button9
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3621,6 +3624,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id searchView
+id searchView2
 id search_badge
 id search_bar
 id search_button
@@ -3919,6 +3923,7 @@ layout activity_announcement_detail_admin
 layout activity_login
 layout activity_main
 layout activity_main2
+layout activity_my_events
 layout activity_new_announcement_message
 layout activity_posts_require
 layout activity_posts_require_inside_cms
