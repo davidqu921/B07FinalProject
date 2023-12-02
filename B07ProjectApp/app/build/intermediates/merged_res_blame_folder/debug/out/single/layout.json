@@ -1,134 +1,134 @@
 [
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_posts_require.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_posts_require.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_add_event.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_add_event.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_posts_require_outside_cms.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_posts_require_outside_cms.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_posts_require_specialist_major.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_posts_require_specialist_major.xml"
     },
     {
         "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_view_complaint.xml",
         "source": "com.example.b07projectapp-main-53:/layout/activity_admin_view_complaint.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_view_announcement.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_view_announcement.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_view_announcement.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_view_announcement.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_dashboard.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_dashboard.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_posts_require_inside_cms.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_posts_require_inside_cms.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_view_comments.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_view_comments.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_dashboard.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_events.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_events.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_post_announcement.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_post_announcement.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_event_list.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_event_list.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_main2.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_main2.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_main.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_check_announcements.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_check_announcements.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_post_announcement.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_post_announcement.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_announcement_detail_admin.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_announcement_detail_admin.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_check_announcements.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_check_announcements.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/comment.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/comment.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_view_announcement.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_view_announcement.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_comment.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_comment.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_posts_require_minor.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_posts_require_minor.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_posts_require_minor.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_posts_require_minor.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_announcement_detail_admin.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_announcement_detail_admin.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_sign_up.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_view_complaint.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_view_complaint.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/announcement_ad.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/announcement_ad.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_dashboard.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_dashboard.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_dashboard.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\event.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\event.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_complaint.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_complaint.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_sign_up.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_sign_up.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_announcement_detail.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_announcement_detail.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_complaint.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_complaint.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/event.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/event.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_login.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_login.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_posts_require_outside_cms.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_posts_require_outside_cms.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_posts_require_inside_cms.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_posts_require_inside_cms.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/complaint.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/complaint.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_announcement_detail.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_announcement_detail.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_login.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_sign_up.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_sign_up.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_my_events.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_my_events.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_view_participants.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_view_participants.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_new_announcement_message.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_new_announcement_message.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\comment.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\comment.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_login.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_login.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\announcement_ad.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\announcement_ad.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_view_announcement.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_view_announcement.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_student_comment.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_student_comment.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_main.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_main2.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_main2.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_view_comments.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_view_comments.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_new_announcement_message.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_new_announcement_message.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_view_participants.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_view_participants.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\complaint.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\complaint.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_posts_require.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_posts_require.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_admin_add_event.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_admin_add_event.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_events.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_events.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_posts_require_specialist_major.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_posts_require_specialist_major.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_admin_sign_up.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_admin_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-mergeDebugResources-50:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\MTC\\.gradle\\daemon\\8.0\\com.example.b07projectapp-main-53:\\layout\\activity_login.xml"
+        "merged": "com.example.b07projectapp-mergeDebugResources-50:/layout/activity_student_event_list.xml",
+        "source": "com.example.b07projectapp-main-53:/layout/activity_student_event_list.xml"
     }
 ]

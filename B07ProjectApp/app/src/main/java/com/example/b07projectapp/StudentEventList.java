@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,16 +19,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class StudentEventList extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FirebaseDatabase db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com");
-    MyAdapter myAdapter;
+    EventsAdapter eventsAdapter;
     ArrayList<Event> list;
     Button btnBack;
-    MyAdapter.RecyclerViewClickListener listener;
+    EventsAdapter.RecyclerViewClickListener listener;
     String st;
 
     SearchView searchView;
@@ -66,8 +64,8 @@ public class StudentEventList extends AppCompatActivity {
         list = new ArrayList<>();
 
         setOnClickListener();
-        myAdapter = new MyAdapter(this,list,listener);
-        recyclerView.setAdapter(myAdapter);
+        eventsAdapter = new EventsAdapter(this,list,listener);
+        recyclerView.setAdapter(eventsAdapter);
 
         ref.child("event").addValueEventListener(new ValueEventListener() {
             @Override
@@ -80,7 +78,7 @@ public class StudentEventList extends AppCompatActivity {
                     Event event = new Event(title,location,date,description);
                     list.add(event);
                 }
-                myAdapter.notifyDataSetChanged();
+                eventsAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -107,7 +105,7 @@ public class StudentEventList extends AppCompatActivity {
         if (filteredList.isEmpty()) {
           //  Toast.makeText(this, "No Events Found", Toast.LENGTH_SHORT).show();
         }else{
-            myAdapter.setFilteredList(filteredList);
+            eventsAdapter.setFilteredList(filteredList);
         }
     }
 
@@ -121,7 +119,7 @@ public class StudentEventList extends AppCompatActivity {
 
     private void setOnClickListener() {
 
-        listener = new MyAdapter.RecyclerViewClickListener() {
+        listener = new EventsAdapter.RecyclerViewClickListener() {
             String s = "xca";
             @Override
             public void onClick(View view, int position) {

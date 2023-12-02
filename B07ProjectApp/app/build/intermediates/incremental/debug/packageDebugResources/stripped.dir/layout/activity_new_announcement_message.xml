@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/blue"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    tools:context=".newAnnouncementMessage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/PstTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Final Exam Schedule"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088" />
+
+        <TextView
+            android:id="@+id/PstAnnounInfo"
+            android:layout_width="367dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Final Exam for CSCB07 will happen on: Saturday December 16 14:00-16:30."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PstTitle" />
+
+        <TextView
+            android:id="@+id/PstName"
+            android:layout_width="48dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="Alfredo Yu"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/PstAnnounInfo"
+            app:layout_constraintEnd_toEndOf="@+id/PstAnnounInfo"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="@+id/PstAnnounInfo" />
+
+        <TextView
+            android:id="@+id/PstTime"
+            android:layout_width="129dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Monday, 27 November, 11:59"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/PstAnnounInfo"
+            app:layout_constraintEnd_toEndOf="@+id/PstAnnounInfo"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="@+id/PstAnnounInfo" />
+
+        <Button
+            android:id="@+id/BtnClose"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Close"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PstAnnounInfo"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
