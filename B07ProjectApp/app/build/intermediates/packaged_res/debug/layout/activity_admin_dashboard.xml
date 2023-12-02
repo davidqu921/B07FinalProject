@@ -22,7 +22,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:text="@string/adminDashboard"
         android:textAlignment="center"
         android:textColor="#F4F0F0"
@@ -39,8 +39,9 @@
         android:onClick="onClickViewEvent"
         android:text="@string/view_events"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
 
     <Button
         android:id="@+id/eventListBack"
@@ -50,6 +51,7 @@
         android:onClick="onClickAddEvent"
         android:text="@string/add_new_event"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -57,13 +59,12 @@
         android:id="@+id/button7"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="20dp"
         android:onClick="onClickAnnouncement"
         android:text="Announcements"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/eventListBack" />
 
     <Button
         android:id="@+id/button"
@@ -87,4 +88,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/utoronto_coa" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickViewMyEvent"
+        android:text="My Events"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

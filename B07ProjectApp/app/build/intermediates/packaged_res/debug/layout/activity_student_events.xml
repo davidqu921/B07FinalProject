@@ -15,7 +15,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/black"
         android:onClick="onClickGoBack"
         android:padding="15dp"
         android:text="Go Back"

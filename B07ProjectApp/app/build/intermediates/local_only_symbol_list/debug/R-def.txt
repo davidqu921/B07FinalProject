@@ -24,6 +24,8 @@ id EventComment
 id GoToSubmitComplaintBtn
 id LogInAdminBtn
 id LogInStudentBtn
+id MyEventBack
+id MyEventsList
 id PstAnnounInfo
 id PstName
 id PstTime
@@ -53,6 +55,7 @@ id back3Btn
 id back4Btn
 id back5Btn
 id button
+id button10
 id button11
 id button12
 id button13
@@ -67,6 +70,7 @@ id button5
 id button6
 id button7
 id button8
+id button9
 id checkAnnouncements
 id checkpostBtn
 id date
@@ -115,6 +119,7 @@ id ratingBar
 id ratingBar2
 id registerBtn
 id searchView
+id searchView2
 id smbtn
 id specialistBtn
 id studentComplaintBtn
@@ -164,6 +169,7 @@ id yes3Btn
 id yes4Btn
 layout activity_admin_add_event
 layout activity_admin_dashboard
+layout activity_admin_events
 layout activity_admin_login
 layout activity_admin_post_announcement
 layout activity_admin_sign_up
@@ -174,6 +180,7 @@ layout activity_announcement_detail_admin
 layout activity_login
 layout activity_main
 layout activity_main2
+layout activity_my_events
 layout activity_new_announcement_message
 layout activity_posts_require
 layout activity_posts_require_inside_cms

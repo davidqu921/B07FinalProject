@@ -1,5 +1,8 @@
 package com.example.b07projectapp;
 
+import static android.widget.Toast.LENGTH_SHORT;
+import static android.widget.Toast.makeText;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,7 +14,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,21 +22,19 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class StudentEventList extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FirebaseDatabase db = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com");
-    MyAdapter myAdapter;
+    EventsAdapter eventsAdapter;
     ArrayList<Event> list;
     Button btnBack;
-    MyAdapter.RecyclerViewClickListener listener;
-    String st;
+    EventsAdapter.RecyclerViewClickListener listener;
+    String searchCheckString;
 
     SearchView searchView;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +50,7 @@ public class StudentEventList extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                st = newText;
+                searchCheckString = newText;
                 filterList(newText);
                 return true;
             }
@@ -66,8 +66,8 @@ public class StudentEventList extends AppCompatActivity {
         list = new ArrayList<>();
 
         setOnClickListener();
-        myAdapter = new MyAdapter(this,list,listener);
-        recyclerView.setAdapter(myAdapter);
+        eventsAdapter = new EventsAdapter(this,list,listener);
+        recyclerView.setAdapter(eventsAdapter);
 
         ref.child("event").addValueEventListener(new ValueEventListener() {
             @Override
@@ -80,7 +80,7 @@ public class StudentEventList extends AppCompatActivity {
                     Event event = new Event(title,location,date,description);
                     list.add(event);
                 }
-                myAdapter.notifyDataSetChanged();
+                eventsAdapter.notifyDataSetChanged();
             }
 
             @Override
@@ -88,14 +88,8 @@ public class StudentEventList extends AppCompatActivity {
 
             }
         });
-
         btnBack = findViewById(R.id.StudentEventBack);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        btnBack.setOnClickListener(v -> onBackPressed());
     }
     private void filterList(String newText) {
         ArrayList<Event> filteredList = new ArrayList<>();
@@ -104,10 +98,8 @@ public class StudentEventList extends AppCompatActivity {
                 filteredList.add(event);
             }
         }
-        if (filteredList.isEmpty()) {
-          //  Toast.makeText(this, "No Events Found", Toast.LENGTH_SHORT).show();
-        }else{
-            myAdapter.setFilteredList(filteredList);
+        if (!filteredList.isEmpty()) {
+            eventsAdapter.setFilteredList(filteredList);
         }
     }
 
@@ -120,31 +112,30 @@ public class StudentEventList extends AppCompatActivity {
     }
 
     private void setOnClickListener() {
-
-        listener = new MyAdapter.RecyclerViewClickListener() {
-            String s = "xca";
+        listener = new EventsAdapter.RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
                 ArrayList<Event> lists = new ArrayList<>();
-                if (st == null)
+                if (searchCheckString == null)
                     lists = list;
                 else
-                    filterList(st, lists);
-                Intent intent = new Intent(getApplicationContext(),StudentEvents.class);
-                intent.putExtra("student", getIntent().getStringExtra("student"));
-                intent.putExtra("title",lists.get(position).getEventTitle()) ;
-                intent.putExtra("location",lists.get(position).getLocation());
-                intent.putExtra("description",lists.get(position).getDescription());
-                intent.putExtra("date",lists.get(position).getDate());
-                if (getIntent().getStringExtra("stu") != null) {
-                    String stStr = getIntent().getStringExtra("stu");
-                    intent.putExtra("stu", stStr);
+                    filterList(searchCheckString, lists);
+                if(lists.isEmpty())
+                    makeText(getApplicationContext(), "No Events with " + searchCheckString, LENGTH_SHORT).show();
+                else {
+                    Intent intent = new Intent(getApplicationContext(), StudentEvents.class);
+                    intent.putExtra("student", getIntent().getStringExtra("student"));
+                    intent.putExtra("title", lists.get(position).getEventTitle());
+                    if (getIntent().getStringExtra("studentUsername") != null) {
+                        String stStr = getIntent().getStringExtra("studentUsername");
+                        intent.putExtra("studentUsername", stStr);
+                    }
+                    if (getIntent().getStringExtra("username") != null) {
+                        String user = getIntent().getStringExtra("username");
+                        intent.putExtra("username", user);
+                    }
+                    startActivity(intent);
                 }
-                if (getIntent().getStringExtra("username") != null) {
-                    String user = getIntent().getStringExtra("username");
-                    intent.putExtra("username", user);
-                }
-                startActivity(intent);
             }
         };
     }

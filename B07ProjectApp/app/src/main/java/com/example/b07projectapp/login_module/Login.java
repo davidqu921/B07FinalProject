@@ -51,7 +51,7 @@ public class Login extends AppCompatActivity implements LoginView {
 
         Intent i = new Intent(this, StudentDashboard.class);
         i.putExtra("student", userName);
-        i.putExtra("stu", userId);
+        i.putExtra("studentUsername", userId);
         startActivity(i);
         finish();
     }

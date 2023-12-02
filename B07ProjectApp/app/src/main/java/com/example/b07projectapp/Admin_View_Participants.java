@@ -33,9 +33,8 @@ public class Admin_View_Participants extends AppCompatActivity {
         setContentView(layout.activity_admin_view_participants);
         TextView textView22 = findViewById(id.textView22);
         FirebaseDatabase fire = FirebaseDatabase.getInstance("https://cscb07finalproject-b7b73-default-rtdb.firebaseio.com/");
-        String ev = getIntent().getStringExtra("eventx");
+        String ev = getIntent().getStringExtra("eventNameStr");
         DatabaseReference event = fire.getReference("event").child(ev);
-        //textView22.setText("List of Participants : ");
         event.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

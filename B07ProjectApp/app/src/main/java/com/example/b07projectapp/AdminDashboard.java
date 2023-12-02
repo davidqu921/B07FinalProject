@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class AdminDashboard extends AppCompatActivity {
 
@@ -19,26 +18,20 @@ public class AdminDashboard extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), AdminViewComplaint.class);
         startActivity(intent);
     }
-
     public void onClickViewEvent(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentEventList.class);
+        Intent i = new Intent(getApplicationContext(), StudentEventList.class);
         if (getIntent().getStringExtra("username") != null) {
             String user = getIntent().getStringExtra("username");
-            intent.putExtra("username", user);
+            i.putExtra("username", user);
         }
-
-        startActivity(intent);
+        startActivity(i);
     }
-
     public void onClickAddEvent(View view) {
         Intent intent = new Intent(getApplicationContext(), AdminAddEvent.class);
-
         String user = getIntent().getStringExtra("username");
         intent.putExtra("username", user);
-
         startActivity(intent);
     }
-
     public void onClickAnnouncement(View view) {
         Intent intent = new Intent(getApplicationContext(), AdminViewAnnouncement.class);
         startActivity(intent);
@@ -51,5 +44,13 @@ public class AdminDashboard extends AppCompatActivity {
         LoggedInAdmin.getInstance().setName("");
 
         startActivity(intent);
+    }
+    public void onClickViewMyEvent(View view) {
+        Intent i = new Intent(getApplicationContext(), Admin_My_Events.class);
+        if (getIntent().getStringExtra("username") != null) {
+            String user = getIntent().getStringExtra("username");
+            i.putExtra("username", user);
+        }
+        startActivity(i);
     }
 }

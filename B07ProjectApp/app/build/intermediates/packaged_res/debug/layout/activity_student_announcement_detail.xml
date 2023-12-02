@@ -51,6 +51,7 @@
         android:inputType="textMultiLine"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

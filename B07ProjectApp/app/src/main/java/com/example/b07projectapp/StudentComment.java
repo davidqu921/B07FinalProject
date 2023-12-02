@@ -31,7 +31,7 @@ public class StudentComment extends AppCompatActivity {
         Title.setText(TitleStr);
     }
     public void onClickSubmitComment(View view){
-        String username = getIntent().getStringExtra("stu");
+        String username = getIntent().getStringExtra("studentUsername");
         String admin = getIntent().getStringExtra("username");
         if (username == null && admin == null) {
             makeText(StudentComment.this, "Log In First", LENGTH_SHORT).show();
@@ -84,21 +84,16 @@ public class StudentComment extends AppCompatActivity {
                                 break;
                             }
                         }
-
-                            if (found)
-                                makeText(StudentComment.this, "Comment Already Submitted", LENGTH_SHORT).show();
-                            else {
-                                ref.child("event").child(TitleStr).child("comment").child(pathway).child("review").setValue(cmntStr);
-                                ref.child("event").child(TitleStr).child("comment").child(pathway).child("rating").setValue(Integer.valueOf(String.valueOf(rating)));
-                                ref.child("event").child(TitleStr).child("comment").child(pathway).child("username").setValue(name);
-                                makeText(StudentComment.this, "Comment Submitted", LENGTH_SHORT).show();
-                                star.setRating(0);
-                                cmnt.setText("");
-
-                            }
-
-
-
+                        if (found)
+                            makeText(StudentComment.this, "Comment Already Submitted", LENGTH_SHORT).show();
+                        else {
+                            ref.child("event").child(TitleStr).child("comment").child(pathway).child("review").setValue(cmntStr);
+                            ref.child("event").child(TitleStr).child("comment").child(pathway).child("rating").setValue(Integer.valueOf(String.valueOf(rating)));
+                            ref.child("event").child(TitleStr).child("comment").child(pathway).child("username").setValue(name);
+                            makeText(StudentComment.this, "Comment Submitted", LENGTH_SHORT).show();
+                            star.setRating(0);
+                            cmnt.setText("");
+                        }
                     }
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {

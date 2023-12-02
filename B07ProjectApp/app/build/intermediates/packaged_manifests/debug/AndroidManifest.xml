@@ -39,6 +39,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.B07ProjectApp" >
         <activity
+            android:name="com.example.b07projectapp.Admin_My_Events"
+            android:exported="false" />
+        <activity
+            android:name="com.example.b07projectapp.MyEvents"
+            android:exported="false" />
+        <activity
             android:name="com.example.b07projectapp.StudentAnnouncementDetail"
             android:exported="false" />
         <activity
