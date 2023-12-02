@@ -3142,6 +3142,7 @@ id AdminCenter
 id AdminViewAnnouncement
 id BOTTOM_END
 id BOTTOM_START
+id BtnClose
 id CTRL
 id CommentsBack
 id EventComment
@@ -3151,6 +3152,10 @@ id LogInAdminBtn
 id LogInStudentBtn
 id META
 id NO_DEBUG
+id PstAnnounInfo
+id PstName
+id PstTime
+id PstTitle
 id SABtn
 id SHIFT
 id SHOW_ALL
@@ -3914,6 +3919,7 @@ layout activity_announcement_detail_admin
 layout activity_login
 layout activity_main
 layout activity_main2
+layout activity_new_announcement_message
 layout activity_posts_require
 layout activity_posts_require_inside_cms
 layout activity_posts_require_minor
