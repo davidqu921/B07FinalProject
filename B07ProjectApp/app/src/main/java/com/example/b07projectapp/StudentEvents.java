@@ -182,11 +182,10 @@ public class StudentEvents extends AppCompatActivity {
             makeText(StudentEvents.this, "You must be the poster of this event to see participants", Toast.LENGTH_LONG).show();
     }
 
-    public void limitCheck(String evented) {
+    public void limitCheck(String evnt) {
         TextView limits = findViewById(R.id.textView15);
         String lim = (String) limits.getText();
-        //TextView Title = findViewById(R.id.textView5);
-        DatabaseReference events = event.child(evented);
+        DatabaseReference events = event.child(evnt);
         events.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
